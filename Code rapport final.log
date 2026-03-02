@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2026.1.22)  5 FEB 2026 11:36
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2026.1.22)  2 MAR 2026 10:40
  restricted system commands enabled.
 **"Code rapport final.tex"
 ("./Code rapport final.tex"
@@ -1381,7 +1381,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count387
-<logo.png, id=177, 903.375pt x 474.27188pt>
+<logo.png, id=189, 903.375pt x 474.27188pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package luatex.def Info: logo.png  used on input line 98.
@@ -1399,15 +1399,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-{C:/Users/Nicolas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}<./logo.png>] ("./Code rapport final.toc")
-\tf@toc=\write5
-
-\openout5 = Code rapport final.toc
-
+{C:/Users/Nicolas/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}<./logo.png>] ("./Code rapport final.toc"
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
-]
+])
+\tf@toc=\write5
+
+\openout5 = Code rapport final.toc
 File: logo.png Graphic file (type png)
 <use logo.png>
 Package luatex.def Info: logo.png  used on input line 102.
@@ -1502,7 +1501,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [5]
-<Images/0 graphique.png, id=261, 492.33937pt x 423.83344pt>
+<Images/0 graphique.png, id=276, 492.33937pt x 423.83344pt>
 File: Images/0 graphique.png Graphic file (type png)
 <use Images/0 graphique.png>
 Package luatex.def Info: Images/0 graphique.png  used on input line 255.
@@ -1521,13 +1520,13 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 
 [6<./Images/0 graphique.png>]
 Chapitre 3.
-<Images/1 montage sortie tuyau 1 small.png, id=268, 669.50125pt x 501.875pt>
+<Images/1 montage sortie tuyau 1 small.png, id=283, 669.50125pt x 501.875pt>
 File: Images/1 montage sortie tuyau 1 small.png Graphic file (type png)
 <use Images/1 montage sortie tuyau 1 small.png>
 Package luatex.def Info: Images/1 montage sortie tuyau 1 small.png  used on inp
 ut line 283.
 (luatex.def)             Requested size: 218.51521pt x 163.8043pt.
-<Images/2 montage sortie tuyau 2 small.png, id=269, 501.875pt x 501.875pt>
+<Images/2 montage sortie tuyau 2 small.png, id=284, 501.875pt x 501.875pt>
 File: Images/2 montage sortie tuyau 2 small.png Graphic file (type png)
 <use Images/2 montage sortie tuyau 2 small.png>
 Package luatex.def Info: Images/2 montage sortie tuyau 2 small.png  used on inp
@@ -1552,12 +1551,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
 <./Images/1 montage sortie tuyau 1 small.png><./Images/2 montage sortie tuyau 2 
 small.png>]
-<Images/3 Manometre small.png, id=276, 669.50125pt x 501.875pt>
+<Images/3 Manometre small.png, id=291, 669.50125pt x 501.875pt>
 File: Images/3 Manometre small.png Graphic file (type png)
 <use Images/3 Manometre small.png>
 Package luatex.def Info: Images/3 Manometre small.png  used on input line 312.
 (luatex.def)             Requested size: 141.12456pt x 105.78741pt.
-<Images/4 Streamlines Hardware small.png, id=277, 669.50125pt x 501.875pt>
+<Images/4 Streamlines Hardware small.png, id=292, 669.50125pt x 501.875pt>
 File: Images/4 Streamlines Hardware small.png Graphic file (type png)
 <use Images/4 Streamlines Hardware small.png>
 Package luatex.def Info: Images/4 Streamlines Hardware small.png  used on input
@@ -1568,19 +1567,19 @@ Underfull \hbox (badness 6708) in paragraph at lines 319--319
 []\T1/lmr/m/sc/12 Fi-gure 3.4 \T1/lmr/m/n/12 : |Ma-té-riel
  []
 
-<Images/5 Boitier acquisition small.png, id=278, 235.1419pt x 176.2683pt>
+<Images/5 Boitier acquisition small.png, id=293, 235.1419pt x 176.2683pt>
 File: Images/5 Boitier acquisition small.png Graphic file (type png)
 <use Images/5 Boitier acquisition small.png>
 Package luatex.def Info: Images/5 Boitier acquisition small.png  used on input 
 line 324.
 (luatex.def)             Requested size: 141.12456pt x 105.78868pt.
-<Images/6 fil chaud 1 small.png, id=279, 501.875pt x 501.875pt>
+<Images/6 fil chaud 1 small.png, id=294, 501.875pt x 501.875pt>
 File: Images/6 fil chaud 1 small.png Graphic file (type png)
 <use Images/6 fil chaud 1 small.png>
 Package luatex.def Info: Images/6 fil chaud 1 small.png  used on input line 343
 .
 (luatex.def)             Requested size: 153.64384pt x 153.64217pt.
-<Images/7 fil chaud 2 small.png, id=280, 501.875pt x 501.875pt>
+<Images/7 fil chaud 2 small.png, id=295, 501.875pt x 501.875pt>
 File: Images/7 fil chaud 2 small.png Graphic file (type png)
 <use Images/7 fil chaud 2 small.png>
 Package luatex.def Info: Images/7 fil chaud 2 small.png  used on input line 349
@@ -1616,7 +1615,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
-<Images/8 fil chaud xD.png, id=290, 468.24937pt x 128.73094pt>
+<Images/8 fil chaud xD.png, id=305, 468.24937pt x 128.73094pt>
 File: Images/8 fil chaud xD.png Graphic file (type png)
 <use Images/8 fil chaud xD.png>
 Package luatex.def Info: Images/8 fil chaud xD.png  used on input line 409.
@@ -1633,7 +1632,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [9<./Images/8 fil chaud xD.png>]
-<Images/9.1 reglage streamline.png, id=298, 350.81062pt x 212.29312pt>
+<Images/9.1 reglage streamline.png, id=313, 350.81062pt x 212.29312pt>
 File: Images/9.1 reglage streamline.png Graphic file (type png)
 <use Images/9.1 reglage streamline.png>
 Package luatex.def Info: Images/9.1 reglage streamline.png  used on input line 
@@ -1656,13 +1655,13 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [10<./Images/9.1 reglage streamline.png>]
-<Images/9.2 resultat graphique.png, id=306, 350.81062pt x 316.18124pt>
+<Images/9.2 resultat graphique.png, id=321, 350.81062pt x 316.18124pt>
 File: Images/9.2 resultat graphique.png Graphic file (type png)
 <use Images/9.2 resultat graphique.png>
 Package luatex.def Info: Images/9.2 resultat graphique.png  used on input line 
 435.
 (luatex.def)             Requested size: 163.88739pt x 147.71266pt.
-<Images/9.3 erreur graphique.png, id=307, 350.81062pt x 285.31593pt>
+<Images/9.3 erreur graphique.png, id=322, 350.81062pt x 285.31593pt>
 File: Images/9.3 erreur graphique.png Graphic file (type png)
 <use Images/9.3 erreur graphique.png>
 Package luatex.def Info: Images/9.3 erreur graphique.png  used on input line 44
@@ -1711,7 +1710,7 @@ Missing character: There is no ° (U+00B0) in font cmr12!
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 658.
+Package luatex.def Info: logo.png  used on input line 659.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1722,9 +1721,28 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [14]
+Overfull \hbox (13.66866pt too wide) in paragraph at lines 706--724
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 658.
+Package luatex.def Info: logo.png  used on input line 751.
+(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[15]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package luatex.def Info: logo.png  used on input line 766.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1734,23 +1752,39 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[15] [16
+[16]
+Overfull \hbox (63.44427pt too wide) in paragraph at lines 839--841
+ [][] 
+ []
 
-] [17
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package luatex.def Info: logo.png  used on input line 869.
+(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[17] [18
+
+] [19
 
 ]
-Overfull \hbox (10.94708pt too wide) in paragraph at lines 680--681
+Overfull \hbox (10.94708pt too wide) in paragraph at lines 891--892
 []\T1/lmr/bx/n/12 Sys-tème d'ac-qui-si-tion : \T1/lmr/m/n/12 Boî-tier ma-té-r
 iel \T1/lmr/bx/n/12 Stream-line \T1/lmr/m/n/12 pi-loté par le lo-gi-ciel \T1/l
 mr/bx/n/12 Stream-
  []
 
-[18
+[20
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 743.
+Package luatex.def Info: logo.png  used on input line 954.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1760,10 +1794,10 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[19]
+[21]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 748.
+Package luatex.def Info: logo.png  used on input line 959.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1773,7 +1807,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[20] ("./Code rapport final.aux")
+[22] ("./Code rapport final.aux")
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -1783,43 +1817,46 @@ Package rerunfilecheck Info: File `"Code rapport final".out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42951 strings out of 476081
+ 43038 strings out of 476081
  125129,1648299 words of node,token memory allocated
- 6144 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 231 glue, 4 kern, 1 penalty, 2 glyph, 1125 attrib
-ute, 219 glue_spec, 241 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorsta
+ 6773 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 264 glue, 4 kern, 1 penalty, 2 glyph, 1245 attrib
+ute, 241 glue_spec, 265 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorsta
 ck nodes
-   avail lists: 1:1,2:9161,3:1339,4:116,5:399,6:103,7:6797,8:62,9:1181,10:43,11:
+   avail lists: 1:2,2:9706,3:1348,4:116,5:406,6:104,7:6764,8:62,9:1509,10:43,11:
 572
- 64227 multiletter control sequences out of 65536+600000
- 69 fonts using 4441895 bytes
+ 64301 multiletter control sequences out of 65536+600000
+ 77 fonts using 4979439 bytes
  99i,21n,104p,740b,2424s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:
 /Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex
 10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmmi5.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nicolas/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Nicolas/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Nicolas/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/N
-icolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
-/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy8.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/lm/lmbx10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/lm/lmbx12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmbx6.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/lm/lmcsc10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmr12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmr6.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/lm/lmri12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmro12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/lm/lmtt10.pfb>
-Output written on Code rapport final.pdf (21 pages, 3434430 bytes).
+ts/cm/cmmi10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Nicolas/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Nicolas/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Nicolas
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb>
+<C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Nicolas/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Nicolas/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/lm/lmbx6.pfb><C:/Users/Nicolas/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Nicolas/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Nicolas/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Nicolas/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Nicolas/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Nicolas/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Nicolas/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
+Output written on Code rapport final.pdf (23 pages, 3498010 bytes).
 
-PDF statistics: 437 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 131072)
- 528 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 476 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 131072)
+ 552 words of extra memory for PDF output out of 10000 (max. 100000000)
 

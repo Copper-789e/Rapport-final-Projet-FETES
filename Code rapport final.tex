@@ -513,15 +513,16 @@
 				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20 } & \textbf{R\_L} & \textbf{alpha\_20 } & \textbf{T\_max } & \textbf{État} \\
 				& & ($\Omega$) & ($\Omega$) & ($\%/°C$) & ($°C$) & \\
 				\midrule
-				Probe Type 55 R11 & 1D/droit & 3,3 & 0,5 & 0,48 & 150 & Non vérifié \\
-				Probe Type 55 R11 & 1D/droit & 6 & 0,5 & 0,4 & 300 & Non vérifié \\
-				Probe Type 55 R11 & 1D/droit & 6,2 & 0,5 & 0,37 & 150 & Non vérifié \\
-				Probe Type 55 R11 & 1D/droit & 6,7 & 0,5 & 0,36 & 150 & Non vérifié \\
-				Probe Type 55 R11 & 1D/droit & 7,07 & 0,6 & 0,4 & 150 & Non vérifié \\
+				Probe Type 55 R11 & 1D/droit & 3,3 & 0,5 & 0,48 & 150 & Failed
+				 \\
+				Probe Type 55 R11 & 1D/droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil\\
+				Probe Type 55 R11 & 1D/droit & 6,2 & 0,5 & 0,37 & 150 & pas Fil \\
+				Probe Type 55 R11 & 1D/droit & 6,7 & 0,5 & 0,36 & 150 & pas Fil \\
+				Probe Type 55 R11 & 1D/droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil  \\
 				Probe Type 55 R11 & 1D/droit & 8,6 & 0,6 & 0,42 & 150 & Non vérifié \\
-				Probe Type 55 R01 & 1D/droit & 5,3 & 0,5 & 0,48 & 300 & Non vérifié \\
+				Probe Type 55 R01 & 1D/droit & 5,3 & 0,5 & 0,48 & 300 & Ok \\
 				\midrule
-				Probe Type 55 P15 & 1D/coudé & 3,3 & 0,5 & 0,36 & 300 & Non vérifié \\
+				Probe Type 55 P15 & 1D/coudé & 3,37 & 0,5 & 0,36 & 300 & Ok \\
 				Probe Type 55 P15 & 1D/coudé & 3,4 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & 1D/coudé & 3,48 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & 1D/coudé & 3,6 & 0,5 & 0,36 & 300 & Non vérifié \\
@@ -651,6 +652,216 @@
 	
 	\section{Mesure d'anémométrie, avec la méthode ATC}
 	
+	
+	\subsection{Méthode de calcul}
+	Nous faisons une mesure sur le fil chaud suivant :
+	\begin{itemize}
+		\item 55P15
+		\item $R_{20}$ = 5.3 $\Omega$
+		\item $R_L$ = 0.5 $\Omega$
+		\item $\alpha_{20}$ = 0.48 $\Omega / K$
+	\end{itemize}
+	
+	
+	Nous mesurons ces valeurs:
+	\begin{center}
+		\begin{tabular}{l|c|c}
+			$\Delta_{mmH2O}$ à vide & 0.23 & -- \\
+			$\Delta_{mmH2O}$ non vide & 13.12 & -- \\
+			$\Delta_{mmH2O}$ réel & 12.89 & -- \\
+			$\Delta Pa$ & 126.40 & Pa \\
+			$U_{cal}$ & 13.22 & $m/s$ \\
+		\end{tabular}
+	\end{center}
+
+	
+	"INSÉRER ICI LES MÉTHODES DE CALCUL"
+	
+	\subsection{détermination des constantes A,B,n}	
+	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
+	\begin{itemize}
+		\item 55R01
+		\item $R_{20}$ = 3.37 $\Omega$
+		\item $R_L$ = 0.5 $\Omega$
+		\item $\alpha_{20}$ = 0.36 $\Omega / K$
+	\end{itemize}
+	
+	% --- Section des Constantes ---
+	\begin{center}
+		\textbf{Paramètres Physiques :} \\
+		\begin{tabular}{ll|ll}
+			$M_{air}$ & 29 g/mol & $T$ & 290,35 K \\
+			$P_{atm}$ & 101325 Pa & $\rho_{air, cal}$ & 1,4474 $kg/m^3$ \\
+			$R$ & 8,314 & -- & -- \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
+
+	
+	% --- Tableau de mesures (Points 1 à 10) ---
+	\begin{table}[h!]
+		\centering
+		\small
+		\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\textbf{Id} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+			$E_{moy}$ [V] & 1,44 & 1,82 & 1,88 & 1,92 & 1,96 & 1,99 & 2,02 & 2,06 & 2,09 & 2,11 \\ \hline
+			$\Delta_{mmH2O}$ & 0,12 & 0,46 & 0,78 & 1,33 & 1,33 & 1,99 & 2,21 & 2,70 & 3,83 & 4,80 \\ \hline
+			\textbf{$\sigma (\Delta_{mmH2O}) $} & $\pm$0,01 & -- & -- & -- & -- & -- & $\pm$0,05 & -- & -- & -- \\ \hline
+			$U_{off}$ (m/s) & 0,00 & 2,13 & 2,99 & 4,05 & 4,79 & 5,32 & 5,91 & 7,09 & 7,96 & 8,63 \\ \hline
+			$log(U_{off})$ & -- & 0,33 & 0,48 & 0,61 & 0,68 & 0,73 & 0,77 & 0,85 & 0,90 & 0,94 \\
+			\hline
+			\hline
+			\textbf{Id} & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\ \hline
+			$E_{moy}$ [V] & 2,13 & 2,16 & 2,18 & 2,19 & 2,21 & 2,23 & 2,24 & 2,26 & 2,28 & 2,29 \\ \hline
+			$\Delta_{mmH2O}$ & 5,62 & 6,61 & 8,15 & 9,11 & 10,04 & 11,25 & 12,60 & 13,41 & 16,18 & 18,68 \\ \hline
+			\textbf{$\sigma (\Delta_{mmH2O}) $} & -- & -- & -- & $\pm$0,08 & $\pm$0,15 & $\pm$0,20 & $\pm$0,30 & $\pm$0,35 & $\pm$0,38 & $\pm$0,40 \\ \hline
+			$U_{off}$ (m/s) & 9,37 & 10,43 & 11,04 & 11,59 & 12,28 & 13,00 & 13,42 & 14,75 & 15,86 & 16,21 \\ \hline
+			$log(U_{off})$ & 0,97 & 1,02 & 1,04 & 1,06 & 1,09 & 1,11 & 1,13 & 1,17 & 1,20 & 1,21 \\ \hline
+			
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[h!]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				title={$log(U_{off})$ en fonction de $E_{moy}$},
+				xlabel={$E_{moy}$ (V)},
+				ylabel={$log(U_{off})$},
+				grid=both,
+				width=12cm, height=8cm,
+				scatter,
+				only marks,
+				mark=triangle*
+				]
+				\addplot[blue] coordinates {
+					(1.82, 0.33) (1.88, 0.48) (1.92, 0.60) (1.96, 0.68)
+					(1.99, 0.73) (2.02, 0.77) (2.06, 0.85) (2.09, 0.90)
+					(2.11, 0.94) (2.13, 0.97) (2.16, 1.02) (2.18, 1.04)
+					(2.19, 1.06) (2.21, 1.09) (2.23, 1.11) (2.24, 1.13)
+					(2.26, 1.17) (2.28, 1.20) (2.29, 1.21)
+				};
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Caractéristique aérodynamique du système.}
+	\end{figure}
+	
+	\newpage
+	\begin{itemize}
+		\item \textbf{Modèle} : $log(E_{moy}^2-A) = log(B) + n \log(U_{off})$
+		\item \textbf{Pente ($n$)} : $0,5245$
+		\item \textbf{Coefficient $(B)$} : $5.150$
+		\item \textbf{Ordonnée à l'origine ($Log(B)$)} : $1,6390$
+		\item \textbf{Qualité de l'ajustement ($R^2$)} : $0,9881$
+	\end{itemize}
+	
+	\begin{equation*}
+		log(E_{moy}^2-A) = 1,6390 + 0,5245 \log(U_{off})
+	\end{equation*}
+	
+	Avec un $R^2$ > 0.98, nous avons une corrélation correct.
+	
+	\newpage
+	\subsection{Mesure en couche limite}
+		Nous faisons une mesure sur le fil chaud suivant :
+	\begin{itemize}
+		\item 55P15
+		\item $R_{20}$ = 5.3 $\Omega$
+		\item $R_L$ = 0.5 $\Omega$
+		\item $\alpha_{20}$ = 0.48 $\Omega / K$
+	\end{itemize}
+	
+	Et pour pouvoir étudier la couche limite du système, nous reprenons directement les constantes A, B, et n déterminées dans la partie précédente.
+	
+	
+	\begin{table}[h!]
+		\centering
+		% --- Bloc Série 1 ---
+		\begin{minipage}{0.45\textwidth}
+			\centering			
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{z\_cal} \\ \hline
+				275   & 2,20 & 11,77 & 11,5 \\ \hline
+				277   & 2,18 & 11,30 & 9,5  \\ \hline
+				279   & 2,17 & 10,84 & 7,5  \\ \hline
+				281   & 2,16 & 10,43 & 5,5  \\ \hline
+				283   & 2,14 & 9,58  & 3,5  \\ \hline
+				285   & 2,10 & 8,51  & 1,5  \\ \hline
+				286   & 2,07 & 7,34  & 0,5  \\ \hline
+				286,5 & 2,03 & 6,29  & 0    \\ \hline
+			\end{tabular}
+			\caption{Synthèse des mesures (Série 1)}
+		\end{minipage}
+		\hfill % Ajoute un espace flexible entre les deux minipages
+		% --- Bloc Série 2 ---
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{z\_cal} \\ \hline
+				234   & 1,79 & 1,75  & 52,5 \\ \hline
+				255   & 1,77 & 1,60  & 31,5 \\ \hline
+				265   & 1,75 & 1,39  & 21,5 \\ \hline
+				275   & 1,74 & 1,29  & 11,5 \\ \hline
+				280   & 1,73 & 1,18  & 6,5  \\ \hline
+				282   & 1,71 & 1,01  & 4,5  \\ \hline
+				284   & 1,70 & 0,92  & 2,5  \\ \hline
+				285   & 1,67 & 0,66  & 1,5  \\ \hline
+				286   & 1,63 & 0,44  & 0,5  \\ \hline
+			\end{tabular}
+			\centering
+			\caption{Synthèse des mesures (Série 2)}
+		\end{minipage}
+	\end{table}
+	
+	\begin{figure}[!h]
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					title={Série 1 : $U_{cal}$ en fonction de $z_{cal}$},
+					xlabel={$z_{cal}$},
+					ylabel={$U_{cal}$},
+					grid=major,
+					width=7cm, height=6cm,
+					scatter/classes={
+						a={mark=*,blue}
+					}
+					]
+					\addplot[blue, mark=*, thick] coordinates {
+						(11.5, 11.77) (9.5, 11.30) (7.5, 10.84) (5.5, 10.43) 
+						(3.5, 9.58) (1.5, 8.51) (0.5, 7.34) (0, 6.29)
+					};
+				\end{axis}
+			\end{tikzpicture}
+			\centering
+			\caption{Je sais pas 2}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.3\textheight}
+			\begin{tikzpicture}
+				\begin{axis}[
+					title={Série 2 : $U_{cal}$ en fonction de $z_{cal}$},
+					xlabel={$z_{cal}$},
+					ylabel={$U_{cal}$},
+					grid=major,
+					width=7cm, height=6cm,
+					scatter/classes={
+						a={mark=square*,red}
+					}
+					]
+					\addplot[red, mark=square*, thick] coordinates {
+						(52.5, 1.75) (31.5, 1.60) (21.5, 1.39) (11.5, 1.29) 
+						(6.5, 1.18) (4.5, 1.01) (2.5, 0.92) (1.5, 0.66) (0.5, 0.44)
+					};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Je sais pas 2}
+		\end{minipage}
+	\end{figure}
 	
 	
 	
