@@ -24,18 +24,21 @@
 \contentsline {subsection}{\numberline {4.3.1}Méthode de calcul}{16}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}détermination des constantes A,B,n}{16}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Mesure en couche limite}{18}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Études de la couche limite, à différentes puissances de la soufflerie}{19}{subsection.4.3.4}%
-\contentsline {subsubsection}{Qualification de la turbulence}{21}{section*.22}%
-\contentsline {chapter}{Conclusion}{22}{chapter*.25}%
-\contentsline {chapter}{Annexes}{23}{chapter*.26}%
-\contentsline {chapter}{TP Anémométrie}{23}{chapter*.26}%
-\contentsline {section}{\numberline {1.1}Introduction}{24}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Dispositif Expérimental}{24}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Montage et Géométrie}{24}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Instrumentation}{24}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Calibration du Fil Chaud}{24}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Résultats et Analyse}{25}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Profils de Pression}{25}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Mesures Anémométriques}{25}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Mesures Anémométriques : couche limite}{25}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Conclusion}{26}{section.1.5}%
+\contentsline {section}{\numberline {4.4}Études de la couche limite, à différentes puissances de la soufflerie}{19}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Qualification de la turbulence}{21}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}$U^+$, et $y^+$}{21}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Calcul de $U_m$}{22}{subsection.4.4.3}%
+\contentsline {subsubsection}{Calcul de l'intégrale}{22}{section*.27}%
+\contentsline {chapter}{Conclusion}{23}{chapter*.28}%
+\contentsline {chapter}{Annexes}{24}{chapter*.29}%
+\contentsline {chapter}{TP Anémométrie}{24}{chapter*.29}%
+\contentsline {section}{\numberline {1.1}Introduction}{25}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Dispositif Expérimental}{25}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Montage et Géométrie}{25}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Instrumentation}{25}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Calibration du Fil Chaud}{25}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Résultats et Analyse}{26}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Profils de Pression}{26}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Mesures Anémométriques}{26}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Mesures Anémométriques : couche limite}{26}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Conclusion}{27}{section.1.5}%
