@@ -779,25 +779,6 @@
 	
 	
 	\begin{table}[h!]
-		\centering
-		% --- Bloc Série 1 ---
-		\begin{minipage}{0.45\textwidth}
-			\centering			
-			\begin{tabular}{|c|c|c|c|}
-				\hline
-				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{z\_cal} \\ \hline
-				275   & 2,20 & 11,77 & 11,5 \\ \hline
-				277   & 2,18 & 11,30 & 9,5  \\ \hline
-				279   & 2,17 & 10,84 & 7,5  \\ \hline
-				281   & 2,16 & 10,43 & 5,5  \\ \hline
-				283   & 2,14 & 9,58  & 3,5  \\ \hline
-				285   & 2,10 & 8,51  & 1,5  \\ \hline
-				286   & 2,07 & 7,34  & 0,5  \\ \hline
-				286,5 & 2,03 & 6,29  & 0    \\ \hline
-			\end{tabular}
-			\caption{Synthèse des mesures (Série 1)}
-		\end{minipage}
-		\hfill % Ajoute un espace flexible entre les deux minipages
 		% --- Bloc Série 2 ---
 		\begin{minipage}{0.45\textwidth}
 			\centering
@@ -813,34 +794,11 @@
 				284   & 1,70 & 0,92  & 2,5  \\ \hline
 				285   & 1,67 & 0,66  & 1,5  \\ \hline
 				286   & 1,63 & 0,44  & 0,5  \\ \hline
+				286,5 & 1,53 & 0,08 & 0 \\
+				\hline
 			\end{tabular}
 			\centering
-			\caption{Synthèse des mesures (Série 2)}
-		\end{minipage}
-	\end{table}
-	
-	\begin{figure}[!h]
-		\begin{minipage}{0.3\textwidth}
-			\centering
-			\begin{tikzpicture}
-				\begin{axis}[
-					title={Série 1 : $U_{cal}$ en fonction de $z_{cal}$},
-					xlabel={$z_{cal}$},
-					ylabel={$U_{cal}$},
-					grid=major,
-					width=7cm, height=6cm,
-					scatter/classes={
-						a={mark=*,blue}
-					}
-					]
-					\addplot[blue, mark=*, thick] coordinates {
-						(11.5, 11.77) (9.5, 11.30) (7.5, 10.84) (5.5, 10.43) 
-						(3.5, 9.58) (1.5, 8.51) (0.5, 7.34) (0, 6.29)
-					};
-				\end{axis}
-			\end{tikzpicture}
-			\centering
-			\caption{Je sais pas 2}
+			\caption{Synthèse des mesures}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.3\textheight}
@@ -857,12 +815,274 @@
 					]
 					\addplot[red, mark=square*, thick] coordinates {
 						(52.5, 1.75) (31.5, 1.60) (21.5, 1.39) (11.5, 1.29) 
-						(6.5, 1.18) (4.5, 1.01) (2.5, 0.92) (1.5, 0.66) (0.5, 0.44)
+						(6.5, 1.18) (4.5, 1.01) (2.5, 0.92) (1.5, 0.66) (0.5, 0.44) (0,0.08)
 					};
 				\end{axis}
 			\end{tikzpicture}
-			\caption{Je sais pas 2}
+			\caption{Graphique des mesures}
 		\end{minipage}
+	\end{table}	
+	
+	\begin{table}[h!]
+		% --- Bloc Série 2 ---
+		\begin{minipage}{0.45\textwidth}
+			\centering
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{$\log(z_{cal})$} \\ \hline
+				234   & 1,79 & 1,75  & 1,72 \\ \hline
+				255   & 1,77 & 1,60  & 1,50 \\ \hline
+				265   & 1,75 & 1,39  & 1,33 \\ \hline
+				275   & 1,74 & 1,29  & 1,06 \\ \hline
+				280   & 1,73 & 1,18  & 0,81 \\ \hline
+				282   & 1,71 & 1,01  & 0,65 \\ \hline
+				284   & 1,70 & 0,92  & 0,40 \\ \hline
+				285   & 1,67 & 0,66  & 0,18 \\ \hline
+				286   & 1,63 & 0,44  & -0,30 \\ \hline
+				286,5 & 1,53 & 0,08  & $-\infty$ \\ % Log(0) est indéfini
+				\hline
+			\end{tabular}
+			\caption{Synthèse des mesures ($\log$)}
+		\end{minipage}
+		\hfill
+		\begin{minipage}{0.48\textwidth} % Augmenté légèrement pour le graphique
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					title={Série 2 : Profil semi-log},
+					xlabel={$z_{cal}$ (échelle log)},
+					ylabel={$U_{cal}$},
+					xmode=log, % <--- Active l'échelle logarithmique sur l'axe X
+					log ticks with fixed point, % Pour afficher 1, 10 au lieu de 10^0, 10^1
+					grid=both, % Grille plus fine pour le log
+					minor grid style={gray!25},
+					width=7.5cm, height=6.5cm
+					]
+					\addplot[red, mark=square*, thick] coordinates {
+						(52.5, 1.75) (31.5, 1.60) (21.5, 1.39) (11.5, 1.29) 
+						(6.5, 1.18) (4.5, 1.01) (2.5, 0.92) (1.5, 0.66) (0.5, 0.44) 
+						% (0.1, 0.08) % Valeur 0 ajustée à 0.1 pour être visible en log
+					};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Graphique semi-logarithmique}
+		\end{minipage}
+	\end{table}
+	
+	Après avoir récupérer les constantes A,B, et n pour ce fil chaud. Nous avons voulu tracer le profil de vitesse autour de la couche limite. On s'est placé à la plus petite vitesse stable que pouvait proposer la soufflerie, et nous avons fait un relevé de la tension à pas progressif jusqu'à la couche limite.\\
+	
+	La Table 4.3 présente 4 colonnes:
+	\begin{itemize}
+		\item z : représente la valeur lue sur l'échelle graduée visible  en figure 3.1;
+		\item E : représente la valeur obtenue grâce au logiciel d'acquisition StreamWare;
+		\item $U_{cal}$ : représente la valeur mesurée pour les E correspondant;
+		\item $z_{cal}$ : représente la distance à la paroi.\\ 
+	\end{itemize}
+	
+	Protocole : descendre le fil chaud jusqu'à atteindre la paroi sans la toucher, et prendre la valeur lu sur l'échelle graduée comme la distance à la paroi nulle.\\
+	
+	Résultat : Dans ces conditions, nous avons un $Re \approx 15 000$, donc pas suffisamment petit pour considérer un écoulement laminaire. pour cette manipulation, nous avons voulu interpoler les valeurs à un polynôme dans $\mathbb{R} _2[X]$, et avons obtenue cette équation : $P(x) = 0,5395361 + 0,0635075x-0,0007952x^2$, pour un coefficient de corrélation valant $R^2=0,81685$. Ce qui confirme que supposer un écoulement laminaire serait faux.
+
+	
+	\subsection{Études de la couche limite, à différentes puissances de la soufflerie}
+	Nous avons étudié la couche limite à deux puissances différentes de la soufflerie, nous avons relevé les valeurs de vitesse, et de position. Grâce à la solution Dantec.	
+	
+	\begin{figure}[h]
+		\centering
+		% --- Premier Graphique (Complet) ---
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					width=\textwidth, % Utilise toute la largeur de la minipage
+					xlabel={Distance à la paroi $z_{cl}$ (mm)},
+					ylabel={Vitesse $U$ (m/s)},
+					grid=both,
+					title={Profils complets},
+					% Configuration de la légende en bas
+					legend style={at={(0.5,-0.25)}, anchor=north, legend columns=2, font=\tiny},
+					]
+					% Données Expérimentales
+					\addplot[blue, mark=*] coordinates {(54,8.7) (48,8.89) (43,8.88) (38,8.74) (33,8.57) (28,8.32) (23,7.95) (18,7.76) (16,7.46) (14,7.35) (12,7.25) (10,6.99) (8,6.81) (6,6.59) (4,6.06) (2,5.59) (1,5.06) (0,3.49)};
+					\addlegendentry{U1 (exp)}
+					
+					\addplot[cyan, mark=*] coordinates {(54,18.07) (48,17.86) (43,17.83) (38,17.51) (33,17.34) (28,16.92) (23,16.45) (18,15.76) (16,15.69) (14,15.12) (12,14.96) (10,14.49) (8,14.16) (6,13.58) (4,12.80) (2,11.70) (1,10.97) (0,8.62)};
+					\addlegendentry{U2 (exp)}
+					
+					\addplot[orange, thick, no marks] coordinates {(0.03,0.71) (0.5,3.19) (1.01,4.09) (2.00,4.83) (3.47,5.38) (5.52,5.91) (8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) (33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)};
+					\addlegendentry{u1 com}
+					
+					\addplot[green!60!black, thick, no marks] coordinates {(0.03,2.28) (0.5,7.82) (1.01,9.38) (2.00,10.67) (3.47,11.63) (5.52,12.57) (8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) (33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)};
+					\addlegendentry{u2 com}
+				\end{axis}
+			\end{tikzpicture}
+		\end{minipage}
+		\hfill % Espace élastique entre les deux minipages
+		% --- Deuxième Graphique (Zoom) ---
+		\begin{minipage}{0.48\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					width=\textwidth,
+					xmin=0, xmax=10,
+					xlabel={Distance à la paroi $z_{cl}$ (mm)},
+					ylabel={Vitesse $U$ (m/s)},
+					grid=both,
+					minor tick num=1,
+					title={Zoom (0-10 mm)},
+					% Configuration de la légende en bas
+					legend style={at={(0.5,-0.25)}, anchor=north, legend columns=2, font=\tiny},
+					]
+					\addplot[blue, mark=*] coordinates {(54,8.7) (48,8.89) (43,8.88) (38,8.74) (33,8.57) (28,8.32) (23,7.95) (18,7.76) (16,7.46) (14,7.35) (12,7.25) (10,6.99) (8,6.81) (6,6.59) (4,6.06) (2,5.59) (1,5.06) (0,3.49)};
+					\addlegendentry{U1 (exp)}
+					
+					\addplot[cyan, mark=*] coordinates {(54,18.07) (48,17.86) (43,17.83) (38,17.51) (33,17.34) (28,16.92) (23,16.45) (18,15.76) (16,15.69) (14,15.12) (12,14.96) (10,14.49) (8,14.16) (6,13.58) (4,12.80) (2,11.70) (1,10.97) (0,8.62)};
+					\addlegendentry{U2 (exp)}
+					
+					\addplot[orange, thick, no marks] coordinates {(0.03,0.71) (0.5,3.19) (1.01,4.09) (2.00,4.83) (3.47,5.38) (5.52,5.91) (8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) (33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)};
+					\addlegendentry{u1 com}
+					
+					\addplot[green!60!black, thick, no marks] coordinates {(0.03,2.28) (0.5,7.82) (1.01,9.38) (2.00,10.67) (3.47,11.63) (5.52,12.57) (8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) (33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)};
+					\addlegendentry{u2 com}
+				\end{axis}
+			\end{tikzpicture}
+		\end{minipage}
+		\caption{Comparaison des profils de vitesse expérimentaux et numériques.}
+	\end{figure}
+	
+	\newpage
+	\begin{table}[h]
+		\centering
+		\footnotesize % Police légèrement plus grande car plus de place
+		% --- Première partie (9 premiers points) ---
+		\begin{tabular}{l|ccccccccc}
+			\toprule
+			\textbf{z (mm)} & 234 & 240 & 245 & 250 & 255 & 260 & 265 & 270 & 272 \\
+			\midrule
+			\textbf{z cl (mm)} & 54 & 48 & 43 & 38 & 33 & 28 & 23 & 18 & 16 \\
+			\textbf{U1 (m/s)} & 8,7 & 8,89 & 8,88 & 8,74 & 8,57 & 8,32 & 7,95 & 7,76 & 7,46 \\
+			\textbf{U2 (m/s)} & 18,07 & 17,86 & 17,83 & 17,51 & 17,34 & 16,92 & 16,45 & 15,76 & 15,69 \\
+			\toprule
+			\textbf{z (mm)} & 274 & 276 & 278 & 280 & 282 & 284 & 286 & 287 & 288 \\
+			\midrule
+			\textbf{z cl (mm)} & 14 & 12 & 10 & 8 & 6 & 4 & 2 & 1 & 0 \\
+			\textbf{U1 (m/s)} & 7,35 & 7,25 & 6,99 & 6,81 & 6,59 & 6,06 & 5,59 & 5,06 & 3,49 \\
+			\textbf{U2 (m/s)} & 15,12 & 14,96 & 14,49 & 14,16 & 13,58 & 12,80 & 11,70 & 10,97 & 8,62 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Données de profil de vitesse}
+	\end{table}
+
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=10cm, height=7cm,
+				xmin = 0.8,
+				xmode=log,               % <--- Activation de l'échelle logarithmique
+				log ticks with fixed point, % <--- Affichage 0.1, 1, 10 au lieu de 10^n
+				xlabel={Distance à la paroi $z_{cl}$ (mm, échelle log)},
+				ylabel={Vitesse $U$ (m/s)},
+				grid=both,               % Grille complète (majeure et mineure)
+				minor grid style={gray!10},
+				legend pos=outer north east,
+				title={Profils de vitesse - Échelle semi-logarithmique}
+				]
+				
+				% Données Expérimentales
+				\addplot[blue, mark=*] coordinates {
+					(54,8.7) (48,8.89) (43,8.88) (38,8.74) (33,8.57) (28,8.32) (23,7.95) 
+					(18,7.76) (16,7.46) (14,7.35) (12,7.25) (10,6.99) (8,6.81) (6,6.59) 
+					(4,6.06) (2,5.59) (1,5.06)
+				};
+				\addlegendentry{U1 (exp)}
+				
+				\addplot[cyan, mark=*] coordinates {
+					(54,18.07) (48,17.86) (43,17.83) (38,17.51) (33,17.34) (28,16.92) 
+					(23,16.45) (18,15.76) (16,15.69) (14,15.12) (12,14.96) (10,14.49) 
+					(8,14.16) (6,13.58) (4,12.80) (2,11.70) (1,10.97)
+				};
+				\addlegendentry{U2 (exp)}
+				
+				% --- MODÈLES COM ---
+				% u1 com
+				\addplot[orange, thick, no marks] coordinates {
+					(0.03,0.71) (0.5,3.19) (1.01,4.09) (2.00,4.83) (3.47,5.38) (5.52,5.91) 
+					(8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) 
+					(33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)
+				};
+				\addlegendentry{u1 com}
+				
+				% u2 com
+				\addplot[green!60!black, thick, no marks] coordinates {
+					(0.03,2.28) (0.5,7.82) (1.01,9.38) (2.00,10.67) (3.47,11.63) (5.52,12.57) 
+					(8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) 
+					(33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)
+				};
+				\addlegendentry{u2 com}
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure}
+	
+	
+	\newpage
+	\subsubsection{Qualification de la turbulence}
+	\begin{table}[h]
+		\centering
+		\tiny
+		\begin{tabular}{l|cccccccccccc}
+			\toprule
+			\textbf{Moyenne ($m/s$)} & 0,74 & 1,93 & 3,11 & 3,83 & 5,01 & 6,31 & 7,97 & 8,70 & 9,97 & 11,77 & 14,21 & 18,07 \\
+			\textbf{Variance ($m^2/s^2$)} & 0,002 & 0,010 & 0,028 & 0,046 & 0,074 & 0,106 & 0,164 & 0,207 & 0,294 & 0,358 & 0,532 & 0,781 \\
+			\textbf{Intensité} & 6,67 & 5,21 & 5,36 & 5,62 & 5,41 & 5,15 & 5,08 & 5,23 & 5,44 & 5,09 & 5,13 & 4,89 \\
+			\midrule
+			\textbf{Re} & 6340 & 16657 & 26798 & 33019 & 43162 & 54339 & 68641 & 74905 & 85864 & 101329 & 122335 & 155623 \\
+			\textbf{Formule empirique} & 5,36 & 4,75 & 4,47 & 4,36 & 4,21 & 4,09 & 3,98 & 3,93 & 3,87 & 3,79 & 3,70 & 3,59 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Données expérimentales et calculées en couche limite 55P11}
+	\end{table}
+	
+	Nous avons repris les valeurs de vitesse pour
+	
+	Nous avons utilisé les formules suivantes pour remplir les lignes du tableau:
+	\begin{itemize}
+		\item Intensité : I = $\frac{\sigma_{U}}{U_{moy}}$;
+		\item Re : Re = $\frac{\rho_{air} d U_{moy}}{\nu}$;
+		\item Formule empirique : $I_{emp} = 0.16Re^{-1/8}$.
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=12cm, height=8cm,
+				xlabel={Moyenne ($m/s$)},
+				ylabel={Valeurs},
+				grid=both,
+				legend pos=north east,
+				title={Comparaison Intensité vs Formule Empirique}
+				]
+				
+				% Courbe 1 : Intensité
+				\addplot[color=blue, mark=square*] coordinates {
+					(0.736, 6.671) (1.935, 5.211) (3.112, 5.363) (3.835, 5.621) 
+					(5.013, 5.411) (6.311, 5.154) (7.972, 5.077) (8.700, 5.230) 
+					(9.973, 5.439) (11.769, 5.087) (14.208, 5.133) (18.075, 4.889)
+				};
+				\addlegendentry{Intensité expérimentale}
+				
+				% Courbe 2 : Formule Empirique
+				\addplot[color=red, mark=triangle*, dashed] coordinates {
+					(0.736, 5.356) (1.935, 4.747) (3.112, 4.473) (3.835, 4.358) 
+					(5.013, 4.214) (6.311, 4.095) (7.972, 3.977) (8.700, 3.934) 
+					(9.973, 3.867) (11.769, 3.788) (14.208, 3.700) (18.075, 3.590)
+				};
+				\addlegendentry{Formule empirique}
+				
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Évolution de l'intensité et de la formule empirique en fonction de la vitesse moyenne relevée}
 	\end{figure}
 	
 	
@@ -870,7 +1090,7 @@
 	
 	\chapter*{Conclusion}
 	\addcontentsline{toc}{chapter}{Conclusion}
-	Synthèse des travaux et perspectives d'ouverture.
+	Le dispositif de mesure à la règle ne permet pas d'atteindre la sous couche visqueuse en théorie de la couche limite.
 	
 	
 	\newpage
