@@ -16,7 +16,7 @@
 \usepackage[hidelinks]{hyperref} % Liens cliquables
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-
+\usepackage{pgfplotstable}
 
 
 % --- Mathématiques et Tableaux ---
@@ -352,7 +352,7 @@
 			\caption{Détail de la sonde à fil chaud}
 		\end{minipage}
 	\end{figure}
-	Voici un exemple de présentation d'un fil chaud, on peut y lire que l'étiquette que nous avons affaire à un fil chaud coudé 1D de référence $55P15$, avec les constantes suivantes:
+	Voici un exemple de présentation d'un fil chaud, on peut y lire que l'étiquette que nous avons affaire à un fil chaud coudé 1D de référence \textbf{55P15}, avec les constantes suivantes:
 	\begin{itemize}
 		 \item \textbf{R\_20} : 3,48 $\Omega$; 
 		 \item \textbf{R\_L} : 0,5$\Omega$;
@@ -469,9 +469,9 @@
 	
 	\subsection{Modèle de conversion et étalonnage}
 	La transition entre la tension mesurée $E$ et la vitesse du fluide $U$ suit une loi de puissance (Loi de King modifiée), définie par les coefficients extraits de l'étalonnage :
-	\begin{equation}
-		E^2 = A + B U^n
-	\end{equation}
+	\begin{equation*}
+		\boxed{E^2 = A + B U^n}
+	\end{equation*}
 	
 	D'après les résultats de la Figure 3.11, les coefficients, pour la corrélation avec une loi puissance, retenus sont :
 	\begin{itemize}
@@ -483,24 +483,22 @@
 	\subsection{Valeurs mesurées et estimation de l'erreur}
 	Pour un point de mesure stabilisé, nous obtenons les valeurs suivantes :
 	\begin{itemize}
-		\item \textbf{Tension mesurée :} $1,573$ V;
-		\item \textbf{Vitesse calculée ($U$) :} $1,009$ m/s.
+		\item Tension mesurée : $1,573$ V;
+		\item Vitesse calculée ($U$) : $1,009$ m/s.
 	\end{itemize}
 	
 	L'estimation de l'erreur systématique, calculée par la différence entre la vitesse mesurée et la courbe de tendance (Curve Fit), est extrêmement faible pour ce point :
-	\begin{equation}
-		\epsilon_{vitesse} = -0,0010 \%
-	\end{equation}
+	\begin{equation*}
+		\boxed{\epsilon_{vitesse} = -0,0010 \%}
+	\end{equation*}
 	
 	\subsection{Caractérisation de l'écoulement}
 	À partir de la vitesse $U \approx 1,01$ m/s, nous pouvons calculer le nombre de Reynolds $Re$, avec $D$ le diamètre équivalent du conduit :
-	\begin{equation}
-		Re = \frac{U D}{\nu}
-	\end{equation}
+	\begin{equation*}
+		\boxed{Re = \frac{U D}{\nu}}
+	\end{equation*}
 	Où $\nu$ est la viscosité cinématique de l'air ($\approx 1,5 \cdot 10^{-5}$ m$^2$/s à 20°C).
 	
-	
-	\newpage
 	\section{Comsol}
 	
 	\begin{figure}[h]
@@ -524,7 +522,7 @@
 		\centering
 		\label{tab:inventaire_fil_chaud}
 		\resizebox{\textwidth}{!}{
-			\begin{tabular}{lcccccc}
+			\begin{tabular}{l|ccccc|c}
 				\toprule
 				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20 } & \textbf{R\_L} & \textbf{alpha\_20 } & \textbf{T\_max } & \textbf{État} \\
 				& & ($\Omega$) & ($\Omega$) & ($\%/°C$) & ($°C$) & \\
@@ -564,34 +562,8 @@
 	
 	\newpage
 	\section{Profil de vitesse à la sortie du système}
-	\begin{table}[h!]
-		\centering
-		\label{tab:mesures_pression}
-		\resizebox{0.75\textwidth}{!}{
-			\begin{tabular}{ccc|ccc}
-				\toprule
-				\textbf{position /r} & \textbf{mesure} & \textbf{Convertion} & \textbf{position /r} & \textbf{mesure} & \textbf{Convertion} \\
-				\textbf{centre (mm)} & \textbf{en mmH2O} & \textbf{en Pa}& \textbf{ bord(mm)} & \textbf{en mmH2O} & \textbf{en Pa}\\
-				\midrule
-				27,0 & 13,35 & 130,92 & 21,5 & 11,80 & 115,72 \\
-				23,0 & 13,55 & 132,88 & 17,5 & 10,80 & 105,91 \\
-				19,0 & 13,95 & 136,80 & 13,5 & 10,15 & 99,54 \\
-				15,0 & 14,30 & 140,23 & 11,5 & 9,60  & 94,14 \\
-				11,0 & 14,50 & 142,20 & 9,5 & 9,20  & 90,22 \\
-				7,0 & 14,40 & 141,22 & 7,5 & 8,45  & 82,87 \\
-				3,0 & 14,50 & 142,20 & 5,5 & 7,90  & 77,47 \\
-				-1,0 & 14,60 & 143,18& 3,5 & 7,30  & 71,59 \\
-				-5,0 & 14,50 & 142,20& 2,5 & 6,50  & 63,74 \\
-				-9,0 & 14,40 & 141,22& 1,5 & 5,80  & 56,88 \\
-				-13,0 & 14,50 & 142,20& 0,5 & 5,20  & 50,99 \\
-				-17,0 & 14,30 & 140,23& 0   & 4,85  & 47,56 \\
-				-21,0 & 14,20 & 139,25& --- & --- & --- \\
-				-25,0 & 14,00 & 137,29& --- & --- & --- \\
-				\bottomrule
-			\end{tabular}
-		}
-		\caption{Mesures de pression et positions expérimentales}
-	\end{table}
+	
+	TABLEAU ANCIEN
 	
 	Pour ce tableau, on a mesuré la pression en $mmH_2O$ à l'aide du manomètre, et fait la conversion en $Pa$, avec le coefficient de conversion \boxed{c_{mmH20 \rightarrow Pa} = 9,80665}.
 	
@@ -677,21 +649,32 @@
 		\item $R_L$ = 0.5 $\Omega$
 		\item $\alpha_{20}$ = 0.48 $\Omega / K$
 	\end{itemize}
+
+	La vitesse de l'écoulement est déduite de la mesure de la pression dynamique à l'aide de l'équation de Bernoulli. La pression mesurée en millimètres de colonne d'eau est d'abord corrigée de l'erreur de zéro, puis convertie en Pascals :
 	
+	\begin{itemize}
+		\item Pression réelle : $\Delta P_{réel} = \Delta P_{mesurée} - \Delta P_{offset} = 12,89 \, mmH_2O$
+		\item Conversion : $\Delta P_{Pa} = \rho_{H_2O} g \Delta P_{réel} 10^{-3} = 126,40 \, Pa$
+	\end{itemize}
 	
-	Nous mesurons ces valeurs:
+	La vitesse calculée $U_{cal}$ est ensuite obtenue par la relation :
+	\begin{equation*}
+		\boxed{U_{cal} = \sqrt{\frac{2 \Delta P_{Pa}}{\rho_{air}}}}
+	\end{equation*}
+	
 	\begin{center}
 		\begin{tabular}{l|c|c}
-			$\Delta_{mmH2O}$ à vide & 0.23 & -- \\
-			$\Delta_{mmH2O}$ non vide & 13.12 & -- \\
-			$\Delta_{mmH2O}$ réel & 12.89 & -- \\
-			$\Delta Pa$ & 126.40 & Pa \\
-			$U_{cal}$ & 13.22 & $m/s$ \\
+			\toprule
+			Paramètre & Valeur & Unité \\
+			\midrule
+			$\Delta mmH_2O$ à vide & 0,23 & $mmH_2O$ \\
+			$\Delta mmH_2O$ non vide & 13,12 & $mmH_2O$ \\
+			$\Delta mmH_2O$ réel & 12,89 & $mmH_2O$ \\
+			$\Delta Pa$ & 126,40 & Pa \\
+			$U_{cal}$ & 13,22 & m/s \\
+			\bottomrule
 		\end{tabular}
 	\end{center}
-
-	
-	"INSÉRER ICI LES MÉTHODES DE CALCUL"
 	
 	\subsection{détermination des constantes A,B,n}	
 	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
@@ -713,32 +696,8 @@
 		\end{tabular}
 	\end{center}
 	
+	TABLEAU ANCIEN
 
-	
-	% --- Tableau de mesures (Points 1 à 10) ---
-	\begin{table}[h!]
-		\centering
-		\small
-		\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
-			\hline
-			\textbf{Id} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
-			$E_{moy}$ [V] & 1,44 & 1,82 & 1,88 & 1,92 & 1,96 & 1,99 & 2,02 & 2,06 & 2,09 & 2,11 \\ \hline
-			$\Delta_{mmH2O}$ & 0,12 & 0,46 & 0,78 & 1,33 & 1,33 & 1,99 & 2,21 & 2,70 & 3,83 & 4,80 \\ \hline
-			\textbf{$\sigma (\Delta_{mmH2O}) $} & $\pm$0,01 & -- & -- & -- & -- & -- & $\pm$0,05 & -- & -- & -- \\ \hline
-			$U_{off}$ (m/s) & 0,00 & 2,13 & 2,99 & 4,05 & 4,79 & 5,32 & 5,91 & 7,09 & 7,96 & 8,63 \\ \hline
-			$log(U_{off})$ & -- & 0,33 & 0,48 & 0,61 & 0,68 & 0,73 & 0,77 & 0,85 & 0,90 & 0,94 \\
-			\hline
-			\hline
-			\textbf{Id} & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\ \hline
-			$E_{moy}$ [V] & 2,13 & 2,16 & 2,18 & 2,19 & 2,21 & 2,23 & 2,24 & 2,26 & 2,28 & 2,29 \\ \hline
-			$\Delta_{mmH2O}$ & 5,62 & 6,61 & 8,15 & 9,11 & 10,04 & 11,25 & 12,60 & 13,41 & 16,18 & 18,68 \\ \hline
-			\textbf{$\sigma (\Delta_{mmH2O}) $} & -- & -- & -- & $\pm$0,08 & $\pm$0,15 & $\pm$0,20 & $\pm$0,30 & $\pm$0,35 & $\pm$0,38 & $\pm$0,40 \\ \hline
-			$U_{off}$ (m/s) & 9,37 & 10,43 & 11,04 & 11,59 & 12,28 & 13,00 & 13,42 & 14,75 & 15,86 & 16,21 \\ \hline
-			$log(U_{off})$ & 0,97 & 1,02 & 1,04 & 1,06 & 1,09 & 1,11 & 1,13 & 1,17 & 1,20 & 1,21 \\ \hline
-			
-		\end{tabular}
-	\end{table}
-	
 	\begin{figure}[h!]
 		\centering
 		\begin{tikzpicture}
@@ -774,12 +733,11 @@
 	\end{itemize}
 	
 	\begin{equation*}
-		log(E_{moy}^2-A) = 1,6390 + 0,5245 \log(U_{off})
+		\boxed{log(E_{moy}^2-A) = 1,6390 + 0,5245 \log(U_{off})}
 	\end{equation*}
 	
 	Avec un $R^2$ > 0.98, nous avons une corrélation correct.
 	
-	\newpage
 	\subsection{Mesure en couche limite}
 		Nous faisons une mesure sur le fil chaud suivant :
 	\begin{itemize}
@@ -895,7 +853,13 @@
 	
 	Protocole : descendre le fil chaud jusqu'à atteindre la paroi sans la toucher, et prendre la valeur lu sur l'échelle graduée comme la distance à la paroi nulle.\\
 	
-	Résultat : Dans ces conditions, nous avons un $Re \approx 15 000$, donc pas suffisamment petit pour considérer un écoulement laminaire. pour cette manipulation, nous avons voulu interpoler les valeurs à un polynôme dans $\mathbb{R} _2[X]$, et avons obtenue cette équation : $P(x) = 0,5395361 + 0,0635075x-0,0007952x^2$, pour un coefficient de corrélation valant $R^2=0,81685$. Ce qui confirme que supposer un écoulement laminaire serait faux.
+	Résultat : Dans ces conditions, nous avons un $Re \approx 15 000$, donc pas suffisamment petit pour considérer un écoulement laminaire. pour cette manipulation, nous avons voulu interpoler les valeurs à un polynôme dans $\mathbb{R} _2[X]$, et avons obtenue cette équation : 
+	
+	\begin{equation*}
+		\boxed{P(x) = 0,5395361 + 0,0635075x-0,0007952x^2}
+	\end{equation*}
+	
+	Pour un coefficient de corrélation valant $R^2=0,81685$. Ce qui confirme que supposer un écoulement laminaire serait faux.
 
 	
 	\section{Études de la couche limite, à différentes puissances de la soufflerie}
@@ -964,28 +928,7 @@
 		\caption{Comparaison des profils de vitesse expérimentaux et numériques.}
 	\end{figure}
 	
-	\newpage
-	\begin{table}[h]
-		\centering
-		\footnotesize % Police légèrement plus grande car plus de place
-		% --- Première partie (9 premiers points) ---
-		\begin{tabular}{l|ccccccccc}
-			\toprule
-			\textbf{z (mm)} & 234 & 240 & 245 & 250 & 255 & 260 & 265 & 270 & 272 \\
-			\midrule
-			\textbf{z cl (mm)} & 54 & 48 & 43 & 38 & 33 & 28 & 23 & 18 & 16 \\
-			\textbf{U1 (m/s)} & 8,7 & 8,89 & 8,88 & 8,74 & 8,57 & 8,32 & 7,95 & 7,76 & 7,46 \\
-			\textbf{U2 (m/s)} & 18,07 & 17,86 & 17,83 & 17,51 & 17,34 & 16,92 & 16,45 & 15,76 & 15,69 \\
-			\toprule
-			\textbf{z (mm)} & 274 & 276 & 278 & 280 & 282 & 284 & 286 & 287 & 288 \\
-			\midrule
-			\textbf{z cl (mm)} & 14 & 12 & 10 & 8 & 6 & 4 & 2 & 1 & 0 \\
-			\textbf{U1 (m/s)} & 7,35 & 7,25 & 6,99 & 6,81 & 6,59 & 6,06 & 5,59 & 5,06 & 3,49 \\
-			\textbf{U2 (m/s)} & 15,12 & 14,96 & 14,49 & 14,16 & 13,58 & 12,80 & 11,70 & 10,97 & 8,62 \\
-			\bottomrule
-		\end{tabular}
-		\caption{Données de profil de vitesse}
-	\end{table}
+	TABLEAU ANCIEN
 
 	\begin{figure}[h]
 		\centering
@@ -1122,64 +1065,112 @@
 	
 	Nous retiendrons la valeur $U_m = 14.84m/s$, qui est justifiée dans la partie 4.4.3.
 	
-		
 	
 	\subsection{Calcul de $U_m$}
-	\subsubsection*{Interpolation du profil de vitesse}
+	\subsubsection*{Formulation de la somme pondérée}
 	
-	L'évolution de la vitesse en fonction de la distance à la paroi $z_{cl}$ est modélisée par une loi de puissance, ajustée pour tenir compte de la vitesse résiduelle à la paroi :
-	
-	\begin{equation*}
-		U(z_{cl}) = v_{max} \left( \frac{z_{cl} + C_1}{C_{2}} \right)^{n}
-	\end{equation*}
-	
-	Où :
-	\begin{itemize}
-		\item $V_{max} = 19.15$ m/s (Vitesse théorique au centre de l'écoulement).
-		\item $C_1 = 0,28$ (Paramètre d'ajustement de paroi).
-		\item $C_2 = 63$ mm (Rayon du cylindre).
-		\item $n = 0,328$ (Exposant de la couche limite).
-	\end{itemize}
-	
-	\subsubsection*{Validation du modèle}
-	
-	Le tableau suivant compare les valeurs expérimentales mesurées ($U_{exp}$) aux valeurs calculées par le modèle numérique ($U_{mod}$) :
-	
-	\begin{table}[h]
-		\centering
-		\begin{tabular}{l|ccc}
-			\toprule
-			$z_{cl}$ (mm) & $U_{exp}$ (m/s) & $U_{mod}$ (m/s) & Erreur (\%) \\
-			\midrule
-			0 (paroi) & 8,62 & 8,62 & 0,0\% \\
-			10        & 14,49 & 14,36 & 0,9\% \\
-			33        & 17,34 & 17,84 & 2,8\% \\
-			54        & 18,07 & 21,02 & 16,3\% \\
-			\bottomrule
-		\end{tabular}
-		\caption{Vérification du modèle interpolé}
-	\end{table}
-	
-	\subsubsection{Calcul de l'intégrale}
-	Pour obtenir la vitesse moyenne $U_{moy}$ sur la section transversale du cylindre de rayon $R = 63$ mm, nous intégrons le profil de vitesse sur la surface du disque en coordonnées polaires, où le rayon local depuis le centre est $r = R - z_{cl}$ :
+	Pour un point situé à une distance $z_i$ de la paroi, le rayon local depuis le centre est $r_i = R - z_i$. La surface élémentaire $S_i$ associée à chaque mesure est l'aire de l'anneau compris entre deux rayons médians. La vitesse moyenne est définie par :
 	
 	\begin{equation*}
-		U_{moy} = \frac{1}{\pi R^2} \int_{0}^{R} U(z_{cl}) \cdot 2\pi (R - z_{cl}) \, dz_{cl}
+		\boxed{U_{moy} = \frac{\sum \Phi_i}{\sum S_i} = \frac{\sum U_i S_i}{\sum S_i} = \frac{\sum U_i \pi (r_{ext,i}^2 - r_{int,i}^2)}{\pi R^2}}
 	\end{equation*}
 	
-	En remplaçant par l'expression numérique et en simplifiant par $\pi$ :
+	
+	
+	\subsubsection*{Calcul numérique par pondération des vitesses moyennes}
+	
+	En utilisant les coordonnées $(z, U)$ expérimentales et en appliquant une intégration numérique discrète (pondération par le périmètre $2\pi r$), nous obtenons les contributions suivantes :
+	
+	
+	Pour passer à une forme calculable par nos points expérimentaux, nous travaillerons avec les intervalles $[r_i, r_{i+1}]$ :
+	\begin{equation*}
+		\Phi_i =  2\pi \left[ \frac{U(r_i) r_i + U(r_{i+1}) r_{i+1}}{2} \right] \Delta r_i
+	\end{equation*}
+
+	Donc, 
 	
 	\begin{equation*}
-		U_{moy} = \frac{2}{R^2} \int_{0}^{63} 21,72 \left( \frac{z_{cl} + 0,28}{63} \right)^{0,328} (63 - z_{cl}) \, dz_{cl}
+		\boxed{\Phi_i = \pi \left( U_i r_i + U_{i+1} r_{i+1} \right) \Delta r_i}
 	\end{equation*}
 	
-	Le calcul de cette intégrale (tenant compte de la pondération par le rayon $r$) donne la valeur suivante :
+	La vitesse moyenne est enfin obtenue en sommant toutes ces contributions et en divisant par la section totale $S = \pi R^2$ :
 	
+	\begin{equation*}
+		\boxed{U_{moy} =\frac{1}{R^2} \sum_{i=0}^{n-1} (U_i r_i + U_{i+1} r_{i+1}) \Delta r_i}
+	\end{equation*}
+	
+	L'application numérique sur les 18 points de mesure donne :
 	\begin{equation*}
 		\boxed{U_{moy} \approx 14,84 \text{ m/s}}
 	\end{equation*}
 
+	\subsubsection{Loi logarithme de von Kármán}
 	
+	La structure de la couche limite turbulente peut être décrite par des variables adimensionnelles basées sur la vitesse de frottement $u_\tau = \sqrt{\tau_w / \rho}$. On définit ainsi la distance à la paroi adimensionnelle $y^+$ et la vitesse adimensionnelle $U^+$ par :
+	\begin{equation*}
+		y^+ = \frac{y u_\tau}{\nu} \quad ; \quad U^+ = \frac{U}{u_\tau}
+	\end{equation*}
+	
+	Dans la zone logarithmique ($30 < y^+ < 1000$ environ), le profil de vitesse suit la loi de von Kármán :
+	\begin{equation*}
+		\boxed{U^+ = \frac{1}{\kappa} \ln(y^+) + B}
+	\end{equation*}
+	où $\kappa$ est la constante de von Kármán, de valeur approximative $\kappa = 0.384$, et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).
+	
+	ANCIEN TABLEAU
+
+	\begin{figure}[ht]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=11cm, height=7cm,
+				xlabel={$\ln(y^+)$},
+				ylabel={$U^+$},
+				grid=both,
+				minor tick num=1,
+				legend pos=north west,
+				title={Analyse de la zone logarithmique}
+				]
+				\pgfplotstableread{
+					x           y
+					7.778975583 27.227469121
+					7.662656436 26.871100183
+					7.552867308 26.819935218
+					7.431504282 26.282073526
+					7.291640618 25.99626004
+					7.130449459 25.278283037
+					6.937291372 24.482921333
+					6.697485974 23.338917417
+					6.580227331 23.229028192
+					6.451356273 22.274882532
+					6.298560685 22.004871687
+					6.120228566 21.22880379
+					5.899978369 20.683137367
+					5.617471170 19.741931714
+					5.219463126 18.460462996
+					4.537514257 16.690613664
+					3.852392691 15.527551661
+				}\datatable
+				
+				\addplot[only marks, mark=o, blue] table {\datatable};
+				\addlegendentry{Points expérimentaux}
+				
+				\addplot[thick, red, no marks] table[y={create col/linear regression={y=y}}] {\datatable};
+				\addlegendentry{Régression : $U^+ = 3,01 \ln(y^+) + 3,47$}
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Profil $U^+$ en fonction de $\ln(y^+)$ et détermination expérimentale des constantes.}
+	\end{figure}
+	
+	\noindent Régression :
+	\begin{equation*}
+		\boxed{U^+ = A \ln(y^+) + B$, avec $A=3,01$, et $B = 3,47}
+	\end{equation*}
+	\noindent Analyse des résultats :	La régression linéaire effectuée sur l'ensemble des points expérimentaux donne un coefficient de corrélation $R^2 = 0,996$, ce qui indique une pente $A = 3,013$, nous pouvons identifier la constante de von Kármán expérimentale :
+	\begin{equation*}
+		\kappa_{exp} = \frac{1}{A} \approx 0,33
+	\end{equation*}
+	On observe une légère différence avec la valeur de référence empirique ($\kappa = 0,384$). L'ordonnée à l'origine $B \approx 3,47$ est proche de la valeur de référence de 5.0 pour une paroi lisse en PVC, ce qui peut s'expliquer par les conditions spécifiques de l'écoulement ou la rugosité résiduelle de la paroi.
 	
 	
 	\chapter*{Conclusion}
@@ -1189,7 +1180,130 @@
 	
 	\newpage
 	\chapter*{Annexes}
+	
 	\addcontentsline{toc}{chapter}{Annexes}
+	\addcontentsline{toc}{chapter}{Tableaux de valeurs}
+	\setcounter{chapter}{1}
+	\setcounter{section}{0}
+	\section{Tableaux}
+	\subsection{Tableau pour profil de vitesse (4.2)}
+	\vspace{-2em}
+	\begin{table}[h!]
+		\centering
+		\label{tab:mesures_pression}
+		\resizebox{0.85\textwidth}{!}{
+			\begin{tabular}{ccc|ccc}
+				\toprule
+				\textbf{position /r} & \textbf{mesure} & \textbf{Convertion} & \textbf{position /r} & \textbf{mesure} & \textbf{Convertion} \\
+				\textbf{centre (mm)} & \textbf{en mmH2O} & \textbf{en Pa}& \textbf{ bord(mm)} & \textbf{en mmH2O} & \textbf{en Pa}\\
+				\midrule
+				27,0 & 13,35 & 130,92 & 21,5 & 11,80 & 115,72 \\
+				23,0 & 13,55 & 132,88 & 17,5 & 10,80 & 105,91 \\
+				19,0 & 13,95 & 136,80 & 13,5 & 10,15 & 99,54 \\
+				15,0 & 14,30 & 140,23 & 11,5 & 9,60  & 94,14 \\
+				11,0 & 14,50 & 142,20 & 9,5 & 9,20  & 90,22 \\
+				7,0 & 14,40 & 141,22 & 7,5 & 8,45  & 82,87 \\
+				3,0 & 14,50 & 142,20 & 5,5 & 7,90  & 77,47 \\
+				-1,0 & 14,60 & 143,18& 3,5 & 7,30  & 71,59 \\
+				-5,0 & 14,50 & 142,20& 2,5 & 6,50  & 63,74 \\
+				-9,0 & 14,40 & 141,22& 1,5 & 5,80  & 56,88 \\
+				-13,0 & 14,50 & 142,20& 0,5 & 5,20  & 50,99 \\
+				-17,0 & 14,30 & 140,23& 0   & 4,85  & 47,56 \\
+				-21,0 & 14,20 & 139,25& --- & --- & --- \\
+				-25,0 & 14,00 & 137,29& --- & --- & --- \\
+				\bottomrule
+			\end{tabular}
+		}
+		\caption{Mesures de pression et positions expérimentales}
+	\end{table}
+	\vspace{-2em}
+	\subsection{Tableau détermination des constantes A,B,n (4.3.2)}
+	\vspace{-2em}
+	\begin{table}[h]
+		\centering
+		\small
+		\begin{tabular}{l|cccccccccc}
+			\toprule
+			\textbf{Id} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+			\midrule
+			$E_{moy}$ [V] & 1,44 & 1,82 & 1,88 & 1,92 & 1,96 & 1,99 & 2,02 & 2,06 & 2,09 & 2,11 \\ \hline
+			$\Delta_{mmH2O}$ & 0,12 & 0,46 & 0,78 & 1,33 & 1,33 & 1,99 & 2,21 & 2,70 & 3,83 & 4,80 \\ \hline
+			\textbf{$\sigma (\Delta_{mmH2O}) $} & $\pm$0,01 & -- & -- & -- & -- & -- & $\pm$0,05 & -- & -- & -- \\ 
+			\midrule
+			$U_{off}$ (m/s) & 0,00 & 2,13 & 2,99 & 4,05 & 4,79 & 5,32 & 5,91 & 7,09 & 7,96 & 8,63 \\ \hline
+			$log(U_{off})$ & -- & 0,33 & 0,48 & 0,61 & 0,68 & 0,73 & 0,77 & 0,85 & 0,90 & 0,94 \\
+			\midrule
+			\midrule
+			\textbf{Id} & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+			\midrule
+			$E_{moy}$ [V] & 2,13 & 2,16 & 2,18 & 2,19 & 2,21 & 2,23 & 2,24 & 2,26 & 2,28 & 2,29 \\ \hline
+			$\Delta_{mmH2O}$ & 5,62 & 6,61 & 8,15 & 9,11 & 10,04 & 11,25 & 12,60 & 13,41 & 16,18 & 18,68 \\ \hline
+			\textbf{$\sigma (\Delta_{mmH2O}) $} & -- & -- & -- & $\pm$0,08 & $\pm$0,15 & $\pm$0,20 & $\pm$0,30 & $\pm$0,35 & $\pm$0,38 & $\pm$0,40 \\
+			\midrule
+			$U_{off}$ (m/s) & 9,37 & 10,43 & 11,04 & 11,59 & 12,28 & 13,00 & 13,42 & 14,75 & 15,86 & 16,21 \\ \hline
+			$log(U_{off})$ & 0,97 & 1,02 & 1,04 & 1,06 & 1,09 & 1,11 & 1,13 & 1,17 & 1,20 & 1,21 \\
+			\bottomrule
+		\end{tabular}
+		\caption{La faire}
+	\end{table}
+	
+	\newpage
+	\subsection{Tableau deux puissances en soufflerie (4.4)}
+	\vspace{-2em}
+	\begin{table}[h]
+		\centering
+		\footnotesize % Police légèrement plus grande car plus de place
+		% --- Première partie (9 premiers points) ---
+		\begin{tabular}{l|ccccccccc}
+			\toprule
+			\textbf{z (mm)} & 234 & 240 & 245 & 250 & 255 & 260 & 265 & 270 & 272 \\
+			\midrule
+			\textbf{z cl (mm)} & 54 & 48 & 43 & 38 & 33 & 28 & 23 & 18 & 16 \\
+			\textbf{U1 (m/s)} & 8,7 & 8,89 & 8,88 & 8,74 & 8,57 & 8,32 & 7,95 & 7,76 & 7,46 \\
+			\textbf{U2 (m/s)} & 18,07 & 17,86 & 17,83 & 17,51 & 17,34 & 16,92 & 16,45 & 15,76 & 15,69 \\
+			\toprule
+			\textbf{z (mm)} & 274 & 276 & 278 & 280 & 282 & 284 & 286 & 287 & 288 \\
+			\midrule
+			\textbf{z cl (mm)} & 14 & 12 & 10 & 8 & 6 & 4 & 2 & 1 & 0 \\
+			\textbf{U1 (m/s)} & 7,35 & 7,25 & 6,99 & 6,81 & 6,59 & 6,06 & 5,59 & 5,06 & 3,49 \\
+			\textbf{U2 (m/s)} & 15,12 & 14,96 & 14,49 & 14,16 & 13,58 & 12,80 & 11,70 & 10,97 & 8,62 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Données de profil de vitesse}
+	\end{table}
+	
+	\subsection{Tableau pour la loi logarithme de von Kármán}
+	\vspace{-2em}
+	\begin{table}[h]
+		\centering
+		\small
+		\begin{tabular}{cc|ccc|ccc}
+			\toprule
+			{$y$ (m)} & {$U(y)$} & {$Re(y)$} & {$f$} & {$u_\tau$} & {$y^+$} & {$\ln(y^+)$} & {$U^+$} \\
+			\midrule
+			0.054 & 18.07 & 151827.43 & 0.01600 & 0.66 & 2389.83 & 7.78 & 27.23 \\
+			0.048 & 17.86 & 150059.73 & 0.01606 & 0.66 & 2127.40 & 7.66 & 26.87 \\
+			0.043 & 17.83 & 149805.72 & 0.01606 & 0.66 & 1906.20 & 7.55 & 26.82 \\
+			0.038 & 17.52 & 147132.25 & 0.01613 & 0.67 & 1688.35 & 7.43 & 26.28 \\
+			0.033 & 17.35 & 145709.13 & 0.01618 & 0.67 & 1467.98 & 7.29 & 26.00 \\
+			0.028 & 16.92 & 142126.46 & 0.01627 & 0.67 & 1249.44 & 7.13 & 25.28 \\
+			0.023 & 16.45 & 138144.41 & 0.01639 & 0.67 & 1029.98 & 6.94 & 24.48 \\
+			0.018 & 15.76 & 132391.45 & 0.01657 & 0.68 & 810.37 & 6.70 & 23.34 \\
+			0.016 & 15.69 & 131837.22 & 0.01658 & 0.68 & 720.70 & 6.58 & 23.23 \\
+			0.014 & 15.12 & 127012.47 & 0.01674 & 0.68 & 633.56 & 6.45 & 22.27 \\
+			0.012 & 14.96 & 125643.00 & 0.01678 & 0.68 & 543.79 & 6.30 & 22.00 \\
+			0.010 & 14.49 & 121696.35 & 0.01692 & 0.68 & 454.97 & 6.12 & 21.23 \\
+			0.008 & 14.16 & 118911.82 & 0.01702 & 0.68 & 365.03 & 5.90 & 20.68 \\
+			0.006 & 13.58 & 114089.50 & 0.01719 & 0.69 & 275.19 & 5.62 & 19.74 \\
+			0.004 & 12.80 & 107482.36 & 0.01745 & 0.69 & 184.83 & 5.22 & 18.46 \\
+			0.002 & 11.70 & 98272.10  & 0.01785 & 0.70 & 93.46  & 4.54 & 16.69 \\
+			0.001 & 10.97 & 92160.84  & 0.01813 & 0.71 & 47.11  & 3.85 & 15.53 \\
+			\bottomrule
+		\end{tabular}
+		\caption{Données de profil de vitesse en couche limite adimensionnée}
+	\end{table}
+
+
 	\addcontentsline{toc}{chapter}{TP Anémométrie}
 	\setcounter{chapter}{1}
 	\setcounter{section}{0}
