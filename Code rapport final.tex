@@ -65,7 +65,7 @@
 		
 		\begin{minipage}{0.45\textwidth}
 			\begin{flushleft} \large
-				\emph{Auteurs :}\\
+				\emph{Auteur :}\\
 				\@author \\
 				Nicolas Hénin \\
 				Roman Dufour
@@ -88,8 +88,8 @@
 % --- Informations du document ---
 \institution{Centrale Méditerranée}
 \logo{logo.png}
-\title{Anémométrie à Température Constante}
-\subtitle{Étude expérimentale d’un jet turbulent dans un tube cylindrique}
+\title{Anémométrie par Température Constante}
+\subtitle{Déterminer un profil de vitesse, qualifier la turbulance, et mettre en place un TP pour ECM}
 \author{Nicolas Gallard}
 \date{\today}
 
@@ -104,20 +104,20 @@
 	\newpage
 	
 	\chapter{Introduction}
+	L'anémométrie à fil chaud est une technique expérimentale de mesure des vitesses d'écoulement utilisée pour caractériser les fluctuations de vitesse dans des régimes turbulents. Basée sur la mesure de la dissipation thermique d'un fil métallique chauffé (en platine ou tungstène), cette méthode permet d'obtenir des mesures fines et rapides des composantes de vitesse locales dans un fluide, qu'il soit gazeux ou liquide. Ce système est très utilisé en dans la recherche et dans l'industrie, puisque les principes d'anémométrie sont directement liés à des problématiques de contrôle des écoulements en aéronautique, automobile ou thermique industrielle. \\
 	
-	L’anémométrie à fil chaud est une technique expérimentale de mesure des vitesses d’écoulement, utilisée pour caractériser les fluctuations de vitesse dans des régimes turbulents. Basée sur la mesure de la dissipation thermique d’un fil métallique chauffé (en platine ou en tungstène), cette méthode permet d’obtenir des mesures fines et rapides des composantes locales de la vitesse dans un fluide, qu’il soit gazeux ou liquide. Ce système est largement utilisé en recherche et dans l’industrie, car les principes de l’anémométrie sont directement liés aux problématiques de contrôle des écoulements en aéronautique, en automobile ou en thermique industrielle.\\
+	L'objectif général est de maîtriser le fonctionnement du système d'anémométrie à fil chaud Dantec Streamline, installé dans la salle S07 du plot 6, et de proposer une étude expérimentale d'un jet turbulent dans un tube. \\
 	
-	L’objectif général est de maîtriser le fonctionnement du système d’anémométrie à fil chaud Dantec Streamline, installé dans la salle S07 du plot 6, et de proposer une étude expérimentale d’un jet turbulent dans un tube.\\
 	
-	L’enjeu de ce projet est double :
+	L'enjeu de ce projet est double :
 	
 	\begin{itemizeFB}
-		\item \textbf{Scientifique} : il s’agit de comprendre et d’expliciter les mécanismes physiques permettant l’utilisation de ce dispositif, tout en mobilisant des outils numériques (Streamline, Comsol Multiphysics) afin de modéliser le phénomène ;
-		\item \textbf{Pédagogique} : il vise à concevoir un TP ainsi qu’un support expérimental dédié à la mesure de vitesse.\\
+	\item Scientifique : il s'agit de comprendre et d'expliciter les mécanismes physiques permettant l'utilisation de ce dispositif, tout en utilisant des outils numériques (Streamline, Comsol Multiphysics) pour modéliser le phénomène ;
+	\item Pédagogique: puisqu'il vise à concevoir un TP, et un support expérimental pour la mesure de vitesse.
 	\end{itemizeFB}
 	
-	Nous utiliserons, dans le cadre de ce projet, le principe de l’\textbf{anémométrie à température constante (ATC)}, car nous ne disposons pas de l’équipement nécessaire pour réaliser des mesures en \textbf{anémométrie à courant constant (ACC)}. Voici un comparatif synthétique des deux méthodes :
-
+	Nous utiliserons le principe d'\textbf{Anémométrie par Température Constante} pour le projet, car nous n'avons pas l'équipement nécessaire pour faire les mesures en \textbf{Anémométrie par Courant Constant}, Voici un comparatif rapide entre les deux méthodes:
+	
 	\begin{table}[h!]	
 		\centering
 		\label{tab:ACC & ATC}
@@ -143,12 +143,12 @@
 	\chapter{Matériel et Méthodes}
 	
 	\section{Protocoles possibles}
-	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynolds et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\
+	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynold et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\
 	
 	
 	Avec le matériel à disposition dans le local de TP, nous pourrions selon la bibliographie faire ces protocoles plus complets:
 
-	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Suggestions de Protocoles expérimentaux par Dantec Dynamics]
+	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Suggestions de Protocoles expérimentals par Dantec Dynamics]
 		\tiny
 		\textbf{1/ Très basses vitesses}\\
 		À de très basses vitesses, le transfert de chaleur du fil est régi par la convection naturelle. Cela signifie que le refroidissement ne dépend pas seulement de l'amplitude de la vitesse, mais aussi de son orientation par rapport au champ de gravité. L'influence de la convection naturelle commence autour de 0,2 m/s pour les sondes à fil et prend totalement le dessus aux alentours de 0,03-0,04 m/s. Dans cette plage, il est important que la sonde garde la même orientation par rapport au champ de vitesse lors de l'étalonnage et de la mesure.\\
@@ -274,7 +274,7 @@
 	
 	
 	
-	\chapter{Dispositif Expérimental}
+	\chapter{Dispositif expérimental}
 	\section{Présentation du matériel mis à disposition}
 	Voici les différents éléments composants le montage de l'expérience : \\
 	% --- Groupe 1 : Montages sortie tuyau ---
@@ -500,10 +500,24 @@
 	Où $\nu$ est la viscosité cinématique de l'air ($\approx 1,5 \cdot 10^{-5}$ m$^2$/s à 20°C).
 	
 	
+	\newpage
+	\section{Comsol}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/0.1 comsol tube.png}
+		\caption{test}
+	\end{figure}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/0.2 comsol graphiques.png}
+		\caption{test}
+	\end{figure}
 	
 	
 	\chapter{Résultats et Discussion}
-	\section{Matériel disponible}
+	\section{Matériel Disponible}
 	Présentation des graphiques et interprétation des phénomènes observés.
 	
 	\begin{table}[h!]
@@ -679,7 +693,7 @@
 	
 	"INSÉRER ICI LES MÉTHODES DE CALCUL"
 	
-	\subsection{Détermination des constantes A,B,n}	
+	\subsection{détermination des constantes A,B,n}	
 	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
 	\begin{itemize}
 		\item 55R01
@@ -1025,7 +1039,7 @@
 	\end{figure}
 	
 	
-	\newpage
+	\newpage 
 	\subsubsection{Qualification de la turbulence}
 	\begin{table}[h]
 		\centering
