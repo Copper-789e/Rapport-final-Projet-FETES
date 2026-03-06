@@ -116,7 +116,8 @@
 	\item Pédagogique: puisqu'il vise à concevoir un tutoriel StreamWare, et un support expérimental pour la mesure de vitesse.
 	\end{itemizeFB}
 	
-	Nous utiliserons le principe d'\textbf{Anémométrie par Température Constante} pour le projet, car nous n'avons pas l'équipement nécessaire pour faire les mesures en \textbf{Anémométrie par Courant Constant}, Voici un comparatif rapide entre les deux méthodes:
+	\vspace{3mm}
+	Il existe deux méthodes d'anémométrie par fil chaud, que sont l'\textbf{Anémométrie à Température Constante} et  l'\textbf{Anémométrie à Courant Constant}. Voici un comparatif rapide entre ces deux méthodes:
 	
 	\begin{table}[h!]	
 		\centering
@@ -140,8 +141,72 @@
 	\end{table}
 
 	
-	\chapter{Matériel et Méthodes}
+	\chapter{Étude théorique}
+	\section{Principe de fonctionnement}
+	L'anémométrie à fil chaud est une technique de mesure largement utilisée en mécanique des fluides pour déterminer la vitesse d'un écoulement gazeux, en particulier dans l'étude de la turbulence. Son principe repose sur les échanges thermiques entre un élément chauffé et le fluide en mouvement. L'instrument de mesure est constitué d'un fil métallique extrêmement fin, généralement en tungstène ou en platine, chauffé par effet Joule grâce à un courant électrique. Lorsque le fluide s'écoule autour de ce fil, il provoque un transfert de chaleur par convection qui tend à le refroidir. L'intensité de ce refroidissement dépend directement de la vitesse de l'écoulement, ce qui permet d'établir un lien entre la réponse électrique du capteur et la vitesse du fluide.\\
 	
+	Dans le cas de l'anémométrie à température constante, un dispositif électronique ajuste en permanence le courant traversant le fil afin de maintenir sa température constante malgré les variations de refroidissement dues à l'écoulement. Ainsi, lorsque la vitesse du fluide augmente, le refroidissement du fil devient plus important et le système doit fournir davantage de puissance électrique pour compenser cette perte de chaleur. La mesure du signal électrique associé permet alors d'obtenir une information sur la vitesse de l'écoulement.\\
+	
+	Pour obtenir la loi de vitesse en fonction du courant mesuré, il est nécessaire de coupler le bilan thermique du fil et les équations de la mécanique des fluides.
+	
+	\section{Bilan thermique}
+	On retiendra \textbf{quatre transferts thermiques} dans le bilan thermique du fil chaud :
+	\vspace{1mm}
+	\begin{itemize}
+		\item Conduction vers le fluide, due à la diffusion moléculaire de la chaleur dans le fluide;
+		\item Convection vers le fluide, où la chaleur est transportée par le mouvement du fluide	environnant;
+		\item Conduction vers les supports, due à la diffusion de la chaleur le long du fil;
+		\item Rayonnement thermique : puissance transférée sous forme de rayonnement électromagnétique.
+	\end{itemize}
+	\vspace{3mm}
+	
+	Grâce au fait que la longueur du fil est bien plus grand que son diamètre, on pourra négliger la conduction vers les supports. Le rayonnement thermique est lui aussi négligé.\\
+	
+	D'après le \textbf{premier principe de la thermodynamique} appliqué au fil chaud, on a donc
+	\begin{center}
+		$\partial_t U = \Sigma P = P - \dot{Q} $
+	\end{center}
+	
+	\noindent Les expressions pour $P$ la puissance émise par effet Joule et $\dot{Q}$ l'échange temporelle avec le milieu extérieur sont les suivantes :
+	\vspace{1mm}
+	\begin{equation*}
+		\dot{Q} =  h S (T_w - T_0) \qquad \qquad P = R_{w} I^2
+	\end{equation*}
+	
+	\noindent Avec les constantes suivantes définies :
+	\vspace{1mm}
+	\begin{itemize}
+		\item $h$ le coefficient de dissipation avec l'extérieur;
+		\item $S$ surface latérale du fil chaud;
+		\item $T_w$ température du fil chaud;
+		\item $T_0$ température du milieu extérieur;
+		\item $R_w$ résistance du système "fil d'anémométrie";
+		\item $I$ Intensité électrique dans le fil chaud.
+	\end{itemize}
+	\vspace{3mm}
+	
+	\noindent On supposera pour que $T_w$ est identique sur toute la longueur du fil, et nous travaillerons avec le nombre adimensionné de Nusselt, et développant S = "surface latérale du fil chaud" = $d*\pi$, avec d le diamètre du fil chaud :
+	\begin{center}
+		$\mathrm{Nu} = \frac{h d}{k_f}$; \quad $\dot{Q} = \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
+	\end{center}
+	avec $k_f$ : coefficient de diffusion thermique.
+	\vspace{3mm}
+	
+	\noindent On obtient ainsi la relation suivante :
+	\begin{center}
+		$\partial_t U = R_w I^2 - \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
+	\end{center}
+	
+	En prenant l'hypothèse que le régime est \textbf{stationnaire} ($\partial_t U = 0 $), on obtient une première équation fondamentale pour l'expérience:
+	\begin{center}
+		\boxed{R_w I^2 = \pi l k_f (T_w - T_0)\,\mathrm{Nu}}
+	\end{center}
+	
+	
+	\section{Loi de King}
+	\section{Loi d'évolution de la vitesse}
+	
+	\chapter{ANCIEN CHAPITRE A MODIFIER}
 	\section{Protocoles possibles}
 	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynolds et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\
 	
@@ -361,6 +426,49 @@
 	\end{itemize}
 	Nous avons fait un \textbf{tableau récapitulatif} de toutes les sondes d'Anémométrie par Température Constante dans la page suivante, avec leurs constantes respectives.
 	
+	\subsection{Inventaire des fils}
+	Présentation des graphiques et interprétation des phénomènes observés.
+	
+	\begin{table}[h!]
+		\centering
+		\label{tab:inventaire_fil_chaud}
+		\resizebox{\textwidth}{!}{
+			\begin{tabular}{l|ccccc|c}
+				\toprule
+				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20 } & \textbf{R\_L} & \textbf{alpha\_20 } & \textbf{T\_max } & \textbf{État} \\
+				& & ($\Omega$) & ($\Omega$) & ($\%/°C$) & ($°C$) & \\
+				\midrule
+				Probe Type 55 R11 & 1D/droit & 3,3 & 0,5 & 0,48 & 150 & Failed
+				\\
+				Probe Type 55 R11 & 1D/droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil\\
+				Probe Type 55 R11 & 1D/droit & 6,2 & 0,5 & 0,37 & 150 & pas Fil \\
+				Probe Type 55 R11 & 1D/droit & 6,7 & 0,5 & 0,36 & 150 & pas Fil \\
+				Probe Type 55 R11 & 1D/droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil  \\
+				Probe Type 55 R11 & 1D/droit & 8,6 & 0,6 & 0,42 & 150 & Non vérifié \\
+				Probe Type 55 R01 & 1D/droit & 5,3 & 0,5 & 0,48 & 300 & Ok \\
+				\midrule
+				Probe Type 55 P15 & 1D/coudé & 3,37 & 0,5 & 0,36 & 300 & Ok \\
+				Probe Type 55 P15 & 1D/coudé & 3,4 & 0,5 & 0,36 & 300 & Non vérifié \\
+				Probe Type 55 P15 & 1D/coudé & 3,48 & 0,5 & 0,36 & 300 & Non vérifié \\
+				Probe Type 55 P15 & 1D/coudé & 3,6 & 0,5 & 0,36 & 300 & Non vérifié \\
+				Probe Type 55 P05 & 1D/coudé & 3,5 & 0,7 & 0,36 & 300 & Non vérifié \\
+				\bottomrule
+			\end{tabular}
+		}
+		\caption{Inventaire du matériel - Anémomètre à fil chaud}
+	\end{table}
+	
+	Grâce à l'inventaire dans le tableau 4.1, on remarque que l'on a deux types de sonde :
+	\begin{itemize}
+		\item les sondes droites 1D : utiles pour une mesure d'une composante de la vitesse à un emplacement quelconque;
+		\item les sondes coudées 2D : identiques à celles droites, mais permettent plus facilement d'étudier la couche limite d'une structure.
+	\end{itemize}
+	
+	On pourra mettre en place deux manipulations suivant le même principe mais pour les spécifications suivantes:
+	\begin{itemize}
+		\item les sondes droites : pour le centre du cylindre;
+		\item les sondes coudées : pour le bord du cylindre / couche limite du cylindre.
+	\end{itemize}
 	
 	
 	
@@ -515,52 +623,7 @@
 	
 	
 	\chapter{Résultats et Discussion}
-	\section{Matériel Disponible}
-	Présentation des graphiques et interprétation des phénomènes observés.
-	
-	\begin{table}[h!]
-		\centering
-		\label{tab:inventaire_fil_chaud}
-		\resizebox{\textwidth}{!}{
-			\begin{tabular}{l|ccccc|c}
-				\toprule
-				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20 } & \textbf{R\_L} & \textbf{alpha\_20 } & \textbf{T\_max } & \textbf{État} \\
-				& & ($\Omega$) & ($\Omega$) & ($\%/°C$) & ($°C$) & \\
-				\midrule
-				Probe Type 55 R11 & 1D/droit & 3,3 & 0,5 & 0,48 & 150 & Failed
-				 \\
-				Probe Type 55 R11 & 1D/droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil\\
-				Probe Type 55 R11 & 1D/droit & 6,2 & 0,5 & 0,37 & 150 & pas Fil \\
-				Probe Type 55 R11 & 1D/droit & 6,7 & 0,5 & 0,36 & 150 & pas Fil \\
-				Probe Type 55 R11 & 1D/droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil  \\
-				Probe Type 55 R11 & 1D/droit & 8,6 & 0,6 & 0,42 & 150 & Non vérifié \\
-				Probe Type 55 R01 & 1D/droit & 5,3 & 0,5 & 0,48 & 300 & Ok \\
-				\midrule
-				Probe Type 55 P15 & 1D/coudé & 3,37 & 0,5 & 0,36 & 300 & Ok \\
-				Probe Type 55 P15 & 1D/coudé & 3,4 & 0,5 & 0,36 & 300 & Non vérifié \\
-				Probe Type 55 P15 & 1D/coudé & 3,48 & 0,5 & 0,36 & 300 & Non vérifié \\
-				Probe Type 55 P15 & 1D/coudé & 3,6 & 0,5 & 0,36 & 300 & Non vérifié \\
-				Probe Type 55 P05 & 1D/coudé & 3,5 & 0,7 & 0,36 & 300 & Non vérifié \\
-				\bottomrule
-			\end{tabular}
-		}
-		\caption{Inventaire du matériel - Anémomètre à fil chaud}
-	\end{table}
-	
-	Grâce à l'inventaire dans le tableau 4.1, on remarque que l'on a deux types de sonde :
-	\begin{itemize}
-		\item les sondes droites 1D : utiles pour une mesure d'une composante de la vitesse à un emplacement quelconque;
-		\item les sondes coudées 2D : identiques à celles droites, mais permettent plus facilement d'étudier la couche limite d'une structure.
-	\end{itemize}
-	
-	On pourra mettre en place deux manipulations suivant le même principe mais pour les spécifications suivantes:
-	\begin{itemize}
-		\item les sondes droites : pour le centre du cylindre;
-		\item les sondes coudées : pour le bord du cylindre / couche limite du cylindre.
-	\end{itemize}
-	
-	
-	\newpage
+
 	\section{Profil de vitesse à la sortie du système}
 	
 	TABLEAU ANCIEN
@@ -862,7 +925,7 @@
 	Pour un coefficient de corrélation valant $R^2=0,81685$. Ce qui confirme que supposer un écoulement laminaire serait faux.
 
 	
-	\section{Études de la couche limite, à différentes puissances de la soufflerie}
+	\section{Étude de la couche limite}
 	Nous avons étudié la couche limite à deux puissances différentes de la soufflerie, nous avons relevé les valeurs de vitesse, et de position. Grâce à la solution Dantec.	
 	
 	\begin{figure}[h]
@@ -888,10 +951,10 @@
 					\addlegendentry{U2 (exp)}
 					
 					\addplot[orange, thick, no marks] coordinates {(0.03,0.71) (0.5,3.19) (1.01,4.09) (2.00,4.83) (3.47,5.38) (5.52,5.91) (8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) (33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)};
-					\addlegendentry{u1 com}
+					\addlegendentry{U1 (comsol)}
 					
 					\addplot[green!60!black, thick, no marks] coordinates {(0.03,2.28) (0.5,7.82) (1.01,9.38) (2.00,10.67) (3.47,11.63) (5.52,12.57) (8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) (33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)};
-					\addlegendentry{u2 com}
+					\addlegendentry{U2 (comsol)}
 				\end{axis}
 			\end{tikzpicture}
 		\end{minipage}
@@ -918,10 +981,10 @@
 					\addlegendentry{U2 (exp)}
 					
 					\addplot[orange, thick, no marks] coordinates {(0.03,0.71) (0.5,3.19) (1.01,4.09) (2.00,4.83) (3.47,5.38) (5.52,5.91) (8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) (33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)};
-					\addlegendentry{u1 com}
+					\addlegendentry{U1 (comsol)}
 					
 					\addplot[green!60!black, thick, no marks] coordinates {(0.03,2.28) (0.5,7.82) (1.01,9.38) (2.00,10.67) (3.47,11.63) (5.52,12.57) (8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) (33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)};
-					\addlegendentry{u2 com}
+					\addlegendentry{U2 (comsol)}
 				\end{axis}
 			\end{tikzpicture}
 		\end{minipage}
@@ -968,7 +1031,7 @@
 					(8.69,6.48) (12.23,6.88) (16.49,7.28) (21.32,7.78) (26.83,8.20) 
 					(33.01,8.60) (39.87,8.99) (47.46,9.39) (53.92,9.69)
 				};
-				\addlegendentry{u1 com}
+				\addlegendentry{U1 (comsol)}
 				
 				% u2 com
 				\addplot[green!60!black, thick, no marks] coordinates {
@@ -976,7 +1039,7 @@
 					(8.69,13.52) (12.23,14.20) (16.49,14.92) (21.32,15.75) (26.83,16.40) 
 					(33.01,17.02) (39.87,17.70) (47.46,18.45) (53.92,18.99)
 				};
-				\addlegendentry{u2 com}
+				\addlegendentry{U2 (comsol)}
 			\end{axis}
 		\end{tikzpicture}
 	\end{figure}
