@@ -9,9 +9,8 @@
 \contentsline {section}{\numberline {3.1}Protocoles possibles}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Dispositif expérimental}{8}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Caractéristiques dynamiques et limite de fréquence}{9}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Dispositif expérimental}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Présentation du matériel mis à disposition}{10}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Inventaire des fils}{11}{subsection.4.1.1}%
+\contentsline {chapter}{\numberline {4}Méthodologie expérimentale}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Présentation du matériel}{10}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Précaution nécessaire}{12}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Solution Dantec Dynamics}{13}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Présentation de la solution}{13}{subsection.4.3.1}%
