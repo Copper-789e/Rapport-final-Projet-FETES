@@ -160,14 +160,14 @@
 	\end{itemize}
 	\vspace{3mm}
 	
-	Grâce au fait que la longueur du fil est bien plus grand que son diamètre, on pourra négliger la conduction vers les supports. Le rayonnement thermique est lui aussi négligé.\\
+	\noindent La longueur du fil étant bien plus grande que son diamètre ($l/d \gg 1$), on peut négliger la conduction vers les supports. Le rayonnement thermique est lui aussi négligé.\\
 	
-	D'après le \textbf{premier principe de la thermodynamique} appliqué au fil chaud, on a donc
+	\noindent D'après le \textbf{premier principe de la thermodynamique} appliqué au fil chaud, on a donc
 	\begin{center}
 		$\partial_t U = \Sigma P = P - \dot{Q} $
 	\end{center}
 	
-	\noindent Les expressions pour $P$ la puissance émise par effet Joule et $\dot{Q}$ l'échange temporelle avec le milieu extérieur sont les suivantes :
+	\noindent Les expressions pour $P$ la puissance émise par effet Joule et $\dot{Q}$ le transfert thermique avec le milieu extérieur sont les suivantes :
 	\vspace{1mm}
 	\begin{equation*}
 		\dot{Q} =  h S (T_w - T_0) \qquad \qquad P = R_{w} I^2
@@ -177,19 +177,19 @@
 	\vspace{1mm}
 	\begin{itemize}
 		\item $h$ le coefficient de dissipation avec l'extérieur;
-		\item $S$ surface latérale du fil chaud;
+		\item $S = \pi*d*l$ surface latérale du fil chaud;
 		\item $T_w$ température du fil chaud;
-		\item $T_0$ température du milieu extérieur;
+		\item $T_0$ température ambiante;
 		\item $R_w$ résistance du système "fil d'anémométrie";
 		\item $I$ Intensité électrique dans le fil chaud.
 	\end{itemize}
 	\vspace{3mm}
 	
-	\noindent On supposera pour que $T_w$ est identique sur toute la longueur du fil, et nous travaillerons avec le nombre adimensionné de Nusselt, et développant S = "surface latérale du fil chaud" = $d*\pi$, avec d le diamètre du fil chaud :
+	\noindent On supposera pour que $T_w$ est identique sur toute la longueur du fil. On peut utiliser le nombre de Nusselt dans l'équation du transfert de chaleur :
 	\begin{center}
 		$\mathrm{Nu} = \frac{h d}{k_f}$; \quad $\dot{Q} = \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
 	\end{center}
-	avec $k_f$ : coefficient de diffusion thermique.
+	avec $k_f$ le coefficient de diffusion thermique.
 	\vspace{3mm}
 	
 	\noindent On obtient ainsi la relation suivante :
@@ -197,15 +197,62 @@
 		$\partial_t U = R_w I^2 - \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
 	\end{center}
 	
-	En prenant l'hypothèse que le régime est \textbf{stationnaire} ($\partial_t U = 0 $), on obtient une première équation fondamentale pour l'expérience:
+	\noindent En prenant l'hypothèse que le régime est \textbf{stationnaire} ($\partial_t U = 0 $), on obtient une première équation fondamentale pour l'expérience:
 	\begin{center}
 		\boxed{R_w I^2 = \pi l k_f (T_w - T_0)\,\mathrm{Nu}}
 	\end{center}
 	
 	
 	\section{Loi de King}
-	\section{Loi d'évolution de la vitesse}
 	
+	L'enjeu est maintenant de lier le nombre de Nusselt à la vitesse du fluide. On écrit d'abord le nombre de Reynolds du fil chaud :
+	\begin{equation*}
+		Re_w = \frac{Ud}{\nu_f}
+	\end{equation*}
+	où $U$ est la vitesse de l'air en amont du fil et $\nu_f$ représente la viscosité cinématique de l'air autour du fil.\\
+	
+	\noindent En 1914, King propose une loi liant Nusselt et Reynolds pour l'étude d'un fil chaud, lorsque l'on se place à un Prandtl proche de 1 :
+	\begin{equation*}
+		Nu = 1 + \sqrt{2 \pi Re_w}
+	\end{equation*}
+	
+	\noindent Cette loi peut être généralisée sous la forme suivante :
+	\begin{equation*}
+		Nu = a_0 + b_0\sqrt{Re_w}
+	\end{equation*}
+	
+	\noindent La loi de transfert devient donc :
+	\begin{equation*}
+		R_w I^2 = \pi l k_f (T_w - T_0)(a_0+b_0\sqrt{Re_w})
+	\end{equation*}
+	
+	\noindent Pour les fils utilisés, la résistance du fil $R_w$ varie linéairement en fonction de sa température :
+	\begin{equation*}
+		R_w = R_0(1+\alpha(T_w-T_0))
+	\end{equation*}
+	
+	\noindent On obtient de cette manière la loi fondamentale de l'anémométrie, aussi appelée loi de King :
+	\begin{equation*}
+		\boxed{\frac{R_w I^2}{R_w-R_0} = a + b\sqrt{U}}
+	\end{equation*}
+	
+	\section{Loi d'évolution de la tension}
+	Le principe de l'anémométrie à fil chaud ATC est de maintenir la température constante tout au long de la mesure, donc la résistance du fil chaud se maintient elle aussi. C'est l'intensité qui varie, et la tension de sortie avec elle.\\
+	
+	\noindent On peut ainsi écrire la loi de variation de la tension en fonction de la vitesse de l'air :
+	\begin{equation*}
+		E_s = R_w I = \sqrt{R_w(R_w-R_0)(a + b\sqrt{U})}
+	\end{equation*}
+	soit
+	\begin{equation*}
+		E_s^2 = A + B\sqrt{U}
+	\end{equation*}
+	
+	\noindent Expérimentalement, il a été montré que cette loi peut être améliorée en utilisant plutôt l'expression suivante :
+	\begin{equation*}
+		\boxed{E_s^2 = A + B U^n}
+	\end{equation*}
+	C'est cette loi que nous allons utiliser dans notre étude.
 	\chapter{ANCIEN CHAPITRE A MODIFIER}
 	\section{Protocoles possibles}
 	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynolds et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\

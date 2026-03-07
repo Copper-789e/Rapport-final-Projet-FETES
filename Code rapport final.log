@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.6)  6 MAR 2026 17:54
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.6)  7 MAR 2026 01:22
  restricted system commands enabled.
 **"Code rapport final.tex"
 ("./Code rapport final.tex"
@@ -1516,11 +1516,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
 [4
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
+
+ []
+
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 209.
+Package luatex.def Info: logo.png  used on input line 232.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
-
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
 (fancyhdr)                Make it at least 34.22353pt, for example:
@@ -1529,51 +1532,73 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [5]
+Overfull \hbox (2.03407pt too wide) in paragraph at lines 240--241
+[]\T1/lmr/m/n/12 Le prin-cipe de l'ané-mo-mé-trie à fil chaud ATC est de main
+-te-nir la tem-pé-ra-ture constante
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package luatex.def Info: logo.png  used on input line 256.
+(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[6]
 Chapitre 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--223
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--226
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-31.
+78.
 (C:/Users/Utilisateur/AppData/Local/Programs/MiKTeX/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
-[6
+[7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 301--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 294.
+Package luatex.def Info: logo.png  used on input line 341.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1582,20 +1607,20 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[7]
-Overfull \hbox (14.58363pt too wide) in paragraph at lines 299--299
+[8]
+Overfull \hbox (14.58363pt too wide) in paragraph at lines 346--346
 []\T1/lmr/bx/n/17.28 Ca-rac-té-ris-tiques dy-na-miques et li-mite de fré-quenc
 e 
  []
 
-<Images/0 graphique.png, id=363, 492.33937pt x 423.83344pt>
+<Images/0 graphique.png, id=368, 492.33937pt x 423.83344pt>
 File: Images/0 graphique.png Graphic file (type png)
 <use Images/0 graphique.png>
-Package luatex.def Info: Images/0 graphique.png  used on input line 322.
+Package luatex.def Info: Images/0 graphique.png  used on input line 369.
 (luatex.def)             Requested size: 170.71654pt x 146.95995pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 342.
+Package luatex.def Info: logo.png  used on input line 389.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1604,71 +1629,71 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[8<./Images/0 graphique.png>]
+[9<./Images/0 graphique.png>]
 Chapitre 4.
-<Images/1 montage sortie tuyau 1 small.png, id=370, 669.50125pt x 501.875pt>
+<Images/1 montage sortie tuyau 1 small.png, id=375, 669.50125pt x 501.875pt>
 File: Images/1 montage sortie tuyau 1 small.png Graphic file (type png)
 <use Images/1 montage sortie tuyau 1 small.png>
 Package luatex.def Info: Images/1 montage sortie tuyau 1 small.png  used on inp
-ut line 350.
+ut line 397.
 (luatex.def)             Requested size: 218.51521pt x 163.8043pt.
-<Images/2 montage sortie tuyau 2 small.png, id=371, 501.875pt x 501.875pt>
+<Images/2 montage sortie tuyau 2 small.png, id=376, 501.875pt x 501.875pt>
 File: Images/2 montage sortie tuyau 2 small.png Graphic file (type png)
 <use Images/2 montage sortie tuyau 2 small.png>
 Package luatex.def Info: Images/2 montage sortie tuyau 2 small.png  used on inp
-ut line 356.
+ut line 403.
 (luatex.def)             Requested size: 170.71654pt x 170.71947pt.
 
-Underfull \hbox (badness 1668) in paragraph at lines 357--357
+Underfull \hbox (badness 1668) in paragraph at lines 404--404
 []\T1/lmr/m/sc/12 Fi-gure 4.2 \T1/lmr/m/n/12 : |Mon-tage sor-tie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-[9
+[10
 
 <./Images/1 montage sortie tuyau 1 small.png><./Images/2 montage sortie tuyau 2 
 small.png>]
-<Images/3 Manometre small.png, id=378, 669.50125pt x 501.875pt>
+<Images/3 Manometre small.png, id=384, 669.50125pt x 501.875pt>
 File: Images/3 Manometre small.png Graphic file (type png)
 <use Images/3 Manometre small.png>
-Package luatex.def Info: Images/3 Manometre small.png  used on input line 379.
+Package luatex.def Info: Images/3 Manometre small.png  used on input line 426.
 (luatex.def)             Requested size: 141.12456pt x 105.78741pt.
-<Images/4 Streamlines Hardware small.png, id=379, 669.50125pt x 501.875pt>
+<Images/4 Streamlines Hardware small.png, id=385, 669.50125pt x 501.875pt>
 File: Images/4 Streamlines Hardware small.png Graphic file (type png)
 <use Images/4 Streamlines Hardware small.png>
 Package luatex.def Info: Images/4 Streamlines Hardware small.png  used on input
- line 385.
+ line 432.
 (luatex.def)             Requested size: 141.12456pt x 105.78741pt.
 
-Underfull \hbox (badness 6708) in paragraph at lines 386--386
+Underfull \hbox (badness 6708) in paragraph at lines 433--433
 []\T1/lmr/m/sc/12 Fi-gure 4.4 \T1/lmr/m/n/12 : |Ma-té-riel
  []
 
-<Images/5 Boitier acquisition small.png, id=380, 235.1419pt x 176.2683pt>
+<Images/5 Boitier acquisition small.png, id=386, 235.1419pt x 176.2683pt>
 File: Images/5 Boitier acquisition small.png Graphic file (type png)
 <use Images/5 Boitier acquisition small.png>
 Package luatex.def Info: Images/5 Boitier acquisition small.png  used on input 
-line 391.
+line 438.
 (luatex.def)             Requested size: 141.12456pt x 105.78868pt.
-<Images/6 fil chaud 1 small.png, id=381, 501.875pt x 501.875pt>
+<Images/6 fil chaud 1 small.png, id=387, 501.875pt x 501.875pt>
 File: Images/6 fil chaud 1 small.png Graphic file (type png)
 <use Images/6 fil chaud 1 small.png>
-Package luatex.def Info: Images/6 fil chaud 1 small.png  used on input line 410
+Package luatex.def Info: Images/6 fil chaud 1 small.png  used on input line 457
 .
 (luatex.def)             Requested size: 153.64384pt x 153.64217pt.
-<Images/7 fil chaud 2 small.png, id=382, 501.875pt x 501.875pt>
+<Images/7 fil chaud 2 small.png, id=388, 501.875pt x 501.875pt>
 File: Images/7 fil chaud 2 small.png Graphic file (type png)
 <use Images/7 fil chaud 2 small.png>
-Package luatex.def Info: Images/7 fil chaud 2 small.png  used on input line 416
+Package luatex.def Info: Images/7 fil chaud 2 small.png  used on input line 463
 .
 (luatex.def)             Requested size: 153.64384pt x 153.64217pt.
 Missing character: There is no ° (U+00B0) in font cmr12!
@@ -1680,7 +1705,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 464.
+Package luatex.def Info: logo.png  used on input line 511.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1689,21 +1714,21 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[10<./Images/3 Manometre small.png><./Images/4 Streamlines Hardware small.png><.
+[11<./Images/3 Manometre small.png><./Images/4 Streamlines Hardware small.png><.
 /Images/5 Boitier acquisition small.png><./Images/6 fil chaud 1 small.png><./Ima
 ges/7 fil chaud 2 small.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 544--545
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 505.
+Package luatex.def Info: logo.png  used on input line 552.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1712,33 +1737,33 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
 
  []
 
-<Images/8 fil chaud xD.png, id=398, 468.24937pt x 128.73094pt>
+<Images/8 fil chaud xD.png, id=403, 468.24937pt x 128.73094pt>
 File: Images/8 fil chaud xD.png Graphic file (type png)
 <use Images/8 fil chaud xD.png>
-Package luatex.def Info: Images/8 fil chaud xD.png  used on input line 519.
+Package luatex.def Info: Images/8 fil chaud xD.png  used on input line 566.
 (luatex.def)             Requested size: 227.62206pt x 62.5778pt.
-<Images/9.1 reglage streamline.png, id=399, 350.81062pt x 212.29312pt>
+<Images/9.1 reglage streamline.png, id=404, 350.81062pt x 212.29312pt>
 File: Images/9.1 reglage streamline.png Graphic file (type png)
 <use Images/9.1 reglage streamline.png>
 Package luatex.def Info: Images/9.1 reglage streamline.png  used on input line 
-531.
+578.
 (luatex.def)             Requested size: 409.71692pt x 247.9576pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--536
+Underfull \hbox (badness 10000) in paragraph at lines 582--583
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 539.
+Package luatex.def Info: logo.png  used on input line 586.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1747,10 +1772,10 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[12<./Images/8 fil chaud xD.png>]
+[13<./Images/8 fil chaud xD.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 540.
+Package luatex.def Info: logo.png  used on input line 587.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1760,32 +1785,32 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[13<./Images/9.1 reglage streamline.png>]
-<Images/9.2 resultat graphique.png, id=413, 350.81062pt x 316.18124pt>
+[14<./Images/9.1 reglage streamline.png>]
+<Images/9.2 resultat graphique.png, id=418, 350.81062pt x 316.18124pt>
 File: Images/9.2 resultat graphique.png Graphic file (type png)
 <use Images/9.2 resultat graphique.png>
 Package luatex.def Info: Images/9.2 resultat graphique.png  used on input line 
-545.
+592.
 (luatex.def)             Requested size: 163.88739pt x 147.71266pt.
-<Images/9.3 erreur graphique.png, id=414, 350.81062pt x 285.31593pt>
+<Images/9.3 erreur graphique.png, id=419, 350.81062pt x 285.31593pt>
 File: Images/9.3 erreur graphique.png Graphic file (type png)
 <use Images/9.3 erreur graphique.png>
-Package luatex.def Info: Images/9.3 erreur graphique.png  used on input line 55
-1.
+Package luatex.def Info: Images/9.3 erreur graphique.png  used on input line 59
+8.
 (luatex.def)             Requested size: 184.37135pt x 149.95418pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 591.
+Package luatex.def Info: logo.png  used on input line 638.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1794,17 +1819,17 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[14<./Images/9.2 resultat graphique.png><./Images/9.3 erreur graphique.png>]
-<Images/0.1 comsol tube.png, id=422, 566.86781pt x 267.24844pt>
+[15<./Images/9.2 resultat graphique.png><./Images/9.3 erreur graphique.png>]
+<Images/0.1 comsol tube.png, id=427, 566.86781pt x 267.24844pt>
 File: Images/0.1 comsol tube.png Graphic file (type png)
 <use Images/0.1 comsol tube.png>
-Package luatex.def Info: Images/0.1 comsol tube.png  used on input line 614.
+Package luatex.def Info: Images/0.1 comsol tube.png  used on input line 661.
 (luatex.def)             Requested size: 409.71692pt x 193.16498pt.
-<Images/0.2 comsol graphiques.png, id=423, 566.86781pt x 268.00125pt>
+<Images/0.2 comsol graphiques.png, id=428, 566.86781pt x 268.00125pt>
 File: Images/0.2 comsol graphiques.png Graphic file (type png)
 <use Images/0.2 comsol graphiques.png>
 Package luatex.def Info: Images/0.2 comsol graphiques.png  used on input line 6
-20.
+67.
 (luatex.def)             Requested size: 409.71692pt x 193.70909pt.
 
 
@@ -1812,7 +1837,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 625.
+Package luatex.def Info: logo.png  used on input line 672.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1821,10 +1846,10 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[15<./Images/0.1 comsol tube.png>]
+[16<./Images/0.1 comsol tube.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 625.
+Package luatex.def Info: logo.png  used on input line 672.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1834,9 +1859,9 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[16<./Images/0.2 comsol graphiques.png>]
+[17<./Images/0.2 comsol graphiques.png>]
 Chapitre 5.
-[17
+[18
 
 ]
 Missing character: There is no é (U+00E9) in font cmmi8!
@@ -1850,37 +1875,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 789.
-(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
-
-Package fancyhdr Warning: \headheight is too small (33.75pt): 
-(fancyhdr)                Make it at least 34.22353pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.22353pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
-
-[18]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package pgfplots info on input line 895: Using 'lua backend=false' for axis: xm
-ode=log unsupported (yet).
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 907--908
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 914--915
-
- []
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package luatex.def Info: logo.png  used on input line 915.
+Package luatex.def Info: logo.png  used on input line 836.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1890,18 +1885,27 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 917--918
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package pgfplots info on input line 942: Using 'lua backend=false' for axis: xm
+ode=log unsupported (yet).
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--955
 
  []
 
 
-Overfull \hbox (4.60431pt too wide) in paragraph at lines 989--990
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 961--962
+
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 992.
+Package luatex.def Info: logo.png  used on input line 962.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1911,13 +1915,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [20]
-Package pgfplots info on input line 1010: Using 'lua backend=false' for axis: x
-mode=log unsupported (yet).
+Underfull \hbox (badness 10000) in paragraph at lines 964--965
+
+ []
+
+
+Overfull \hbox (4.60431pt too wide) in paragraph at lines 1036--1037
+ [][] 
+ []
+
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1051.
+Package luatex.def Info: logo.png  used on input line 1039.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
-
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
 (fancyhdr)                Make it at least 34.22353pt, for example:
@@ -1926,34 +1936,13 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [21]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1119.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1119.
-
+Package pgfplots info on input line 1057: Using 'lua backend=false' for axis: x
+mode=log unsupported (yet).
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1129.
+Package luatex.def Info: logo.png  used on input line 1098.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
 (fancyhdr)                Make it at least 34.22353pt, for example:
@@ -1964,19 +1953,31 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1132.
+(hyperref)                removing `math shift' on input line 1166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1132.
+(hyperref)                removing `superscript' on input line 1166.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1132.
+(hyperref)                removing `math shift' on input line 1166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1166.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1183.
+Package luatex.def Info: logo.png  used on input line 1176.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1986,9 +1987,33 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [23]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1179.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1179.
+
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1239.
+Package luatex.def Info: logo.png  used on input line 1230.
+(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[24]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package luatex.def Info: logo.png  used on input line 1286.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1998,19 +2023,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[24] [25
+[25] [26
 
 ]
-Overfull \hbox (9.26872pt too wide) in paragraph at lines 1288--1310
+Overfull \hbox (9.26872pt too wide) in paragraph at lines 1335--1357
  [][] 
  []
 
-[26
+[27
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1373.
+Package luatex.def Info: logo.png  used on input line 1420.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -2020,22 +2045,22 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[27]
+[28]
 warning  (pdf backend): ignoring duplicate destination with the name 'section.1.
 1'
 
-Overfull \hbox (10.94708pt too wide) in paragraph at lines 1384--1385
+Overfull \hbox (10.94708pt too wide) in paragraph at lines 1431--1432
 []\T1/lmr/bx/n/12 Sys-tème d'ac-qui-si-tion : \T1/lmr/m/n/12 Boî-tier ma-té-r
 iel \T1/lmr/bx/n/12 Stream-line \T1/lmr/m/n/12 pi-loté par le lo-gi-ciel \T1/l
 mr/bx/n/12 Stream-
  []
 
-[28
+[29
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1447.
+Package luatex.def Info: logo.png  used on input line 1494.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -2045,10 +2070,10 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[29]
+[30]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package luatex.def Info: logo.png  used on input line 1452.
+Package luatex.def Info: logo.png  used on input line 1499.
 (luatex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -2058,7 +2083,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[30] ("./Code rapport final.aux")
+[31] ("./Code rapport final.aux")
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -2068,11 +2093,11 @@ Package rerunfilecheck Info: File `"Code rapport final".out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43896 strings out of 476076
+ 43899 strings out of 476076
  156413,1648299 words of node,token memory allocated
- 8846 words of node memory still in use:
-   31 hlist, 2 vlist, 14 rule, 365 glue, 4 kern, 1 penalty, 2 glyph, 1685 attrib
-ute, 309 glue_spec, 338 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorsta
+ 9159 words of node memory still in use:
+   31 hlist, 2 vlist, 14 rule, 379 glue, 4 kern, 1 penalty, 2 glyph, 1760 attrib
+ute, 316 glue_spec, 353 attribute_list, 2 write, 24 pdf_literal, 24 pdf_colorsta
 ck nodes
    avail lists: 1:2,2:21354,3:4387,4:240,5:556,6:106,7:6920,8:62,9:1689,10:43,11
 :549
@@ -2107,9 +2132,9 @@ ograms/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Utilisateur/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Utilisateur/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Utilisateur/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Code rapport final.pdf (31 pages, 3623889 bytes).
+Output written on Code rapport final.pdf (32 pages, 3628467 bytes).
 
-PDF statistics: 605 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 1048576)
+PDF statistics: 609 PDF objects out of 1000 (max. 8388607)
+ 118 named destinations out of 1000 (max. 1048576)
  680 words of extra memory for PDF output out of 10000 (max. 100000000)
 
