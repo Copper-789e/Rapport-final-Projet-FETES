@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.6)  7 MAR 2026 01:38
+This is LuaHBTeX, Version 1.24.0 (MiKTeX 26.2) (format=lualatex 2026.3.6)  7 MAR 2026 01:45
  restricted system commands enabled.
 **"Code rapport final.tex"
 ("./Code rapport final.tex"
@@ -1820,47 +1820,35 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [15<./Images/9.2 resultat graphique.png><./Images/9.3 erreur graphique.png>]
-<Images/0.1 comsol tube.png, id=422, 566.86781pt x 267.24844pt>
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package luatex.def Info: logo.png  used on input line 656.
+(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[16]
+Chapitre 5.
+<Images/0.1 comsol tube.png, id=427, 566.86781pt x 267.24844pt>
 File: Images/0.1 comsol tube.png Graphic file (type png)
 <use Images/0.1 comsol tube.png>
 Package luatex.def Info: Images/0.1 comsol tube.png  used on input line 660.
 (luatex.def)             Requested size: 409.71692pt x 193.16498pt.
-<Images/0.2 comsol graphiques.png, id=423, 566.86781pt x 268.00125pt>
+<Images/0.2 comsol graphiques.png, id=428, 566.86781pt x 268.00125pt>
 File: Images/0.2 comsol graphiques.png Graphic file (type png)
 <use Images/0.2 comsol graphiques.png>
 Package luatex.def Info: Images/0.2 comsol graphiques.png  used on input line 6
 66.
 (luatex.def)             Requested size: 409.71692pt x 193.70909pt.
+[17
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package luatex.def Info: logo.png  used on input line 671.
-(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
-
-Package fancyhdr Warning: \headheight is too small (33.75pt): 
-(fancyhdr)                Make it at least 34.22353pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.22353pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
-
-[16<./Images/0.1 comsol tube.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package luatex.def Info: logo.png  used on input line 671.
-(luatex.def)             Requested size: 56.9055pt x 29.87349pt.
-
-
-Package fancyhdr Warning: \headheight is too small (33.75pt): 
-(fancyhdr)                Make it at least 34.22353pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.22353pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
-
-[17<./Images/0.2 comsol graphiques.png>]
-Chapitre 5.
+<./Images/0.1 comsol tube.png><./Images/0.2 comsol graphiques.png>]
+Chapitre 6.
 [18
 
 ]
@@ -2093,7 +2081,7 @@ Package rerunfilecheck Info: File `"Code rapport final".out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43897 strings out of 476076
+ 43905 strings out of 476076
  156414,1648299 words of node,token memory allocated
  9159 words of node memory still in use:
    31 hlist, 2 vlist, 14 rule, 379 glue, 4 kern, 1 penalty, 2 glyph, 1760 attrib
@@ -2104,6 +2092,26 @@ ck nodes
  65092 multiletter control sequences out of 65536+600000
  84 fonts using 5434303 bytes
  99i,21n,104p,845b,2424s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.3.3'
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.3.2'
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.3.1'
+
+warning  (pdf backend): unreferenced destination with name 'section.5.3'
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.2.3'
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.2.2'
+
+warning  (pdf backend): unreferenced destination with name 'subsection.5.2.1'
+
+warning  (pdf backend): unreferenced destination with name 'section.5.2'
+
+warning  (pdf backend): unreferenced destination with name 'section.5.1'
+
+warning  (pdf backend): unreferenced destination with name 'section.4.5'
 {C:/Users/Utilisateur/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc
 }<C:/Users/Utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmex10.pfb><C:/Users/Utilisateur/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -2132,9 +2140,9 @@ ograms/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Utilisateur/AppData/Loc
 al/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Utilisateur/AppDat
 a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Utilisateur/A
 ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Code rapport final.pdf (32 pages, 3627512 bytes).
+Output written on Code rapport final.pdf (32 pages, 3628418 bytes).
 
-PDF statistics: 604 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 1048576)
+PDF statistics: 614 PDF objects out of 1000 (max. 8388607)
+ 127 named destinations out of 1000 (max. 1048576)
  672 words of extra memory for PDF output out of 10000 (max. 100000000)
 
