@@ -11,16 +11,19 @@
 \contentsline {section}{\numberline {3.3}Caractéristiques dynamiques et limite de fréquence}{9}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Méthodologie expérimentale}{10}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Présentation du matériel}{10}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Précaution nécessaire}{12}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Solution Dantec Dynamics}{13}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Présentation de la solution}{13}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Le hardware et StreamWare : les composants physiques}{13}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Le software StreamLine : Le logiciel}{13}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Lecture des graphiques sur l'exemple}{15}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Présentation du matériel et configuration}{15}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Modèle de conversion et étalonnage}{15}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Valeurs mesurées et estimation de l'erreur}{16}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Caractérisation de l'écoulement}{16}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.1.1}Montage expérimental}{10}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Instrumentation et acquisition des données}{11}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Sondes d'anémométrie à fil chaud}{11}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Précautions d'utilisation}{12}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Solution Dantec Dynamics}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Présentation de la solution}{13}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Le hardware et StreamWare : les composants physiques}{13}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Le software StreamLine : Le logiciel}{13}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Lecture des graphiques sur l'exemple}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Présentation du matériel et configuration}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Modèle de conversion et étalonnage}{15}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Valeurs mesurées et estimation de l'erreur}{16}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Caractérisation de l'écoulement}{16}{subsection.4.3.4}%
 \contentsline {chapter}{\numberline {5}Modélisation sur COMSOL Multiphysics}{17}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Résultats et Discussion}{18}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Profil de vitesse à la sortie du système}{18}{section.6.1}%

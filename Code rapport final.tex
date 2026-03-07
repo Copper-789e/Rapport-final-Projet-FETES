@@ -121,7 +121,6 @@
 	
 	\begin{table}[h!]	
 		\centering
-		\label{tab:ACC & ATC}
 		\resizebox{\textwidth}{!}{
 			\begin{tabular}{lcc}
 				\toprule
@@ -138,6 +137,7 @@
 			\end{tabular}
 		}
 		\caption{Comparaison des méthodes d'anémométrie à fil chaud}
+		\label{tab:Comp_meth_anemo}
 	\end{table}
 
 	
@@ -320,7 +320,6 @@
 		\item $I$ Intensité électrique dans le fil chaud.
 	\end{itemize}
 	
-	
 	On supposera pour que $T_w$ est identique sur toute la longueur du fil, et nous travaillerons avec le nombre adimensionné de Nusselt, et développant S = "surface latérale du fil chaud" = $d*\pi$, avec d le diamètre du fil chaud : \\
 	\begin{center}
 		$\mathrm{Nu} = \frac{h d}{k_f}$; \quad $\dot{Q} = \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
@@ -367,7 +366,8 @@
 		\begin{minipage}{0.375\linewidth}
 			\centering
 			\includegraphics[width=\linewidth]{Images/0 graphique.png}
-			\caption{Représentation graphique du pas temporelle $\tau$}
+			\caption{Représentation graphique du pas temporel $\tau$}
+			\label{rep_grap_pas_temp}
 		\end{minipage}
 	\end{figure}
 
@@ -388,36 +388,51 @@
 	
 	\chapter{Méthodologie expérimentale}
 	\section{Présentation du matériel}
-	Voici les différents éléments composants le montage de l'expérience : \\
+	
+	\subsection{Montage expérimental}
+	
 	% --- Groupe 1 : Montages sortie tuyau ---
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}{0.48\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{Images/1 montage sortie tuyau 1 small.png}
-			\caption{Montage sortie tuyau (vue 1)}
+			\caption{Montage à la sortie du cylindre (vue 1)}
+			\label{mont_sort_tube_1}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.375\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{Images/2 montage sortie tuyau 2 small.png}
-			\caption{Montage sortie tuyau (vue 2)}
+			\caption{Montage à la sortie du cylindre (vue 2)}
+			\label{mont_sort_tube_2}
 		\end{minipage}
 	\end{figure}
 	
-	
-	Nous avons sur les figures 3.1, et 3.2 l'installation presque complètent à la sortie du cylindre. On y observera: \\
+	\noindent Les figures \ref{mont_sort_tube_1} et \ref{mont_sort_tube_2} présentent l'installation expérimentale située à la sortie du cylindre. On peut y observer les éléments principaux du montage :
+	\vspace{1mm}
 	\begin{itemize}
-		\item le cylindre en PVC;
-		\item le support métallique pour les capteurs;
-		\item le système associé aux tubes de Pitot.
+		\item le cylindre en PVC dans lequel s'écoule le fluide, de longueur $L=5$m et de diamètre $D=12.6$cm ;
+		\item le système de mesure utilisant des tubes de Pitot ;
+		\item le support métallique du fil chaud, qui soutient également les tubes de Pitot.
 	\end{itemize}
-	Sur la figure 3.2, on aura un zoom sur la sortie et la manière dont on a disposé les tubes de Pitot. On mesure la pression statique avec le tube droit, et la pression dynamique avec le tube coudé. \\
+	\vspace{3mm}
 	
-	Nous avons relevé des valeurs selon l'axe z dans le référentiel terrestre, ce qui nous a permis de faire des mesures selon  un axe radial du cylindre, en particulier , celui parallèle à l'axe z terrestre. Par la géométrie du système, la mesure sur un axe radial complet du cylindre, permet d'avoir le profil du vitesse sur sa tranche, par invariant de rotation du profil de vitesse.
+	\noindent Un souffleur est installé en amont afin de projeter l'air dans le tuyau. Pour réduire les perturbations générées par le souffleur, l'air passe d'abord par une cuve en bois remplie de mousse qui sert à stabiliser et uniformiser l'écoulement en entrée du tube. 
+	\vspace{3mm}
+	  
+	\noindent La figure \ref{mont_sort_tube_2} montre plus particulièrement la disposition des tubes de Pitot à la sortie du cylindre. Deux mesures de pression sont réalisées :
+	\vspace{1mm}
+	\begin{itemize}
+		\item la pression statique, mesurée à l'aide du tube droit ;
+		\item la pression dynamique, mesurée à l'aide du tube de Pitot coudé.
+	\end{itemize}
+	\vspace{3mm}
 	
+	\noindent La position du support est contrôlée par une vis micrométrique dont la course maximale est de 5,2cm, soit inférieure au rayon du tuyau : on ne peut donc pas obtenir le profil complet des tensions/vitesses avec une seule série de mesure. 
 	
-	\newpage
+	\subsection{Instrumentation et acquisition des données}
+	
 	% --- Groupe 2 : Instrumentation et Acquisition ---
 	\begin{figure}[h]
 		\centering
@@ -425,29 +440,43 @@
 			\centering
 			\includegraphics[width=\linewidth]{Images/3 Manometre small.png}
 			\caption{Manomètre différentiel}
+			\label{mano_diff}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.31\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{Images/4 Streamlines Hardware small.png}
 			\caption{Matériel StreamLine}
+			\label{boit_stream}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.31\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{Images/5 Boitier acquisition small.png}
 			\caption{Boîtier d'acquisition}
+			\label{boit_acqu}
 		\end{minipage}
 	\end{figure}
 	
-	Les figures 3.3, 3.4, et 3.5 représentent les instruments de mesure hardware du système.
+	\noindent Les figures \ref{mano_diff}, \ref{boit_stream} et \ref{boit_acqu} présentent les instruments de mesure utilisés pour l'acquisition des données expérimentales.
+	\vspace{1mm}
 	\begin{itemize}
-		\item 3.3 : manomètre utilisé pour la mesure de la pression statique dans le système. Il indique le différentiel de pression en $mmH_2O$ grâce à aux tubes de Pitot;
-		\item 3.4 : Boîtiers StreamLine permettant l'acquisition des valeurs de la sonde fil chaud
-		\item 3.5 : Boîtier d'acquisition permettant le formatage des données du boîtier StreamLine au logiciel StreamWare dans l'ordinateur.
+		
+		\item \textbf{Manomètre différentiel (figure \ref{mano_diff})} :  
+		Cet instrument permet de mesurer le différentiel de pression dans le système à l'aide des tubes de Pitot. Les valeurs sont exprimées en $mmH_2O$.
+		
+		\item \textbf{Système StreamLine (figure \ref{boit_stream})} :  
+		Il s'agit du système électronique permettant l'acquisition des mesures issues de la sonde à fil chaud.
+		
+		\item \textbf{Boîtier d'acquisition (figure \ref{boit_acqu})} :  
+		Ce boîtier assure l'interface entre le système StreamLine et l'ordinateur, permettant le transfert et le traitement des données via le logiciel \textit{StreamWare}.
+		
 	\end{itemize}
-	Ce sont les instruments minimums supplémentaires pour l'acquisition de données pour l'utilisation des tubes de Pitot (Manomètre), et le fil chaud (StreamLine, boîtier d'acquisition et ordinateur). 
+	\vspace{3mm}
 	
+	\noindent Ces instruments constituent l'équipement nécessaire pour effectuer les mesures de vitesse à l'aide des tubes de Pitot et de l'anémométrie à fil chaud.
+	
+	\subsection{Sondes d'anémométrie à fil chaud}
 	
 	% --- Groupe 3 : Sondes fil chaud ---
 	\begin{figure}[h!]
@@ -456,77 +485,77 @@
 			\centering
 			\includegraphics[width=0.75\linewidth]{Images/6 fil chaud 1 small.png}
 			\caption{Sonde à fil chaud (verticale)}
+			\label{sonde_fil_chaud_vert}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics[width=0.75\linewidth]{Images/7 fil chaud 2 small.png}
 			\caption{Détail de la sonde à fil chaud}
+			\label{sonde_fil_chaud_det}
 		\end{minipage}
 	\end{figure}
-	Voici un exemple de présentation d'un fil chaud. On peut lire sur l'étiquette qu'il s'agit d'un fil chaud coudé 1D de référence \textbf{55P15}, avec les constantes suivantes:
-	\begin{itemize}
-		 \item \textbf{R\_20} : 3,48 $\Omega$; 
-		 \item \textbf{R\_L} : 0,5$\Omega$;
-		 \item \textbf{alpha\_20} : 0.36 $\%/°C$;
-		 \item \textbf{T\_max} : 300 $°C$
-	\end{itemize}
-	Nous avons fait un \textbf{tableau récapitulatif} de toutes les sondes d'Anémométrie par Température Constante dans la page suivante, avec leurs constantes respectives.
 	
-	\textbf{Inventaire des fils}
-		
+	\noindent Les figures \ref{sonde_fil_chaud_vert} et \ref{sonde_fil_chaud_det} montrent un exemple de sonde d'anémométrie à fil chaud. Sur l'étiquette, on peut lire qu'il s'agit d'une sonde coudée 1D de référence \textbf{55P15}. Les principales constantes associées à cette sonde sont :
+	\vspace{1mm}
+	\begin{itemize}
+		\item \textbf{$R_{20}$} : $3,48 \ \Omega$
+		\item \textbf{$R_{L}$} : $0,5 \ \Omega$
+		\item \textbf{$\alpha_{20}$} : $0,36 \ \%/^\circ C$
+		\item \textbf{$T_{max}$} : $300^\circ C$
+	\end{itemize}
+	\vspace{3mm}
+	
+	\noindent Un inventaire complet des sondes disponibles pour l'anémométrie à température constante est présenté dans le tableau suivant :
+	
 	\begin{table}[h!]
 		\centering
 		\label{tab:inventaire_fil_chaud}
 		\resizebox{\textwidth}{!}{
 			\begin{tabular}{l|ccccc|c}
 				\toprule
-				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20 } & \textbf{R\_L} & \textbf{alpha\_20 } & \textbf{T\_max } & \textbf{État} \\
-				& & ($\Omega$) & ($\Omega$) & ($\%/°C$) & ($°C$) & \\
+				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20} & \textbf{R\_L} & \textbf{$\alpha_{20}$} & \textbf{$T_{max}$} & \textbf{État} \\
+				& & ($\Omega$) & ($\Omega$) & ($\%/^\circ C$) & ($^\circ C$) & \\
 				\midrule
-				Probe Type 55 R11 & droit & 3,3 & 0,5 & 0,48 & 150 & Failed
-				\\
-				Probe Type 55 R11 & droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil\\
+				Probe Type 55 R11 & droit & 3,3 & 0,5 & 0,48 & 150 & Failed \\
+				Probe Type 55 R11 & droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil \\
 				Probe Type 55 R11 & droit & 6,2 & 0,5 & 0,37 & 150 & pas Fil \\
 				Probe Type 55 R11 & droit & 6,7 & 0,5 & 0,36 & 150 & pas Fil \\
-				Probe Type 55 R11 & droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil  \\
+				Probe Type 55 R11 & droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil \\
 				Probe Type 55 R11 & droit & 8,6 & 0,6 & 0,42 & 150 & Non vérifié \\
+				\midrule
 				Probe Type 55 R01 & droit & 5,3 & 0,5 & 0,48 & 300 & Ok \\
 				\midrule
 				Probe Type 55 P15 & coudé & 3,37 & 0,5 & 0,36 & 300 & Ok \\
 				Probe Type 55 P15 & coudé & 3,4 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & coudé & 3,48 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & coudé & 3,6 & 0,5 & 0,36 & 300 & Non vérifié \\
+				\midrule
 				Probe Type 55 P05 & coudé & 3,5 & 0,7 & 0,36 & 300 & Non vérifié \\
 				\bottomrule
-			\end{tabular}
-		}
-		\caption{Inventaire du matériel - Anémomètre à fil chaud}
+		\end{tabular}}
+		\caption{Inventaire des sondes d'anémométrie à fil chaud}
 	\end{table}
 	
-	Grâce à l'inventaire dans le tableau 4.1, on remarque que l'on a deux types de sonde :
+	\noindent On distingue deux types de sondes :
+	\vspace{1mm}
 	\begin{itemize}
-		\item les sondes droites 1D : utiles pour une mesure d'une composante de la vitesse à un emplacement quelconque;
-		\item les sondes coudées 2D : identiques à celles droites, mais permettent plus facilement d'étudier la couche limite d'une structure.
+		\item \textbf{les sondes droites} : adaptées à la mesure d'une composante de vitesse en un point donné ;
+		\item \textbf{les sondes coudées} : facilitent les mesures à proximité des parois, donc plus adaptées pour l'étude de la couche limite.
 	\end{itemize}
 	
-	On pourra mettre en place deux manipulations suivant le même principe mais pour les spécifications suivantes:
-	\begin{itemize}
-		\item les sondes droites : pour le centre du cylindre;
-		\item les sondes coudées : pour le bord du cylindre / couche limite du cylindre.
-	\end{itemize}
+	\subsection{Précautions d'utilisation}
 	
+	\noindent Le montage expérimental présent dans la salle de travaux pratiques ne nécessite pas de modification particulière. Seuls les tubes de Pitot et les sondes à fil chaud seront déplacés lors des manipulations.\\
 	
-	
-	
-	\section{Précaution nécessaire}
-	L'arrangement du matériel dans la salle de TP n'a pas besoin d'être modifié. Il y aura seulement les tubes de Pitot, et le fil chaud avec son support qui seront déplacés pendant les manipulations.
-	
-	\textbf{Précaution à suivre} pour le bon déroulement des manipulations :
+	\noindent Afin de garantir la fiabilité des mesures et d'éviter toute détérioration du matériel, plusieurs précautions doivent être respectées :
+	\vspace{1mm}
 	\begin{itemizeFB}
-		\item Un nettoyage du tube PVC sera nécessaire pour éviter que les poussières endommagent ou cassent les fils chaud;
-		\item Le support étant de taille petite, les manipulations des supports, des tubes, ou du fil devront être minimisées;
-		\item Le manomètre différentiel devra être le plus proche du support visible en figure 3.1, il faudra éviter de le mettre par terre, ou de le faire tomber.
+		
+		\item Le tube en PVC doit être soigneusement nettoyé avant les manipulations afin d'éliminer toute poussière susceptible d'endommager les fils chauds.
+		
+		\item Les sondes à fil chaud étant extrêmement fragiles, les manipulations du support et des capteurs doivent être réduites au minimum.
+		
 	\end{itemizeFB}
 	
 	
@@ -563,10 +592,11 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.50\linewidth]{Images/8 fil chaud xD.png}
-		\caption{Figure 3.8, de gauche à droite, fil chaud 1D, 1D deux fils, et 3D}
+		\caption{de gauche à droite, fil chaud 1D, 1D deux fils, et 3D}
+		\label{fil_1D_1D2_3D}
 	\end{figure}
 	
-	Sur la figure 3.8, nous pouvons voir comment on distingue les fils chauds 1D à 3D. Elles se différencient par le nombre de fil, mais aussi de leur placement. En effet, celui de droite est un fil chaud 3D, et permet la mesure de toutes les composantes de la vitesse dans l'espace, puisque chaque sonde permet une mesure de la composante de la vitesse selon une incidence arrivant sur la tranche du fil.
+	Sur la figure \ref{fil_1D_1D2_3D}, nous pouvons voir comment on distingue les fils chauds 1D à 3D. Elles se différencient par le nombre de fil, mais aussi de leur placement. En effet, celui de droite est un fil chaud 3D, et permet la mesure de toutes les composantes de la vitesse dans l'espace, puisque chaque sonde permet une mesure de la composante de la vitesse selon une incidence arrivant sur la tranche du fil.
 	
 	\subsection{Le software StreamLine : Le logiciel}
 	
@@ -576,9 +606,10 @@
 		\centering
 		\includegraphics[width=0.90\linewidth]{Images/9.1 reglage streamline.png}
 		\caption{Fenêtre d'initialisation, et dimensionnement du matériel}
+		\label{dantec_fen_utilisation}
 	\end{figure}
 	
-	Sur la Figure 3.9, nous avons la \textbf{fenêtre type du logiciel Streamline avant l'acquisition des données}, soit décrire numérique le matériel du protocole mis en place. Nous devrons lire cette fenêtre comme un tableau contenant les pictogrammes des composants physiques. \\
+	Sur la Figure \ref{dantec_fen_utilisation}, nous avons la \textbf{fenêtre type du logiciel Streamline avant l'acquisition des données}, soit décrire numérique le matériel du protocole mis en place. Nous devrons lire cette fenêtre comme un tableau contenant les pictogrammes des composants physiques. \\
 	
 	Par exemple, ici nous retrouvons dans la colonne "Probe", tout à gauche du tableau, le fil chaud, avec la référence "55P11", mais le logiciel prend en compte en plus le "Support" et le "Cable", qui sont respectivement le support, et le cable utilisés pour la manipulation. Il y a une pertinence physique, car nous avons affaire à un système électronique, donc toutes les résistances devraient être prisent en compte. En effet, on n'aura pas la même résistance sur le cable, s'il n'est pas de la même longueur, épaisseur, matière, ...\\
 	\textbf{C'est sans doute la force de cet outil : le logiciel est simple mais complexe, au prix d'une inertie à sa maîtrise est importante.}
@@ -590,18 +621,20 @@
 			\centering
 			\includegraphics[width=0.80\linewidth]{Images/9.2 resultat graphique.png}
 			\caption{Résultat brut de l'acquisition du fil chaud}
+			\label{dantec_acq_fil_chaud}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics[width=0.90\linewidth]{Images/9.3 erreur graphique.png}
 			\caption{Estimation de l'erreur}
+			\label{dantec_estim_erreur}
 		\end{minipage}
 	\end{figure}
 	
-	Dans la Figure 3.10, nous avons les résultats brutes du système modélisé en Figure 3.9. L'abscisse du graphique représente l'échelle temporelle, et l'axe des ordonnées représente la tension. L'intérêt de la sonde est qu'elle permet de \textbf{quantifier deux éléments}: la valeur moyenne de la vitesse, et les variations instantanées de tension dans le tube.\\
+	Dans la Figure \ref{dantec_acq_fil_chaud}, nous avons les résultats brutes du système modélisé en Figure \ref{dantec_fen_utilisation}. L'abscisse du graphique représente l'échelle temporelle, et l'axe des ordonnées représente la tension. L'intérêt de la sonde est qu'elle permet de \textbf{quantifier deux éléments}: la valeur moyenne de la vitesse, et les variations instantanées de tension dans le tube.\\
 		
-	La Figure 3.11 est la deuxième fenêtre d'information que l'on obtient, soit \textbf{l'erreur sur les mesures de la sonde}. Elle nous fournie 3 éléments:
+	La Figure \ref{dantec_estim_erreur} est la deuxième fenêtre d'information que l'on obtient, soit \textbf{l'erreur sur les mesures de la sonde}. Elle nous fournie 3 éléments:
 	\begin{itemize}
 		\item 1 - (en haut à gauche) un tracé de l'erreur dimensionné;
 		\item 2 - (en haut à droite) un tracé de l'erreur en pourcentage;
@@ -659,12 +692,14 @@
 		\centering
 		\includegraphics[width=0.90\linewidth]{Images/0.1 comsol tube.png}
 		\caption{test}
+		\label{comsol_profil_vitesse_tuyau}
 	\end{figure}
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.90\linewidth]{Images/0.2 comsol graphiques.png}
 		\caption{test}
+		\label{comsol_profil_vitesse_sortie_1D}
 	\end{figure}
 	
 	
