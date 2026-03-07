@@ -1,6 +1,7 @@
 \documentclass[12pt, a4paper]{report}
 
 \usepackage{multicol}
+\usepackage{float}
 
 % --- Packages de base ---
 \usepackage[utf8]{inputenc}
@@ -561,33 +562,32 @@
 	
 	
 	
-	\section{Solution Dantec Dynamics - à condenser}
-	\subsection{Présentation de la solution}
+	\section{Solution Dantec Dynamics}
+	%\subsection{Présentation de la solution}
 		
-	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Description officielle]
-		\tiny
-		"Le domaine d'activité principal de DANTEC DYNAMICS est le développement et la vente de systèmes de mesures intégrés pour le diagnostic et la recherche en mécanique des fluides, mécanique des solides, microfluidique, analyse des sprays et technologie de la combustion.\\
-		
-		
-		Nos systèmes sont utilisés pour obtenir des données de mesure des propriétés physiques dans l'air, dans des gaz, dans des liquides et dans des solides.\\
-		
-		
-		Les paramètres étudiés sont par exemple la vitesse, la turbulence, la taille des particules, la concentration, la température, le type de combustion, les contraintes/déformations et les vibrations."
-		
-		\tcblower
-		\footnotesize \textbf{Source :} \url{https://www.dantecdynamics.com/fcs/presentation-de-la-societe/}
-	\end{tcolorbox}
+%	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Description officielle]
+%		\tiny
+%		"Le domaine d'activité principal de DANTEC DYNAMICS est le développement et la vente de systèmes de mesures intégrés pour le diagnostic et la recherche en mécanique des fluides, mécanique des solides, microfluidique, analyse des sprays et technologie de la combustion.\\
+%		
+%		
+%		Nos systèmes sont utilisés pour obtenir des données de mesure des propriétés physiques dans l'air, dans des gaz, dans des liquides et dans des solides.\\
+%		
+%		
+%		Les paramètres étudiés sont par exemple la vitesse, la turbulence, la taille des particules, la concentration, la température, le type de combustion, les contraintes/déformations et les vibrations."
+%		
+%		\tcblower
+%		\footnotesize \textbf{Source :} \url{https://www.dantecdynamics.com/fcs/presentation-de-la-societe/}
+%	\end{tcolorbox}
 	
 	La présentation de la société sur son site internet montre que nous avons affaire à des outils de précision, permettant la mesure de constantes physiques parfois non triviale ou avec une précision remarquable. On pourra citer la qualification de la turbulence, qui n'est pas accessible à tous les outils de mesure sur le commerce.
 	
 
 	
 	
-	\subsection{Le hardware et StreamWare : les composants physiques}
+	\subsection{Le hardware et StreamLine : les composants physiques}
 	
 	Nous avons plusieurs fils chauds à notre disposition, et on pourra prendre l'exemple du fil en Figure 3.6, de \textbf{référence 55P15} : il permet de relever une tension ou intensité électrique permettant la mesure d'une vitesse locale. Ici, nous avons un fil chaud 1D coudé, on pourra alors mesurer, avec le reste des composants de la solution Dantec Dynamics, une vitesse selon une unique composante de l'espace. Avec autant de points que la fréquence de l'ensemble le permet, soit des fréquences de l'ordre du $kHz$.\\
 	
-	Une section est dédiée à cette partie, car la solution prend en compte tous les composants du protocole pour permettre le relevé de la mesure.
 	
 	\begin{figure}[h]
 		\centering
@@ -596,43 +596,45 @@
 		\label{fil_1D_1D2_3D}
 	\end{figure}
 	
-	Sur la figure \ref{fil_1D_1D2_3D}, nous pouvons voir comment on distingue les fils chauds 1D à 3D. Elles se différencient par le nombre de fil, mais aussi de leur placement. En effet, celui de droite est un fil chaud 3D, et permet la mesure de toutes les composantes de la vitesse dans l'espace, puisque chaque sonde permet une mesure de la composante de la vitesse selon une incidence arrivant sur la tranche du fil.
+	Sur la figure \ref{fil_1D_1D2_3D}, nous pouvons voir comment on distingue les fils chauds 1D à 3D. Elles se différencient par le nombre de fil, mais aussi de leur placement.
 	
-	\subsection{Le software StreamLine : Le logiciel}
+	\subsection{Le logiciel StreamWare}
 	
 	
 	
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.90\linewidth]{Images/9.1 reglage streamline.png}
-		\caption{Fenêtre d'initialisation, et dimensionnement du matériel}
+		\caption{Fenêtre d'initialisation, et dimensionnement du matériel. Source : Dantec Dynamics}
 		\label{dantec_fen_utilisation}
 	\end{figure}
 	
-	Sur la Figure \ref{dantec_fen_utilisation}, nous avons la \textbf{fenêtre type du logiciel Streamline avant l'acquisition des données}, soit décrire numérique le matériel du protocole mis en place. Nous devrons lire cette fenêtre comme un tableau contenant les pictogrammes des composants physiques. \\
+	Sur la Figure \ref{dantec_fen_utilisation}, nous avons la \textbf{fenêtre type du logiciel Streamline avant l'acquisition des données}, qui décrit le matériel du protocole mis en place. \\
 	
-	Par exemple, ici nous retrouvons dans la colonne "Probe", tout à gauche du tableau, le fil chaud, avec la référence "55P11", mais le logiciel prend en compte en plus le "Support" et le "Cable", qui sont respectivement le support, et le cable utilisés pour la manipulation. Il y a une pertinence physique, car nous avons affaire à un système électronique, donc toutes les résistances devraient être prisent en compte. En effet, on n'aura pas la même résistance sur le cable, s'il n'est pas de la même longueur, épaisseur, matière, ...\\
-	\textbf{C'est sans doute la force de cet outil : le logiciel est simple mais complexe, au prix d'une inertie à sa maîtrise est importante.}
+%	Par exemple, ici nous retrouvons dans la colonne "Probe", tout à gauche du tableau, le fil chaud, avec la référence "55P11", mais le logiciel prend en compte en plus le "Support" et le "Cable", qui sont respectivement le support, et le cable utilisés pour la manipulation. Il y a une pertinence physique, car nous avons affaire à un système électronique, donc toutes les résistances devraient être prisent en compte. En effet, on n'aura pas la même résistance sur le cable, s'il n'est pas de la même longueur, épaisseur, matière, ...\\
+%	\textbf{C'est sans doute la force de cet outil : le logiciel est simple mais complexe, au prix d'une inertie à sa maîtrise est importante.}
+	Nous retrouvons ici le fil chaud 55P15, mais aussi le support et le cable utilisé qui doivent être connus du logiciel pour prendre en compte au mieux leur résistance électrique pour une meilleure précision des résultats
 	
-	\newpage
+%	\newpage
 	\begin{figure}[h]
 		\centering
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics[width=0.80\linewidth]{Images/9.2 resultat graphique.png}
-			\caption{Résultat brut de l'acquisition du fil chaud}
+			\caption{Résultat brut de l'acquisition du fil chaud. Source : Dantec Dynamics}
 			\label{dantec_acq_fil_chaud}
 		\end{minipage}
 		\hfill
 		\begin{minipage}{0.45\textwidth}
 			\centering
 			\includegraphics[width=0.90\linewidth]{Images/9.3 erreur graphique.png}
-			\caption{Estimation de l'erreur}
+			\caption{Estimation de l'erreur. Source : Dantec Dynamics}
 			\label{dantec_estim_erreur}
 		\end{minipage}
 	\end{figure}
 	
-	Dans la Figure \ref{dantec_acq_fil_chaud}, nous avons les résultats brutes du système modélisé en Figure \ref{dantec_fen_utilisation}. L'abscisse du graphique représente l'échelle temporelle, et l'axe des ordonnées représente la tension. L'intérêt de la sonde est qu'elle permet de \textbf{quantifier deux éléments}: la valeur moyenne de la vitesse, et les variations instantanées de tension dans le tube.\\
+	Dans la Figure \ref{dantec_acq_fil_chaud}, nous avons les résultats du système modélisé en Figure \ref{dantec_fen_utilisation}, qui représente la tension en fonction du temps
+%. L'abscisse du graphique représente l'échelle temporelle, et l'axe des ordonnées représente la tension. L'intérêt de la sonde est qu'elle permet de \textbf{quantifier deux éléments}: la valeur moyenne de la vitesse, et les variations instantanées de tension dans le tube.\\
 		
 	La Figure \ref{dantec_estim_erreur} est la deuxième fenêtre d'information que l'on obtient, soit \textbf{l'erreur sur les mesures de la sonde}. Elle nous fournie 3 éléments:
 	\begin{itemize}
@@ -642,49 +644,49 @@
 	\end{itemize}
 	
 	
-	\section{Lecture des graphiques sur l'exemple}
-	\subsection{Présentation du matériel et configuration}
-	Les mesures ont été effectuées à l'aide d'un système \textbf{Dantec Dynamics}. La configuration expérimentale repose sur une sonde fil chaud de type \textbf{55P11}, montée sur un support \textbf{55H20} et reliée par un câble \textbf{A1863} au module d'acquisition \textbf{CTA Pro} (châssis LAN108)\\
-	
-	
-	L'acquisition a été paramétrée avec les réglages suivants :
-	\begin{itemize}
-		\item Nombre d'échantillons : 512
-		\item Fréquence d'échantillonnage : 1,000 kHz
-		\item Temps d'intégration : 0,512 s
-	\end{itemize}
-	
-	\subsection{Modèle de conversion et étalonnage}
-	La transition entre la tension mesurée $E$ et la vitesse du fluide $U$ suit une loi de puissance (Loi de King modifiée), définie par les coefficients extraits de l'étalonnage :
-	\begin{equation*}
-		\boxed{E^2 = A + B U^n}
-	\end{equation*}
-	
-	D'après les résultats de la Figure 3.11, les coefficients, pour la corrélation avec une loi puissance, retenus sont :
-	\begin{itemize}
-		\item $A = 1,452195$;
-		\item $B = 1,018829$;
-		\item $n = 0,423637$.
-	\end{itemize}
-	
-	\subsection{Valeurs mesurées et estimation de l'erreur}
-	Pour un point de mesure stabilisé, nous obtenons les valeurs suivantes :
-	\begin{itemize}
-		\item Tension mesurée : $1,573$ V;
-		\item Vitesse calculée ($U$) : $1,009$ m/s.
-	\end{itemize}
-	
-	L'estimation de l'erreur systématique, calculée par la différence entre la vitesse mesurée et la courbe de tendance (Curve Fit), est extrêmement faible pour ce point :
-	\begin{equation*}
-		\boxed{\epsilon_{vitesse} = -0,0010 \%}
-	\end{equation*}
-	
-	\subsection{Caractérisation de l'écoulement}
-	À partir de la vitesse $U \approx 1,01$ m/s, nous pouvons calculer le nombre de Reynolds $Re$, avec $D$ le diamètre équivalent du conduit :
-	\begin{equation*}
-		\boxed{Re = \frac{U D}{\nu}}
-	\end{equation*}
-	Où $\nu$ est la viscosité cinématique de l'air ($\approx 1,5 \cdot 10^{-5}$ m$^2$/s à 20°C).
+%	\section{Lecture des graphiques sur l'exemple}
+%	\subsection{Présentation du matériel et configuration}
+%	Les mesures ont été effectuées à l'aide d'un système \textbf{Dantec Dynamics}. La configuration expérimentale repose sur une sonde fil chaud de type \textbf{55P11}, montée sur un support \textbf{55H20} et reliée par un câble \textbf{A1863} au module d'acquisition \textbf{CTA Pro} (châssis LAN108)\\
+%	
+%	
+%	L'acquisition a été paramétrée avec les réglages suivants :
+%	\begin{itemize}
+%		\item Nombre d'échantillons : 512
+%		\item Fréquence d'échantillonnage : 1,000 kHz
+%		\item Temps d'intégration : 0,512 s
+%	\end{itemize}
+%	
+%	\subsection{Modèle de conversion et étalonnage}
+%	La transition entre la tension mesurée $E$ et la vitesse du fluide $U$ suit une loi de puissance (Loi de King modifiée), définie par les coefficients extraits de l'étalonnage :
+%	\begin{equation*}
+%		\boxed{E^2 = A + B U^n}
+%	\end{equation*}
+%	
+%	D'après les résultats de la Figure 3.11, les coefficients, pour la corrélation avec une loi puissance, retenus sont :
+%	\begin{itemize}
+%		\item $A = 1,452195$;
+%		\item $B = 1,018829$;
+%		\item $n = 0,423637$.
+%	\end{itemize}
+%	
+%	\subsection{Valeurs mesurées et estimation de l'erreur}
+%	Pour un point de mesure stabilisé, nous obtenons les valeurs suivantes :
+%	\begin{itemize}
+%		\item Tension mesurée : $1,573$ V;
+%		\item Vitesse calculée ($U$) : $1,009$ m/s.
+%	\end{itemize}
+%	
+%	L'estimation de l'erreur systématique, calculée par la différence entre la vitesse mesurée et la courbe de tendance (Curve Fit), est extrêmement faible pour ce point :
+%	\begin{equation*}
+%		\boxed{\epsilon_{vitesse} = -0,0010 \%}
+%	\end{equation*}
+%	
+%	\subsection{Caractérisation de l'écoulement}
+%	À partir de la vitesse $U \approx 1,01$ m/s, nous pouvons calculer le nombre de Reynolds $Re$, avec $D$ le diamètre équivalent du conduit :
+%	\begin{equation*}
+%		\boxed{Re = \frac{U D}{\nu}}
+%	\end{equation*}
+%	Où $\nu$ est la viscosité cinématique de l'air ($\approx 1,5 \cdot 10^{-5}$ m$^2$/s à 20°C).
 	
 	\chapter{Modélisation sur COMSOL Multiphysics}
 	
@@ -705,82 +707,107 @@
 	
 	\chapter{Résultats et Discussion}
 
-	\section{Profil de vitesse à la sortie du système}
+	\section{Mesure du profil de vitesse à l'aide du tube de Pitot}
 	
 	TABLEAU ANCIEN
 	
 	Pour ce tableau, on a mesuré la pression en $mmH_2O$ à l'aide du manomètre, et fait la conversion en $Pa$, avec le coefficient de conversion \boxed{c_{mmH20 \rightarrow Pa} = 9,80665}.
 	
-	\begin{figure}[h!]
-		\begin{minipage}{0.3\textheight}
-			\centering
-			\begin{tikzpicture}
-				\begin{axis}[
-					title={Profils de pression mesurés},
-					xlabel={Position selon $z$ (mm)},
-					ylabel={Pression ($Pa$)},
-					grid=major,
-					legend pos=north west,
-					width=0.8\textwidth,
-					height=7cm,
-					% On définit les couleurs
-					cycle list={
-						{blue, mark=x},
-					}
-					]
-					
-					% Courbe 1 (Série de gauche dans Excel)
-					\addplot+ [smooth] coordinates {
-						(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
-						(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
-						(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
-						(-21, 139.25) (-25, 137.29)
-					};
-					\addlegendentry{Série 1}
-					
-				\end{axis}
-			\end{tikzpicture}
-			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.3\textheight}
-			\centering
-			\begin{tikzpicture}
-				\begin{axis}[
-					title={Profils de pression mesurés},
-					xlabel={Position selon $z$ (mm)},
-					ylabel={Pression ($Pa$)},
-					grid=major,
-					legend pos=north west,
-					width=0.8\textwidth,
-					height=7cm,
-					% On définit les couleurs
-					cycle list={
-						{orange, mark=x}
-					}
-					]
-					
-					
-					% Courbe 2 (Série de droite dans Excel)
-					\addplot+ [smooth] coordinates {
-						(21.5, 115.72) (17.5, 105.91) (13.5, 99.54) (11.5, 94.14) 
-						(9.5, 90.22) (7.5, 82.87) (5.5, 77.47) (3.5, 71.59) 
-						(2.5, 63.74) (1.5, 56.88) (0.5, 50.99) (0, 47.56)
-					};
-					\addlegendentry{Série 2}
-					
-				\end{axis}
-			\end{tikzpicture}
-			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré par rapport au bord du cylindre}
-		\end{minipage}
-	\end{figure}
-	Ces deux courbes permettent de visualiser le profil à la sortie du cylindre. Par la constance du profil dans le domaine $z \in [-20mm;20mm]$ on pourra placer à la sortie du cylindre les tubes de Pitot, et la sonde d'anémomètrie simultanément, mais suffisamment éloignable pour que les sondes n'interfèrent pas entre elles.
-	
-	On observe que l'on n'a pas atteint la couche limite à dans la figure 4.2 avec le tube de Pitot, malgré une mesure de la vitesse à $z=0mm$, soit avoir collé le tube de Pitot mesurant la pression statique contre la paroi du cylindre.
-	
-	
-	
-	
+%	\begin{figure}[h!]
+%		\begin{minipage}{0.3\textheight}
+%			\centering
+%			\begin{tikzpicture}
+%				\begin{axis}[
+%					title={Profils de pression mesurés},
+%					xlabel={Position selon $z$ (mm)},
+%					ylabel={Pression ($Pa$)},
+%					grid=major,
+%					legend pos=north west,
+%					width=0.8\textwidth,
+%					height=7cm,
+%					% On définit les couleurs
+%					cycle list={
+%						{blue, mark=x},
+%					}
+%					]
+%					
+%					% Courbe 1 (Série de gauche dans Excel)
+%					\addplot+ [smooth] coordinates {
+%						(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
+%						(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
+%						(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
+%						(-21, 139.25) (-25, 137.29)
+%					};
+%					\addlegendentry{Série 1}
+%					
+%				\end{axis}
+%			\end{tikzpicture}
+%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
+%		\end{minipage}
+%		\hfill
+%		\begin{minipage}{0.3\textheight}
+%			\centering
+%			\begin{tikzpicture}
+%				\begin{axis}[
+%					title={Profils de pression mesurés},
+%					xlabel={Position selon $z$ (mm)},
+%					ylabel={Pression ($Pa$)},
+%					grid=major,
+%					legend pos=north west,
+%					width=0.8\textwidth,
+%					height=7cm,
+%					% On définit les couleurs
+%					cycle list={
+%						{orange, mark=x}
+%					}
+%					]
+%					
+%					
+%					% Courbe 2 (Série de droite dans Excel)
+%					\addplot+ [smooth] coordinates {
+%						(21.5, 115.72) (17.5, 105.91) (13.5, 99.54) (11.5, 94.14) 
+%						(9.5, 90.22) (7.5, 82.87) (5.5, 77.47) (3.5, 71.59) 
+%						(2.5, 63.74) (1.5, 56.88) (0.5, 50.99) (0, 47.56)
+%					};
+%					\addlegendentry{Série 2}
+%					
+%				\end{axis}
+%			\end{tikzpicture}
+%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré par rapport au bord du cylindre}
+%		\end{minipage}
+%	\end{figure}
+
+\begin{figure}[H] % Utilisation du [H] pour forcer la position
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[
+			title={Profils de pression mesurés},
+			xlabel={Position selon $z$ (mm)},
+			ylabel={Pression ($Pa$)},
+			grid=major,
+			legend pos=north west,
+			width=0.8\textwidth, % Taille ajustée pour un seul graphe
+			height=8cm,
+			cycle list={
+				{blue, mark=x},
+			}
+			]
+			
+			% Courbe 1 (Série de gauche dans Excel)
+			\addplot+ [smooth] coordinates {
+				(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
+				(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
+				(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
+				(-21, 139.25) (-25, 137.29)
+			};
+			\addlegendentry{Série 1}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
+\end{figure}
+%	Ces deux courbes permettent de visualiser le profil à la sortie du cylindre. Par la constance du profil dans le domaine $z \in [-20mm;20mm]$ on pourra placer à la sortie du cylindre les tubes de Pitot, et la sonde d'anémomètrie simultanément, mais suffisamment éloignable pour que les sondes n'interfèrent pas entre elles.
+Ce mesure du profil de vitesse avec le tube de Pitot nous permet d'observer qu'au centre du tube (domaine [-20mm,20mm]), la vitesse varie peu, et donc que nous pourrons placer, à cet endroit, le tube de Pitot accolé au fil chaud lors des mesures nécessaires au calibrage du fil chaud, et mesurer environ la même vitesse.
 	
 	\section{Mesure d'anémométrie, avec la méthode ATC}
 	
@@ -806,81 +833,96 @@
 		\boxed{U_{cal} = \sqrt{\frac{2 \Delta P_{Pa}}{\rho_{air}}}}
 	\end{equation*}
 	
-	\begin{center}
-		\begin{tabular}{l|c|c}
-			\toprule
-			Paramètre & Valeur & Unité \\
-			\midrule
-			$\Delta mmH_2O$ à vide & 0,23 & $mmH_2O$ \\
-			$\Delta mmH_2O$ non vide & 13,12 & $mmH_2O$ \\
-			$\Delta mmH_2O$ réel & 12,89 & $mmH_2O$ \\
-			$\Delta Pa$ & 126,40 & Pa \\
-			$U_{cal}$ & 13,22 & m/s \\
-			\bottomrule
-		\end{tabular}
-	\end{center}
+%	\begin{center}
+%		\begin{tabular}{l|c|c}
+%			\toprule
+%			Paramètre & Valeur & Unité \\
+%			\midrule
+%			$\Delta mmH_2O$ à vide & 0,23 & $mmH_2O$ \\
+%			$\Delta mmH_2O$ non vide & 13,12 & $mmH_2O$ \\
+%			$\Delta mmH_2O$ réel & 12,89 & $mmH_2O$ \\
+%			$\Delta Pa$ & 126,40 & Pa \\
+%			$U_{cal}$ & 13,22 & m/s \\
+%			\bottomrule
+%		\end{tabular}
+%	\end{center}
 	
 	\subsection{détermination des constantes A,B,n}	
-	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
-	\begin{itemize}
-		\item 55R01
-		\item $R_{20}$ = 3.37 $\Omega$
-		\item $R_L$ = 0.5 $\Omega$
-		\item $\alpha_{20}$ = 0.36 $\Omega / K$
-	\end{itemize}
-	
-	% --- Section des Constantes ---
-	\begin{center}
-		\textbf{Paramètres Physiques :} \\
-		\begin{tabular}{ll|ll}
-			$M_{air}$ & 29 g/mol & $T$ & 290,35 K \\
-			$P_{atm}$ & 101325 Pa & $\rho_{air, cal}$ & 1,4474 $kg/m^3$ \\
-			$R$ & 8,314 & -- & -- \\
-			\hline
-		\end{tabular}
-	\end{center}
-	
-	TABLEAU ANCIEN
+%	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
+%	\begin{itemize}
+%		\item 55R01
+%		\item $R_{20}$ = 3.37 $\Omega$
+%		\item $R_L$ = 0.5 $\Omega$
+%		\item $\alpha_{20}$ = 0.36 $\Omega / K$
+%	\end{itemize}
+%	
+%	% --- Section des Constantes ---
+%	\begin{center}
+%		\textbf{Paramètres Physiques :} \\
+%		\begin{tabular}{ll|ll}
+%			$M_{air}$ & 29 g/mol & $T$ & 290,35 K \\
+%			$P_{atm}$ & 101325 Pa & $\rho_{air, cal}$ & 1,4474 $kg/m^3$ \\
+%			$R$ & 8,314 & -- & -- \\
+%			\hline
+%		\end{tabular}
+%	\end{center}
+%	
+%	TABLEAU ANCIEN
+%
+%	\begin{figure}[h!]
+%		\centering
+%		\begin{tikzpicture}
+%			\begin{axis}[
+%				title={$log(U_{off})$ en fonction de $E_{moy}$},
+%				xlabel={$E_{moy}$ (V)},
+%				ylabel={$log(U_{off})$},
+%				grid=both,
+%				width=12cm, height=8cm,
+%				scatter,
+%				only marks,
+%				mark=triangle*
+%				]
+%				\addplot[blue] coordinates {
+%					(1.82, 0.33) (1.88, 0.48) (1.92, 0.60) (1.96, 0.68)
+%					(1.99, 0.73) (2.02, 0.77) (2.06, 0.85) (2.09, 0.90)
+%					(2.11, 0.94) (2.13, 0.97) (2.16, 1.02) (2.18, 1.04)
+%					(2.19, 1.06) (2.21, 1.09) (2.23, 1.11) (2.24, 1.13)
+%					(2.26, 1.17) (2.28, 1.20) (2.29, 1.21)
+%				};
+%			\end{axis}
+%		\end{tikzpicture}
+%		\caption{Caractéristique aérodynamique du système.}
+%	\end{figure}
+%	
+%	\newpage
+%	\begin{itemize}
+%		\item \textbf{Modèle} : $log(E_{moy}^2-A) = log(B) + n \log(U_{off})$
+%		\item \textbf{Pente ($n$)} : $0,5245$
+%		\item \textbf{Coefficient $(B)$} : $5.150$
+%		\item \textbf{Ordonnée à l'origine ($Log(B)$)} : $1,6390$
+%		\item \textbf{Qualité de l'ajustement ($R^2$)} : $0,9881$
+%	\end{itemize}
+%	
+%	\begin{equation*}
+%		\boxed{log(E_{moy}^2-A) = 1,6390 + 0,5245 \log(U_{off})}
+%	\end{equation*}
+%	
+%	Avec un $R^2$ > 0.98, nous avons une corrélation correct.
 
-	\begin{figure}[h!]
-		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				title={$log(U_{off})$ en fonction de $E_{moy}$},
-				xlabel={$E_{moy}$ (V)},
-				ylabel={$log(U_{off})$},
-				grid=both,
-				width=12cm, height=8cm,
-				scatter,
-				only marks,
-				mark=triangle*
-				]
-				\addplot[blue] coordinates {
-					(1.82, 0.33) (1.88, 0.48) (1.92, 0.60) (1.96, 0.68)
-					(1.99, 0.73) (2.02, 0.77) (2.06, 0.85) (2.09, 0.90)
-					(2.11, 0.94) (2.13, 0.97) (2.16, 1.02) (2.18, 1.04)
-					(2.19, 1.06) (2.21, 1.09) (2.23, 1.11) (2.24, 1.13)
-					(2.26, 1.17) (2.28, 1.20) (2.29, 1.21)
-				};
-			\end{axis}
-		\end{tikzpicture}
-		\caption{Caractéristique aérodynamique du système.}
-	\end{figure}
-	
-	\newpage
-	\begin{itemize}
-		\item \textbf{Modèle} : $log(E_{moy}^2-A) = log(B) + n \log(U_{off})$
-		\item \textbf{Pente ($n$)} : $0,5245$
-		\item \textbf{Coefficient $(B)$} : $5.150$
-		\item \textbf{Ordonnée à l'origine ($Log(B)$)} : $1,6390$
-		\item \textbf{Qualité de l'ajustement ($R^2$)} : $0,9881$
-	\end{itemize}
-	
-	\begin{equation*}
-		\boxed{log(E_{moy}^2-A) = 1,6390 + 0,5245 \log(U_{off})}
-	\end{equation*}
-	
-	Avec un $R^2$ > 0.98, nous avons une corrélation correct.
+Avant de pouvoir utiliser le fil chaud, nous devons d'abord le calibrer, en trouvant les coefficients A,B et n de l'équation *équation* trouvé dans la partie *partie*. \\\\
+Pour cela, nous mesurons, pour plusieurs puissance du compresseur (à l'aide de la molette de régulation), la vitesse en sortie avec le tube de Pitot, tout en lançant une acquisition de l'anémomètre à fil chaud, pedant envirion 8 secondes à une fréquence de 1kHz. 
+
+Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sortie du système d'anémomètrie, de laquelle nous calculons la moyenne. \\\\
+
+À l'aide de la fonction \textbf{lsqcurvefit} de Matlab, nous obtenons Les coefficients A, B et n qui permettent de s'approcher au mieux de nos valeurs. 
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.90\linewidth]{Images/matlab}
+	\caption{test}
+	\label{matlab}
+\end{figure}
+
 	
 	\subsection{Mesure en couche limite}
 		Nous faisons une mesure sur le fil chaud suivant :

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.6)  7 MAR 2026 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.6)  7 MAR 2026 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -95,10 +95,18 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \mc@col@check@num=\count293
 \g__mc_curr_col_int=\count294
 )
+(C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count295
+\float@exts=\toks17
+\float@box=\box99
+\@float@everytoks=\toks18
+\@floatcapt=\box100
+)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
@@ -106,7 +114,7 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2026/02/14 v26.3 The multilingual framework for LuaLaTeX, pdfLaT
 eX and XeLaTeX
-\babel@savecnt=\count295
+\babel@savecnt=\count296
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
 ne 2078.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
@@ -126,7 +134,7 @@ on input line 2111.
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count296
+\bbl@dirlevel=\count297
 Package babel Info: Configuration files are deprecated, as
 (babel)             they can break document portability.
 (babel)             Reported on input line 4206.
@@ -150,19 +158,19 @@ Language: french 2025-08-15 v4.0e French support from the babel system
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french3.
 ldf
 Language: french 2025-08-15 v3.7e French support from the babel system
-\FB@stdchar=\count297
+\FB@stdchar=\count298
 Package babel Info: Making : an active character on input line 273.
 Package babel Info: Making ; an active character on input line 274.
 Package babel Info: Making ! an active character on input line 275.
 Package babel Info: Making ? an active character on input line 276.
-\FBguill@level=\count298
-\FBold@everypar=\toks19
+\FBguill@level=\count299
+\FBold@everypar=\toks21
 \FB@Mht=\dimen159
-\mc@charclass=\count299
-\mc@charfam=\count300
-\mc@charslot=\count301
-\std@mcc=\count302
-\dec@mcc=\count303
+\mc@charclass=\count300
+\mc@charfam=\count301
+\mc@charslot=\count302
+\std@mcc=\count303
+\dec@mcc=\count304
 \FB@pardim=\dimen160
 \listindentFB=\dimen161
 \descindentFB=\dimen162
@@ -178,7 +186,7 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks20
+\KV@toks@=\toks22
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
@@ -186,9 +194,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count304
-\Gm@cntv=\count305
-\c@Gm@tempcnt=\count306
+\Gm@cnth=\count305
+\Gm@cntv=\count306
+\c@Gm@tempcnt=\count307
 \Gm@bindingoffset=\dimen168
 \Gm@wd@mp=\dimen169
 \Gm@odd@mp=\dimen170
@@ -197,7 +205,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen173
 \Gm@layouthoffset=\dimen174
 \Gm@layoutvoffset=\dimen175
-\Gm@dimlist=\toks21
+\Gm@dimlist=\toks23
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
@@ -283,11 +291,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count307
+\c@section@level=\count308
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count308
+\etb@tempcnta=\count309
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
@@ -295,8 +303,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen178
-\Hy@linkcounter=\count309
-\Hy@pagecounter=\count310
+\Hy@linkcounter=\count310
+\Hy@pagecounter=\count311
  (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -304,7 +312,7 @@ Now handling font encoding PD1 ...
 ) (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count311
+\Hy@SavedSpaceFactor=\count312
  (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -317,7 +325,7 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count312
+\c@Hy@tempcnt=\count313
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
@@ -334,7 +342,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count313
+\Fld@menulength=\count314
 \Field@Width=\dimen180
 \Fld@charsize=\dimen181
 Package hyperref Info: Hyper figures OFF on input line 6084.
@@ -344,16 +352,16 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count314
-\c@Item=\count315
-\c@Hfootnote=\count316
+\Hy@abspage=\count315
+\c@Item=\count316
+\c@Hfootnote=\count317
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -380,13 +388,13 @@ sty
 y
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen182
 \pgfutil@tempdimb=\dimen183
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box99
+\pgfutil@abb=\box101
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
 code.tex
@@ -405,12 +413,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 .code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
 libraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen184
 \pgf@y=\dimen185
@@ -424,14 +432,14 @@ libraryfiltered.code.tex
 \pgf@yd=\dimen193
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count319
-\c@pgf@countb=\count320
-\c@pgf@countc=\count321
-\c@pgf@countd=\count322
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count323
+\c@pgf@counta=\count320
+\c@pgf@countb=\count321
+\c@pgf@countc=\count322
+\c@pgf@countd=\count323
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count324
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -450,8 +458,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count324
-\pgfsyssoftpath@bigbuffer@items=\count325
+\pgfsyssoftpath@smallbuffer@items=\count325
+\pgfsyssoftpath@bigbuffer@items=\count326
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -468,11 +476,11 @@ code.tex)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
 \pgfmath@dimen=\dimen194
-\pgfmath@count=\count326
-\pgfmath@box=\box100
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@count=\count327
+\pgfmath@box=\box102
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
 ions.code.tex)
@@ -496,7 +504,7 @@ ions.integerarithmetics.code.tex)
 code.tex)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count327
+\c@pgfmathroundto@lastzeros=\count328
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
@@ -533,10 +541,10 @@ File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box101
-\pgf@hbox=\box102
-\pgf@layerbox@main=\box103
-\pgf@picture@serial@count=\count328
+\pgfpic=\box103
+\pgf@hbox=\box104
+\pgf@layerbox@main=\box105
+\pgf@picture@serial@count=\count329
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
@@ -571,8 +579,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 eshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen274
-\pgf@sys@shading@range@num=\count329
-\pgf@shadingcount=\count330
+\pgf@sys@shading@range@num=\count330
+\pgf@shadingcount=\count331
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -581,7 +589,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box104
+\pgfexternal@startupbox=\box106
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -602,7 +610,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box105
+\pgfnodeparttextbox=\box107
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -632,8 +640,8 @@ code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen277
 \pgffor@skip=\dimen278
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z\tikz.code.tex
@@ -642,7 +650,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count331
+\pgf@plot@mark@count=\count332
 \pgfplotmarksize=\dimen279
 )
 \tikz@lastx=\dimen280
@@ -653,23 +661,23 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lastmovetoy=\dimen285
 \tikzleveldistance=\dimen286
 \tikzsiblingdistance=\dimen287
-\tikz@figbox=\box106
-\tikz@figbox@bg=\box107
-\tikz@tempbox=\box108
-\tikz@tempbox@bg=\box109
-\tikztreelevel=\count332
-\tikznumberofchildren=\count333
-\tikznumberofcurrentchild=\count334
-\tikz@fig@count=\count335
+\tikz@figbox=\box108
+\tikz@figbox@bg=\box109
+\tikz@tempbox=\box110
+\tikz@tempbox@bg=\box111
+\tikztreelevel=\count333
+\tikznumberofchildren=\count334
+\tikznumberofcurrentchild=\count335
+\tikz@fig@count=\count336
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count336
-\pgfmatrixcurrentcolumn=\count337
-\pgf@matrix@numberofcolumns=\count338
+\pgfmatrixcurrentrow=\count337
+\pgfmatrixcurrentcolumn=\count338
+\pgf@matrix@numberofcolumns=\count339
 )
-\tikz@expandcount=\count339
+\tikz@expandcount=\count340
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -679,12 +687,12 @@ File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 e.tex
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore
 .code.tex
-\t@pgfplots@toka=\toks34
-\t@pgfplots@tokb=\toks35
-\t@pgfplots@tokc=\toks36
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
 \pgfplots@tmpa=\dimen288
-\c@pgfplots@coordindex=\count340
-\c@pgfplots@scanlineindex=\count341
+\c@pgfplots@coordindex=\count341
+\c@pgfplots@scanlineindex=\count342
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplots
 sysgeneric.code.tex))
@@ -695,9 +703,9 @@ ib\pgfplotsoldpgfsupp_loader.code.tex
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompat
 ib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex))
@@ -709,14 +717,14 @@ e\pgfplotsliststructure.code.tex)
 e\pgfplotsliststructureext.code.tex)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count342
+\c@pgfplotsarray@tmp=\count343
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsmatrix.code.tex)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgf
 plotstableshared.code.tex
-\c@pgfplotstable@counta=\count343
-\t@pgfplotstable@a=\toks40
+\c@pgfplotstable@counta=\count344
+\t@pgfplotstable@a=\toks42
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructur
 e\pgfplotsdeque.code.tex)
@@ -728,7 +736,7 @@ sbinary.data.code.tex))
 sutil.verb.code.tex)
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibr
 arypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count344
+\c@pgfplotslibrarysurf@no=\count345
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibra
 rypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -765,11 +773,11 @@ decorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen291
 \pgfdecoratedinputsegmentremainingdistance=\dimen292
 \pgf@decorate@distancetomove=\dimen293
-\pgf@decorate@repeatstate=\count345
+\pgf@decorate@repeatstate=\count346
 \pgfdecorationsegmentamplitude=\dimen294
 \pgfdecorationsegmentlength=\dimen295
 )
-\tikz@lib@dec@box=\box110
+\tikz@lib@dec@box=\box112
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -781,7 +789,7 @@ z/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ions\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlib
 rarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count346
+\pgfplots@numplots=\count347
 \pgfplots@xmin@reg=\dimen296
 \pgfplots@xmax@reg=\dimen297
 \pgfplots@ymin@reg=\dimen298
@@ -811,12 +819,12 @@ plotstable.coltype.code.tex))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen302
-\ar@mcellbox=\box111
+\ar@mcellbox=\box113
 \extrarowheight=\dimen303
-\NC@list=\toks41
+\NC@list=\toks43
 \extratabsurround=\skip54
 \backup@length=\skip55
-\ar@cellbox=\box112
+\ar@cellbox=\box114
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
@@ -828,7 +836,7 @@ Package: amstext 2024/11/17 v2.01 AMS text
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks42
+\@emptytoks=\toks44
 \ex@=\dimen304
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
@@ -838,19 +846,19 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count347
+\inf@bad=\count348
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count348
-\leftroot@=\count349
+\uproot@=\count349
+\leftroot@=\count350
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count350
-\DOTSCASE@=\count351
+\classnum@=\count351
+\DOTSCASE@=\count352
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box113
-\strutbox@=\box114
+\Mathstrutbox@=\box115
+\strutbox@=\box116
 LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
@@ -858,31 +866,31 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen306
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count352
+\macc@depth=\count353
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count353
+\c@MaxMatrixCols=\count354
 \dotsspace@=\muskip18
-\c@parentequation=\count354
-\dspbrk@lvl=\count355
-\tag@help=\toks43
-\row@=\count356
-\column@=\count357
-\maxfields@=\count358
-\andhelp@=\toks44
+\c@parentequation=\count355
+\dspbrk@lvl=\count356
+\tag@help=\toks45
+\row@=\count357
+\column@=\count358
+\maxfields@=\count359
+\andhelp@=\toks46
 \eqnshift@=\dimen307
 \alignsep@=\dimen308
 \tagshift@=\dimen309
 \tagwidth@=\dimen310
 \totwidth@=\dimen311
 \lineht@=\dimen312
-\@envbody=\toks45
+\@envbody=\toks47
 \multlinegap=\skip57
 \multlinetaggap=\skip58
-\mathdisplay@stack=\toks46
+\mathdisplay@stack=\toks48
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
@@ -898,15 +906,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks47
-\thm@bodyfont=\toks48
-\thm@headfont=\toks49
-\thm@notefont=\toks50
-\thm@headpunct=\toks51
+\thm@style=\toks49
+\thm@bodyfont=\toks50
+\thm@headfont=\toks51
+\thm@notefont=\toks52
+\thm@headpunct=\toks53
 \thm@preskip=\skip59
 \thm@postskip=\skip60
 \thm@headsep=\skip61
-\dth@everypar=\toks52
+\dth@everypar=\toks54
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
@@ -920,12 +928,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen320
 \cmidrulekern=\dimen321
 \defaultaddspace=\dimen322
-\@cmidla=\count359
-\@cmidlb=\count360
+\@cmidla=\count360
+\@cmidlb=\count361
 \@aboverulesep=\dimen323
 \@belowrulesep=\dimen324
-\@thisruleclass=\count361
-\@lastruleclass=\count362
+\@thisruleclass=\count362
+\@lastruleclass=\count363
 \@thisrulewidth=\dimen325
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
@@ -944,35 +952,36 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 Package caption Info: Standard document class detected.
 Package caption Info: french babel package is loaded.
 )
-\c@caption@flags=\count363
-\c@continuedfloat=\count364
+\c@caption@flags=\count364
+\c@continuedfloat=\count365
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip62
-\multirow@cntb=\count365
+\multirow@cntb=\count366
 \multirow@dima=\skip63
 \bigstrutjot=\dimen334
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-\everycr=\toks53
+\everycr=\toks55
 \minrowclearance=\skip64
-\rownum=\count366
+\rownum=\count367
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-\lst@mode=\count367
-\lst@gtempboxa=\box115
-\lst@token=\toks54
-\lst@length=\count368
+\lst@mode=\count368
+\lst@gtempboxa=\box117
+\lst@token=\toks56
+\lst@length=\count369
 \lst@currlwidth=\dimen335
-\lst@column=\count369
-\lst@pos=\count370
+\lst@column=\count370
+\lst@pos=\count371
 \lst@lostspace=\dimen336
 \lst@width=\dimen337
-\lst@newlines=\count371
-\lst@lineno=\count372
+\lst@newlines=\count372
+\lst@lineno=\count373
 \lst@maxwidth=\dimen338
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
@@ -980,9 +989,9 @@ File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count373
-\lst@skipnumbers=\count374
-\lst@framebox=\box116
+\c@lstnumber=\count374
+\lst@skipnumbers=\count375
+\lst@framebox=\box118
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
@@ -999,8 +1008,8 @@ Package: listings 2025/11/14 1.11b (Carsten Heinz)
 Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks55
-\verbatim@line=\toks56
+\every@verbatim=\toks57
+\verbatim@line=\toks58
 \verbatim@in@stream=\read4
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
@@ -1010,27 +1019,27 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 ty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box117
-\tcb@upperbox=\box118
-\tcb@lowerbox=\box119
-\tcb@phantombox=\box120
-\c@tcbbreakpart=\count375
-\c@tcblayer=\count376
-\c@tcolorbox@number=\count377
-\l__tcobox_tmpa_box=\box121
+\tcb@titlebox=\box119
+\tcb@upperbox=\box120
+\tcb@lowerbox=\box121
+\tcb@phantombox=\box122
+\c@tcbbreakpart=\count376
+\c@tcblayer=\count377
+\c@tcolorbox@number=\count378
+\l__tcobox_tmpa_box=\box123
 \l__tcobox_tmpa_dim=\dimen339
-\tcb@temp=\box122
-\tcb@temp=\box123
 \tcb@temp=\box124
 \tcb@temp=\box125
+\tcb@temp=\box126
+\tcb@temp=\box127
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
 e.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.9.0'
-\c@tcbrastercolumn=\count378
-\c@tcbrasterrow=\count379
-\c@tcbrasternum=\count380
-\c@tcbraster=\count381
+\c@tcbrastercolumn=\count379
+\c@tcbrasterrow=\count380
+\c@tcbrasternum=\count381
+\c@tcbraster=\count382
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
 .tex
@@ -1047,7 +1056,7 @@ Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
 l.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box126
+\l__tikzfill_img_box=\box128
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
 w.code.tex
@@ -1060,9 +1069,9 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box127
-\tcb@totalupperbox=\box128
-\tcb@totallowerbox=\box129
+\tcb@testbox=\box129
+\tcb@totalupperbox=\box130
+\tcb@totallowerbox=\box131
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
 .tex
@@ -1078,7 +1087,7 @@ Library (tcolorbox): 'tcbfitting.code.tex' version '6.9.0'
 \tcbfitdim=\dimen340
 \tcb@lowerfitdim=\dimen341
 \tcb@upperfitdim=\dimen342
-\tcb@cur@hbadness=\count382
+\tcb@cur@hbadness=\count383
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
 f8.code.tex
@@ -1096,7 +1105,7 @@ Library (tcolorbox): 'tcblistingscore.code.tex' version '6.9.0'
 .code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.9.0'
 )
-\c@tcblisting=\count383
+\c@tcblisting=\count384
 ))
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
 f8.sty
@@ -1143,37 +1152,37 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip76
 \f@nch@widthC=\skip77
 \f@nch@widthR=\skip78
-\@temptokenb=\toks57
+\@temptokenb=\toks59
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count384
+\l__color_backend_stack_int=\count385
 ) (Code rapport final.aux
 Package babel Info: 'french' activates 'french' shorthands.
 (babel)             Reported on input line 11.
 )
 \openout1 = `"Code rapport final.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 98.
-LaTeX Font Info:    ... okay on input line 98.
-LaTeX Info: Redefining \degres on input line 98.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Info: Redefining \degres on input line 99.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1213,17 +1222,17 @@ LaTeX Info: Redefining \degres on input line 98.
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count385
+\scratchcounter=\count386
 \scratchdimen=\dimen343
-\scratchbox=\box130
-\nofMPsegments=\count386
-\nofMParguments=\count387
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count388
+\scratchbox=\box132
+\nofMPsegments=\count387
+\nofMParguments=\count388
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count389
 \MPscratchDim=\dimen344
-\MPnumerator=\count389
-\makeMPintoPDFobject=\count390
-\everyMPtoPDFconversion=\toks59
+\MPnumerator=\count390
+\makeMPintoPDFobject=\count391
+\everyMPtoPDFconversion=\toks61
 )
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1235,7 +1244,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 98.
+Package hyperref Info: Link coloring OFF on input line 99.
  (Code rapport final.out) (Code rapport final.out)
 \@outlinefile=\write4
 \openout4 = `"Code rapport final.out"'.
@@ -1247,18 +1256,18 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count391
-<logo.png, id=260, 903.375pt x 474.27188pt>
+\c@lstlisting=\count392
+<logo.png, id=236, 903.375pt x 474.27188pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 100.
+Package pdftex.def Info: logo.png  used on input line 101.
 (pdftex.def)             Requested size: 113.81102pt x 59.747pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 100
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101
 .
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 100
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101
 .
 
 (C:\Users\roman\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1272,7 +1281,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.37 ...3.3}Calcul de $U_m$}{24}{subsection.6.3.3}
+l.35 ...ter}{Tableaux de valeurs}{26}{chapter*.26}
                                                   % [1
 
 ])
@@ -1280,10 +1289,10 @@ l.37 ...3.3}Calcul de $U_m$}{24}{subsection.6.3.3}
 \openout5 = `"Code rapport final.toc"'.
 
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 104.
+(babel)             Reported on input line 105.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 104.
+Package pdftex.def Info: logo.png  used on input line 105.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1296,12 +1305,12 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [2]
 Chapitre 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--108
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
@@ -1310,30 +1319,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
 ]
 Chapitre 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 212--214
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 232.
+Package pdftex.def Info: logo.png  used on input line 233.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1343,19 +1352,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [5]
-Overfull \hbox (1.55287pt too wide) in paragraph at lines 240--241
+Overfull \hbox (1.55287pt too wide) in paragraph at lines 241--242
 []\T1/cmr/m/n/12 Le prin-cipe de l'ané-mo-mé-trie à fil chaud ATC est de main-t
 e-nir la tem-pé-ra-ture constante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 256.
+Package pdftex.def Info: logo.png  used on input line 257.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1367,45 +1376,45 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [6]
 Chapitre 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 347.
+Package pdftex.def Info: logo.png  used on input line 348.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1415,19 +1424,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [8]
-<Images/0 graphique.png, id=381, 492.33937pt x 423.83344pt>
+<Images/0 graphique.png, id=351, 492.33937pt x 423.83344pt>
 File: Images/0 graphique.png Graphic file (type png)
 <use Images/0 graphique.png>
-Package pdftex.def Info: Images/0 graphique.png  used on input line 368.
+Package pdftex.def Info: Images/0 graphique.png  used on input line 369.
 (pdftex.def)             Requested size: 170.71654pt x 146.95995pt.
 
-Underfull \hbox (badness 2781) in paragraph at lines 369--369
+Underfull \hbox (badness 2781) in paragraph at lines 370--370
 []\T1/cmr/m/sc/12 Figure 3.1 \T1/cmr/m/n/12 ^^U |Re-pré-sen-ta-tion
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 389.
+Package pdftex.def Info: logo.png  used on input line 390.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1438,59 +1447,59 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 
 [9 <./Images/0 graphique.png>]
 Chapitre 4.
-<Images/1 montage sortie tuyau 1 small.png, id=388, 669.50125pt x 501.875pt>
+<Images/1 montage sortie tuyau 1 small.png, id=358, 669.50125pt x 501.875pt>
 File: Images/1 montage sortie tuyau 1 small.png Graphic file (type png)
 <use Images/1 montage sortie tuyau 1 small.png>
 Package pdftex.def Info: Images/1 montage sortie tuyau 1 small.png  used on inp
-ut line 399.
+ut line 400.
 (pdftex.def)             Requested size: 218.51521pt x 163.8043pt.
-<Images/2 montage sortie tuyau 2 small.png, id=389, 501.875pt x 501.875pt>
+<Images/2 montage sortie tuyau 2 small.png, id=359, 501.875pt x 501.875pt>
 File: Images/2 montage sortie tuyau 2 small.png Graphic file (type png)
 <use Images/2 montage sortie tuyau 2 small.png>
 Package pdftex.def Info: Images/2 montage sortie tuyau 2 small.png  used on inp
-ut line 406.
+ut line 407.
 (pdftex.def)             Requested size: 170.71654pt x 170.71947pt.
 [10
 
  <./Images/1 montage sortie tuyau 1 small.png> <./Images/2 montage sortie tuyau
  2 small.png>]
-<Images/3 Manometre small.png, id=400, 669.50125pt x 501.875pt>
+<Images/3 Manometre small.png, id=370, 669.50125pt x 501.875pt>
 File: Images/3 Manometre small.png Graphic file (type png)
 <use Images/3 Manometre small.png>
-Package pdftex.def Info: Images/3 Manometre small.png  used on input line 441.
+Package pdftex.def Info: Images/3 Manometre small.png  used on input line 442.
 (pdftex.def)             Requested size: 141.12456pt x 105.78741pt.
-<Images/4 Streamlines Hardware small.png, id=401, 669.50125pt x 501.875pt>
+<Images/4 Streamlines Hardware small.png, id=371, 669.50125pt x 501.875pt>
 File: Images/4 Streamlines Hardware small.png Graphic file (type png)
 <use Images/4 Streamlines Hardware small.png>
 Package pdftex.def Info: Images/4 Streamlines Hardware small.png  used on input
- line 448.
+ line 449.
 (pdftex.def)             Requested size: 141.12456pt x 105.78741pt.
 
-Underfull \hbox (badness 5475) in paragraph at lines 449--449
+Underfull \hbox (badness 5475) in paragraph at lines 450--450
 []\T1/cmr/m/sc/12 Figure 4.4 \T1/cmr/m/n/12 ^^U |Ma-té-riel
  []
 
-<Images/5 Boitier acquisition small.png, id=402, 235.1419pt x 176.2683pt>
+<Images/5 Boitier acquisition small.png, id=372, 235.1419pt x 176.2683pt>
 File: Images/5 Boitier acquisition small.png Graphic file (type png)
 <use Images/5 Boitier acquisition small.png>
 Package pdftex.def Info: Images/5 Boitier acquisition small.png  used on input 
-line 455.
+line 456.
 (pdftex.def)             Requested size: 141.12456pt x 105.78868pt.
-<Images/6 fil chaud 1 small.png, id=409, 501.875pt x 501.875pt>
+<Images/6 fil chaud 1 small.png, id=379, 501.875pt x 501.875pt>
 File: Images/6 fil chaud 1 small.png Graphic file (type png)
 <use Images/6 fil chaud 1 small.png>
-Package pdftex.def Info: Images/6 fil chaud 1 small.png  used on input line 486
+Package pdftex.def Info: Images/6 fil chaud 1 small.png  used on input line 487
 .
 (pdftex.def)             Requested size: 153.64384pt x 153.64217pt.
-<Images/7 fil chaud 2 small.png, id=410, 501.875pt x 501.875pt>
+<Images/7 fil chaud 2 small.png, id=380, 501.875pt x 501.875pt>
 File: Images/7 fil chaud 2 small.png Graphic file (type png)
 <use Images/7 fil chaud 2 small.png>
-Package pdftex.def Info: Images/7 fil chaud 2 small.png  used on input line 493
+Package pdftex.def Info: Images/7 fil chaud 2 small.png  used on input line 494
 .
 (pdftex.def)             Requested size: 153.64384pt x 153.64217pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 501.
+Package pdftex.def Info: logo.png  used on input line 502.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1502,23 +1511,13 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [11 <./Images/3 Manometre small.png> <./Images/4 Streamlines Hardware small.png
 > <./Images/5 Boitier acquisition small.png> <./Images/6 fil chaud 1 small.png>
  <./Images/7 fil chaud 2 small.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--570
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 580.
+Package pdftex.def Info: logo.png  used on input line 583.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1528,32 +1527,24 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 588--589
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
-<Images/8 fil chaud xD.png, id=430, 468.24937pt x 128.73094pt>
+<Images/8 fil chaud xD.png, id=399, 468.24937pt x 128.73094pt>
 File: Images/8 fil chaud xD.png Graphic file (type png)
 <use Images/8 fil chaud xD.png>
 Package pdftex.def Info: Images/8 fil chaud xD.png  used on input line 594.
 (pdftex.def)             Requested size: 227.62206pt x 62.5778pt.
-<Images/9.1 reglage streamline.png, id=432, 350.81062pt x 212.29312pt>
+<Images/9.1 reglage streamline.png, id=401, 350.81062pt x 212.29312pt>
 File: Images/9.1 reglage streamline.png Graphic file (type png)
 <use Images/9.1 reglage streamline.png>
 Package pdftex.def Info: Images/9.1 reglage streamline.png  used on input line 
 607.
 (pdftex.def)             Requested size: 409.71692pt x 247.9576pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 612--613
-
- []
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 616.
+Package pdftex.def Info: logo.png  used on input line 611.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1563,44 +1554,25 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [13 <./Images/8 fil chaud xD.png>]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 617.
-(pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
+ []
 
-Package fancyhdr Warning: \headheight is too small (33.75pt): 
-(fancyhdr)                Make it at least 34.22353pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.22353pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
-
-[14 <./Images/9.1 reglage streamline.png>]
-<Images/9.2 resultat graphique.png, id=446, 350.81062pt x 316.18124pt>
+<Images/9.2 resultat graphique.png, id=409, 350.81062pt x 316.18124pt>
 File: Images/9.2 resultat graphique.png Graphic file (type png)
 <use Images/9.2 resultat graphique.png>
 Package pdftex.def Info: Images/9.2 resultat graphique.png  used on input line 
-622.
+623.
 (pdftex.def)             Requested size: 163.88739pt x 147.71266pt.
-<Images/9.3 erreur graphique.png, id=447, 350.81062pt x 285.31593pt>
+<Images/9.3 erreur graphique.png, id=410, 350.81062pt x 285.31593pt>
 File: Images/9.3 erreur graphique.png Graphic file (type png)
 <use Images/9.3 erreur graphique.png>
-Package pdftex.def Info: Images/9.3 erreur graphique.png  used on input line 62
-9.
+Package pdftex.def Info: Images/9.3 erreur graphique.png  used on input line 63
+0.
 (pdftex.def)             Requested size: 184.37135pt x 149.95418pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 635--636
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 647--648
-
- []
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 670.
+Package pdftex.def Info: logo.png  used on input line 642.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1609,10 +1581,11 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[15 <./Images/9.2 resultat graphique.png> <./Images/9.3 erreur graphique.png>]
+[14 <./Images/9.1 reglage streamline.png> <./Images/9.2 resultat graphique.png>
+ <./Images/9.3 erreur graphique.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 689.
+Package pdftex.def Info: logo.png  used on input line 691.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1622,44 +1595,61 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[16]
+[15]
 Chapitre 5.
-<Images/0.1 comsol tube.png, id=463, 566.86781pt x 267.24844pt>
+<Images/0.1 comsol tube.png, id=427, 566.86781pt x 267.24844pt>
 File: Images/0.1 comsol tube.png Graphic file (type png)
 <use Images/0.1 comsol tube.png>
-Package pdftex.def Info: Images/0.1 comsol tube.png  used on input line 693.
+Package pdftex.def Info: Images/0.1 comsol tube.png  used on input line 695.
 (pdftex.def)             Requested size: 409.71692pt x 193.16498pt.
-<Images/0.2 comsol graphiques.png, id=464, 566.86781pt x 268.00125pt>
+<Images/0.2 comsol graphiques.png, id=428, 566.86781pt x 268.00125pt>
 File: Images/0.2 comsol graphiques.png Graphic file (type png)
 <use Images/0.2 comsol graphiques.png>
 Package pdftex.def Info: Images/0.2 comsol graphiques.png  used on input line 7
-00.
+02.
 (pdftex.def)             Requested size: 409.71692pt x 193.70909pt.
-[17
+[16
 
  <./Images/0.1 comsol tube.png> <./Images/0.2 comsol graphiques.png>]
 Chapitre 6.
-[18
+[17
 
 ]
 
-LaTeX Warning: Command \' invalid in math mode on input line 800.
+LaTeX Warning: Command \' invalid in math mode on input line 827.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 800.
-
-Missing character: There is no é in font cmr8!
-Missing character: There is no é in font cmr8!
-
-LaTeX Warning: Command \' invalid in math mode on input line 801.
+LaTeX Warning: Command \' invalid in math mode on input line 827.
 
 Missing character: There is no é in font cmr8!
+Missing character: There is no é in font cmr8!
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Command \' invalid in math mode on input line 828.
 
+Missing character: There is no é in font cmr8!
+
+Underfull \hbox (badness 10000) in paragraph at lines 912--914
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 915--916
+
+ []
+
+<Images/matlab.png, id=442, 1003.95074pt x 529.98pt>
+File: Images/matlab.png Graphic file (type png)
+<use Images/matlab.png>
+Package pdftex.def Info: Images/matlab.png  used on input line 921.
+(pdftex.def)             Requested size: 409.71692pt x 216.28233pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 870.
+Package pdftex.def Info: logo.png  used on input line 925.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1668,14 +1658,11 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[19]
+[18]
+Package pgfplots info on input line 1018: Using 'lua backend=false' for axis: x
+mode=log unsupported (yet).
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package pgfplots info on input line 976: Using 'lua backend=false' for axis: xm
-ode=log unsupported (yet).
-
-Underfull \hbox (badness 10000) in paragraph at lines 984--984
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1026
 []\T1/cmr/m/sc/12 Table 6.4 \T1/cmr/m/n/12 ^^U |Gra-phique semi-
  []
 
@@ -1683,18 +1670,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 984--984
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 988--989
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 995--996
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1031
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 996.
+Package pdftex.def Info: logo.png  used on input line 1035.
+(pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
+
+Package fancyhdr Warning: \headheight is too small (33.75pt): 
+(fancyhdr)                Make it at least 34.22353pt, for example:
+(fancyhdr)                \setlength{\headheight}{34.22353pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
+
+[19 <./Images/matlab.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1037--1038
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1040--1041
+
+ []
+
+
+Overfull \hbox (4.59688pt too wide) in paragraph at lines 1112--1113
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package pgfplots info on input line 1133: Using 'lua backend=false' for axis: x
+mode=log unsupported (yet).
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 1174.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1704,18 +1720,39 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 998--999
 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (4.59688pt too wide) in paragraph at lines 1070--1071
- [][] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 1242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1242.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1073.
+Package pdftex.def Info: logo.png  used on input line 1251.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1725,13 +1762,22 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [21]
-Package pgfplots info on input line 1091: Using 'lua backend=false' for axis: x
-mode=log unsupported (yet).
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1255.
+
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1132.
+Package pdftex.def Info: logo.png  used on input line 1269.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
-
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
 (fancyhdr)                Make it at least 34.22353pt, for example:
@@ -1740,34 +1786,11 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [22]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1200.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1200.
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1210.
+Package pdftex.def Info: logo.png  used on input line 1362.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
+
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
 (fancyhdr)                Make it at least 34.22353pt, for example:
@@ -1776,33 +1799,9 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [23]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1213.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1213.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1213.
-
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1264.
-(pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
-
-Package fancyhdr Warning: \headheight is too small (33.75pt): 
-(fancyhdr)                Make it at least 34.22353pt, for example:
-(fancyhdr)                \setlength{\headheight}{34.22353pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
-
-[24]
-File: logo.png Graphic file (type png)
-<use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1320.
+Package pdftex.def Info: logo.png  used on input line 1362.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1812,19 +1811,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[25] [26
+[24] [25
 
 ]
-Overfull \hbox (8.11958pt too wide) in paragraph at lines 1369--1391
+Overfull \hbox (8.11958pt too wide) in paragraph at lines 1411--1433
  [][] 
  []
 
-[27
+[26
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1454.
+Package pdftex.def Info: logo.png  used on input line 1496.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1834,25 +1833,25 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[28]
+[27]
 pdfTeX warning (ext4): destination with the same identifier (name{section.1.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1455 	\section{Introduction}
+l.1497 	\section{Introduction}
                               
-Overfull \hbox (10.24738pt too wide) in paragraph at lines 1465--1466
+Overfull \hbox (10.24738pt too wide) in paragraph at lines 1507--1508
 []\T1/cmr/bx/n/12 Système d'ac-qui-si-tion : \T1/cmr/m/n/12 Boî-tier ma-té-riel
  \T1/cmr/bx/n/12 Stream-line \T1/cmr/m/n/12 pi-loté par le lo-gi-ciel \T1/cmr/b
 x/n/12 Stream-
  []
 
-[29
+[28
 
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1528.
+Package pdftex.def Info: logo.png  used on input line 1570.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1862,10 +1861,10 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[30]
+[29]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1533.
+Package pdftex.def Info: logo.png  used on input line 1575.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1875,68 +1874,60 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
-[31] (Code rapport final.aux)
+[30] (Code rapport final.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
-
-
-Package rerunfilecheck Warning: File `"Code rapport final".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"Code rapport final".out':
-(rerunfilecheck)             Before: 51B3171FC97390B1C51094929DAC5B09;10947
-(rerunfilecheck)             After:  5843025A189089DA72892C4C387B78EB;11029.
+Package rerunfilecheck Info: File `"Code rapport final".out' has not changed.
+(rerunfilecheck)             Checksum: CEC4C409F4B1A60A2F54DB913FA649C9;9429.
  ) 
 Here is how much of TeX's memory you used:
- 42945 strings out of 467867
- 1016375 string characters out of 5418335
- 1602147 words of memory out of 5000000
- 71061 multiletter control sequences out of 15000+600000
- 652927 words of font info for 100 fonts, out of 8000000 for 9000
+ 42943 strings out of 467867
+ 1016308 string characters out of 5418335
+ 1619269 words of memory out of 5000000
+ 71063 multiletter control sequences out of 15000+600000
+ 652590 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,21n,108p,846b,2384s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,21n,108p,846b,2367s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
 1095.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecbx1095.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecrm1000.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\tcrm1200.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\roman\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\roman\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\roman\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0600.pk> <C:\Users\roman\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\
-roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\
-Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk
-> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1
+pen/ec/dpi600\ecti1200.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\roman\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\roman\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\roman\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0600.pk> <C:\Users\roman\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\roman\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\
+roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsl1200.pk> <C:\
+Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1
 200.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
-\ecbx1200.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecti1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\ecrm1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/
-jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\eccc1440.pk><C:/Users/roman/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/roman/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/roman/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/roman
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Use
-rs/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr5.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/roman/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/roman/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/roman/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/roman/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Code rapport final.pdf" (32 pages, 3596286 bytes).
+\ecti1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
+dpi600\ecrm1440.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx2488.pk> <C:\Users\roman\AppData\Local\MiKTeX\fonts/pk/ljfour/
+jknappen/ec/dpi600\eccc1440.pk><C:/Users/roman/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/roman/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/roman/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/roman/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/rom
+an/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/U
+sers/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr12.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr5.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr6.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/roman/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/roman/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/roman/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Code rapport final.pdf" (31 pages, 3623918 bytes).
 PDF statistics:
- 1312 PDF objects out of 1440 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 672 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1245 PDF objects out of 1440 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 629 words of extra memory for PDF output out of 10000 (max. 10000000)
 
