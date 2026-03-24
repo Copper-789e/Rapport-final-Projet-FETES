@@ -705,7 +705,7 @@
 	\section{Résultats des simulations numériques}
 	\subsection{Profil de vitesse sur la longueur}
 	
-	L'avantage de la simulation sur \textsc{Comsol} est que l'on peut évaluer un grand nombre de paramètres et variables sur tout l'objet, là où les expériences ne peuvent en mesurer qu'une partie et sur un endroit localisé. En particulier, il a été possible de modéliser le profil de vitesse au centre, et le développement de la couche limite le long du tuyau, alors que le matériel expérimental nous restreint à l'étude de la section de sortie.
+	Le grand avantage de la simulation sur \textsc{Comsol} est que l'on peut évaluer un grand nombre de paramètres et variables sur tout l'objet, là où les expériences ne peuvent en mesurer qu'une partie et sur un endroit localisé. En particulier, il a été possible de modéliser le profil de vitesse au centre, et le développement de la couche limite le long du tuyau, alors que le matériel expérimental nous restreint à l'étude de la section de sortie.
 	
 	\begin{figure}[h!]
 		\centering
@@ -733,7 +733,7 @@
 	
 	\noindent Il a également été possible d'étudier le développement de la couche limite le long du tuyau en regardant son épaisseur. L'épaisseur de la couche limite $e$ est définie telle que :
 	\begin{equation*}
-		U(x,e) = 0.99*U_{max}(x) = 0.99*U(x,R)
+		U(x,e) = 0.99*U_{max}(x) = 0.99*U(x,D/2)
 	\end{equation*}
 	
 	\vspace{-8mm}
@@ -744,10 +744,13 @@
 		\label{comsol_couche_limite}
 	\end{figure}
 	
-	\noindent On voit que l'épaisseur de la couche limite, pour $U_e = 7.17$ m/s, continue d'augmenter jusqu'à la sortie du tuyau (figure \ref{comsol_couche_limite}). Cela confirme l'idée que le système n'a pas atteint de régime final, malgré le fait que la vitesse a déjà atteint son maximum.
+	\noindent On voit que l'épaisseur de la couche limite, pour $U_e = 7.17$ m/s, continue d'augmenter jusqu'à la sortie du tuyau (figure \ref{comsol_couche_limite}). Cela confirme l'idée que le système n'a pas atteint de régime final, malgré le fait que la vitesse a déjà atteint son maximum.\\
+	
+	\noindent Par ailleurs, pour cette même vitesse d'entrée, en se rappelant que le rayon du tuyau vaut $D/2 = 63$ mm, on remarque bien que la couche limite représente jusqu'à 90\% du rayon du tuyau, ce qui correspond à 99\% de sa section totale. Les résultats sont comparables pour les deux autres vitesses étudiées, il s'agit donc d'une conséquence de la géométrie et des dimensions du système.  
 	
 	\subsection{Profil de vitesse dans la section de sortie}
-	Pour les trois valeurs de vitesse d'entrée, les figures suivantes montrent des profils de vitesse similaires au niveau de la section de sortie :
+	On s'intéresse désormais aux profils de vitesse dans la section de sortie, données que l'on pourra ensuite comparer avec les mesures expérimentales obtenues.
+	
 	\begin{figure}[h]
 	    \centering
 		\includegraphics[width=0.90\linewidth]{Images/0.1 comsol tube.png}
@@ -762,6 +765,9 @@
 		\label{comsol_profil_vitesse_sortie_1D}
 	\end{figure}
 	
+	\noindent Les figures \ref{comsol_profil_vitesse_tuyau} et \ref{comsol_profil_vitesse_sortie_1D}) ci-dessus  montrent comment est répartie la vitesse dans la section de sortie. On y voit qu'elle augmente très rapidement au niveau de la paroi, avant de suivre une évolution bien plus lente. Globalement, pour les trois vitesses d'entrée, cette rupture de pente apparaît au bout de quelques millimètres.\\
+	
+	\noindent L'évolution suit une tendance plutôt logarithmique, caractéristique des écoulements turbulents en proche paroi (loi logarithmique de Von Kármán).
 	
 	\chapter{Résultats et Discussion}
 
