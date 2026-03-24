@@ -688,19 +688,77 @@
 %	\end{equation*}
 %	Où $\nu$ est la viscosité cinématique de l'air ($\approx 1,5 \cdot 10^{-5}$ m$^2$/s à 20°C).
 	
-	\chapter{Modélisation sur COMSOL Multiphysics}
+	\chapter{Modélisation sur \textsc{COMSOL Multiphysics}}
+	Il est intéressant d'effectuer une modélisation numérique afin de pouvoir la comparer avec les futurs résultats expérimentaux et de voir si nos hypothèses et protocoles sont cohérents, notamment pour l'étude de la couche limite. Nous avons procédé à ces simulations numériques sur le logiciel \textsc{COMSOL Multiphysics} ; ce chapitre a pour but de les expliquer et d'en montrer les résultats.
 	
-	\begin{figure}[h]
+	\section{Modèle}
+	On étudie un écoulement 2D axisymétrique, stationnaire, en régime turbulent. La première étape est donc de choisir le modèle de turbulence à utiliser pour notre simulation.\\
+	
+	\noindent Parmi les nombreux modèles de turbulence gérés par \textsc{Comsol}, on retiendra le \textbf{modèle k-}$\boldsymbol{\omega}$, pour sa simplicité et son efficacité pour décrire le comportement de l'écoulement de fluides proche des parois. On prendra l'hypothèse que l'écoulement est compressible avec un nombre de Mach inférieur à $0.3$.\\
+	
+	\noindent On applique par ailleurs une condition de non-glissement du fluide sur la paroi du tuyau, une vitesse en entrée constante et uniforme, et une pression en sortie nulle sur toute la section.\\
+	
+	\noindent On remarque que pour les simulations sur \textsc{Comsol}, on a besoin de donner une valeur de vitesse en entrée du tuyau. Cependant, cette vitesse n'est pas connue lors des expériences, la seule chose que nous pouvons mesurer facilement est la vitesse moyenne de l'air en sortie. Pour pouvoir comparer les simulations et les expériences, il a donc fallu mesurer la vitesse moyenne au centre de la section de sortie du tuyau, et faire en sorte que la vitesse d'entrée imposée dans la simulation permette d'obtenir la bonne vitesse en sortie.\\
+	
+	\noindent On a ainsi réalisé 3 études \textsc{Comsol} avec pour valeurs de vitesse d'entrée $U_e = 1.45$ m/s, $U_e = 7.17$ m/s et $U_e = 14.89$ m/s, qui permettent d'avoir des vitesses en sortie au centre respectivement de $U_s = 2$ m/s, $U_s = 9$ m/s et $U_s = 18$ m/s.
+	
+	\section{Résultats des simulations numériques}
+	\subsection{Profil de vitesse sur la longueur}
+	
+	L'avantage de la simulation sur \textsc{Comsol} est que l'on peut évaluer un grand nombre de paramètres et variables sur tout l'objet, là où les expériences ne peuvent en mesurer qu'une partie et sur un endroit localisé. En particulier, il a été possible de modéliser le profil de vitesse au centre, et le développement de la couche limite le long du tuyau, alors que le matériel expérimental nous restreint à l'étude de la section de sortie.
+	
+	\begin{figure}[h!]
 		\centering
+		\includegraphics[width=0.80\linewidth]{Images/0.3_comsol_vcentre_145}
+		\caption{Vitesse maximale dans le tuyau pour $U_e = 1.45$ m/s}
+		\label{comsol_profil_de_vitesse_145}
+	\end{figure}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.80\linewidth]{Images/0.4_comsol_vcentre_7.17}
+		\caption{Vitesse maximale dans le tuyau pour $U_e = 7.17$ m/s}
+		\label{comsol_profil_de_vitesse_717}
+	\end{figure}
+	
+	\noindent On remarque quelque chose d'intéressant pour les basses vitesses d'entrée : la vitesse maximale diminue dans le tuyau une fois passée une certaine distance. On voit apparaître un maximum pour la vitesse d'entrée de 1.45 m/s (figure \ref{comsol_profil_de_vitesse_145}), ainsi que pour $U_e = 7.17$ m/s (figure \ref{comsol_profil_de_vitesse_717}), plus tardivement, mais pas pour $U_e = 14.89$ m/s  (figure \ref{comsol_profil_de_vitesse_1489} ci-dessous).\\
+	
+	\noindent Une autre simulation numérique à vitesse moyenne avec un tube plus long (8m au lieu de 5m) a montré que la vitesse maximale se stabilisait à partir d'une certaine distance. Il semble alors que ce phénomène est lié à une sorte de transition avant d'atteindre le régime permanent dans le tuyau. 
+		
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.80\linewidth]{Images/0.5_comsol_vcentre_1489}
+		\caption{Vitesse maximale dans le tuyau pour $U_e = 14.89$ m/s}
+		\label{comsol_profil_de_vitesse_1489}
+	\end{figure}
+	
+	\noindent Il a également été possible d'étudier le développement de la couche limite le long du tuyau en regardant son épaisseur. L'épaisseur de la couche limite $e$ est définie telle que :
+	\begin{equation*}
+		U(x,e) = 0.99*U_{max}(x) = 0.99*U(x,R)
+	\end{equation*}
+	
+	\vspace{-8mm}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=0.80\linewidth]{Images/0.6_comsol_couche_limite}
+		\caption{Épaisseur de la couche limite le long du tuyau pour $U_e = 7.17$ m/s}
+		\label{comsol_couche_limite}
+	\end{figure}
+	
+	\noindent On voit que l'épaisseur de la couche limite, pour $U_e = 7.17$ m/s, continue d'augmenter jusqu'à la sortie du tuyau (figure \ref{comsol_couche_limite}). Cela confirme l'idée que le système n'a pas atteint de régime final, malgré le fait que la vitesse a déjà atteint son maximum.
+	
+	\subsection{Profil de vitesse dans la section de sortie}
+	Pour les trois valeurs de vitesse d'entrée, les figures suivantes montrent des profils de vitesse similaires au niveau de la section de sortie :
+	\begin{figure}[h]
+	    \centering
 		\includegraphics[width=0.90\linewidth]{Images/0.1 comsol tube.png}
-		\caption{test}
+		\caption{Profil de vitesse 2D en sortie du tuyau pour $U_e = 7.17$ m/s}
 		\label{comsol_profil_vitesse_tuyau}
 	\end{figure}
 	
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.90\linewidth]{Images/0.2 comsol graphiques.png}
-		\caption{test}
+		\caption{Profils de vitesse 1D en sortie du tuyau}
 		\label{comsol_profil_vitesse_sortie_1D}
 	\end{figure}
 	
