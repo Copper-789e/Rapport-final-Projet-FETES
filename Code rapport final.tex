@@ -765,7 +765,7 @@
 		\label{comsol_profil_vitesse_sortie_1D}
 	\end{figure}
 	
-	\noindent Les figures \ref{comsol_profil_vitesse_tuyau} et \ref{comsol_profil_vitesse_sortie_1D}) ci-dessus  montrent comment est répartie la vitesse dans la section de sortie. On y voit qu'elle augmente très rapidement au niveau de la paroi, avant de suivre une évolution bien plus lente. Globalement, pour les trois vitesses d'entrée, cette rupture de pente apparaît au bout de quelques millimètres.\\
+	\noindent Les figures \ref{comsol_profil_vitesse_tuyau} et \ref{comsol_profil_vitesse_sortie_1D} ci-dessus  montrent comment est répartie la vitesse dans la section de sortie. On y voit qu'elle augmente très rapidement au niveau de la paroi, avant de suivre une évolution bien plus lente. Globalement, pour les trois vitesses d'entrée, cette rupture de pente apparaît au bout de quelques millimètres.\\
 	
 	\noindent L'évolution suit une tendance plutôt logarithmique, caractéristique des écoulements turbulents en proche paroi (loi logarithmique de Von Kármán).
 	
@@ -892,9 +892,9 @@ Ce mesure du profil de vitesse avec le tube de Pitot nous permet d'observer qu'a
 		\item Conversion : $\Delta P_{Pa} = \rho_{H_2O} g \Delta P_{réel} 10^{-3} = 126,40 \, Pa$
 	\end{itemize}
 	
-	La vitesse calculée $U_{cal}$ est ensuite obtenue par la relation :
+	La vitesse mesurée grâce au manomètre $U_{mano}$ est ensuite obtenue par la relation :
 	\begin{equation*}
-		\boxed{U_{cal} = \sqrt{\frac{2 \Delta P_{Pa}}{\rho_{air}}}}
+		\boxed{U_{mano} = \sqrt{\frac{2 \Delta P_{Pa}}{\rho_{air}}}}
 	\end{equation*}
 	
 %	\begin{center}
@@ -911,7 +911,7 @@ Ce mesure du profil de vitesse avec le tube de Pitot nous permet d'observer qu'a
 %		\end{tabular}
 %	\end{center}
 	
-	\subsection{détermination des constantes A,B,n}	
+	\subsection{Détermination des constantes A,B,n}	
 %	Nous faisons la même procédure que pour le fil chaud de la section précédente avec les caractéristiques suivantes :
 %	\begin{itemize}
 %		\item 55R01
@@ -1006,7 +1006,7 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 			\centering
 			\begin{tabular}{|c|c|c|c|}
 				\hline
-				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{z\_cal} \\ \hline
+				\textbf{$z_{mes}$} & \textbf{$E$} & \textbf{$U_{fil}$} & \textbf{$z$} \\ \hline
 				234   & 1,79 & 1,75  & 52,5 \\ \hline
 				255   & 1,77 & 1,60  & 31,5 \\ \hline
 				265   & 1,75 & 1,39  & 21,5 \\ \hline
@@ -1026,9 +1026,9 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 		\begin{minipage}{0.3\textheight}
 			\begin{tikzpicture}
 				\begin{axis}[
-					title={Série 2 : $U_{cal}$ en fonction de $z_{cal}$},
-					xlabel={$z_{cal}$},
-					ylabel={$U_{cal}$},
+					title={Série 2 : $U_{fil}$ en fonction de $z$},
+					xlabel={$z$},
+					ylabel={$U_{fil}$},
 					grid=major,
 					width=7cm, height=6cm,
 					scatter/classes={
@@ -1051,7 +1051,7 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 			\centering
 			\begin{tabular}{|c|c|c|c|}
 				\hline
-				\textbf{z} & \textbf{E} & \textbf{U\_cal} & \textbf{$\log(z_{cal})$} \\ \hline
+				\textbf{$z_{mes}$} & \textbf{$E$} & \textbf{$U_{fil}$} & \textbf{$\log{z}$} \\ \hline
 				234   & 1,79 & 1,75  & 1,72 \\ \hline
 				255   & 1,77 & 1,60  & 1,50 \\ \hline
 				265   & 1,75 & 1,39  & 1,33 \\ \hline
@@ -1072,8 +1072,8 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 			\begin{tikzpicture}
 				\begin{axis}[
 					title={Série 2 : Profil semi-log},
-					xlabel={$z_{cal}$ (échelle log)},
-					ylabel={$U_{cal}$},
+					xlabel={$z$ (échelle log)},
+					ylabel={$U_{fil}$},
 					xmode=log, % <--- Active l'échelle logarithmique sur l'axe X
 					log ticks with fixed point, % Pour afficher 1, 10 au lieu de 10^0, 10^1
 					grid=both, % Grille plus fine pour le log
@@ -1113,9 +1113,12 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 
 	
 	\section{Étude de la couche limite}
-	Nous avons étudié la couche limite à deux puissances différentes de la soufflerie, nous avons relevé les valeurs de vitesse, et de position. Grâce à la solution Dantec.	
+	Le fil ayant été calibré, il est maintenant possible de l'utiliser pour mesurer précisément les vitesses et caractériser la turbulence. La première manière d'y parvenir est de faire l'étude de la couche limite, dont le profil de vitesse est caractéristique dans les écoulements turbulents.
 	
-	\begin{figure}[h]
+	\subsection{Profil de vitesse dans la couche limite}
+	On peut comparer les mesures de vitesse obtenues avec le fil chaud dans la section de sortie du tuyau avec les profils donnés par la modélisation numérique sur \textsc{Comsol}. La figure \ref{couche_limite_comparaison} montre ces comparaisons pour deux puissances de souffleur différentes.\\
+	
+	\begin{figure}[h!]
 		\centering
 		% --- Premier Graphique (Complet) ---
 		\begin{minipage}{0.48\textwidth}
@@ -1176,11 +1179,14 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 			\end{tikzpicture}
 		\end{minipage}
 		\caption{Comparaison des profils de vitesse expérimentaux et numériques.}
+		\label{couche_limite_comparaison}
 	\end{figure}
 	
-	TABLEAU ANCIEN
+	\noindent On voit que les mesures sont plutôt cohérentes avec les simulations; la tendance logarithmique obtenue est bien respectée. On voit tout de même un décalage sur la partie la plus proche de la paroi. Ce décalage s'explique très probablement par une imprécision dans la mesure de la distance à la paroi : en effet, il est impossible de positionner le fil exactement au contact de celle-ci sans risquer de l'endommager, ce qui entraîne une erreur de l'ordre du millimètre.\\
 
-	\begin{figure}[h]
+	\noindent Il semble également y avoir une différence entre simulation et mesures lorsque l'on s'approche du centre du tuyau : alors que la vitesse continue d'augmenter, d'après \textsc{Comsol}, les mesures montrent qu'elle se stabilise plus vite que ce que prédit la simulation. \\
+	
+	\begin{figure}[h!]
 		\centering
 		\begin{tikzpicture}
 			\begin{axis}[
@@ -1188,12 +1194,11 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 				xmin = 0.8,
 				xmode=log,               % <--- Activation de l'échelle logarithmique
 				log ticks with fixed point, % <--- Affichage 0.1, 1, 10 au lieu de 10^n
-				xlabel={Distance à la paroi $z_{cl}$ (mm, échelle log)},
+				xlabel={Distance à la paroi $z$ (mm, échelle log)},
 				ylabel={Vitesse $U$ (m/s)},
 				grid=both,               % Grille complète (majeure et mineure)
 				minor grid style={gray!10},
 				legend pos=outer north east,
-				title={Profils de vitesse - Échelle semi-logarithmique}
 				]
 				
 				% Données Expérimentales
@@ -1229,11 +1234,27 @@ Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sor
 				\addlegendentry{U2 (comsol)}
 			\end{axis}
 		\end{tikzpicture}
+		\caption{Comparaison des profils de vitesse en échelle logarithmique}
+		\label{couche_limite_comparaison_log}
 	\end{figure}
 	
+	\noindent La figure \ref{couche_limite_comparaison_log} ci-dessus compare les profils de vitesse numériques et expérimentaux en échelle semi-logarithmique. Les courbes expérimentales apparaissent alors pratiquement linéaires (hormis un décrochage pour la faible vitesse en se rapprochant du centre).
 	
+	\subsection{Loi logarithmique de Von Kármán}
+	Le profil logarithmique de la vitesse dans la couche limite a fait l'objet d'une étude approfondie lors du siècle dernier. Les chercheurs ont déterminé que la couche limite pouvait être divisée en plusieurs zones, parmi lesquelles une région plutôt éloignée de la paroi où la vitesse suivait une loi logarithmique.\\
 	
+	\noindent La structure de la couche limite turbulente peut être décrite par des variables adimensionnées basées sur la vitesse de frottement $u_\tau = \sqrt{\tau_w / \rho}$ (avec $\tau_w = \rho \nu \frac{\text{d}u}{\text{d}z}$ le cisaillement). On définit ainsi les variables adimensionnées de distance à la paroi $y^+$ et de vitesse $U^+$ par :
+	\begin{equation*}
+		y^+ = \frac{z u_\tau}{\nu} \quad ; \quad U^+ = \frac{U}{u_\tau}
+	\end{equation*}
 	
+	\noindent Dans la zone logarithmique ($30 < y^+ < 1000$ environ), le profil de vitesse suit la loi de Von Kármán :
+	\begin{equation*}
+		\boxed{U^+ = \frac{1}{\kappa} \ln(y^+) + B}
+	\end{equation*}
+	où $\kappa$ est la constante de Von Kármán, de valeur approximative $\kappa = 0.384$, et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).
+	
+	\noindent L'objectif est de trouver un résultat similaire à la loi de Von Kármán avec nos mesures expérimentales. Pour cela, il faut passer aux variables $U^+$ et $y^+$, donc il est nécessaire de déterminer $u_\tau$. Cette valeur peut être approximée de la manière suivante
 	
 	\newpage 
 	\subsection{Qualification de la turbulence}
