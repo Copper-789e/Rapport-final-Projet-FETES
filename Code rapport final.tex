@@ -254,135 +254,135 @@
 		\boxed{E_s^2 = A + B U^n} \qquad n \in [0.4, 0.6]
 	\end{equation*}
 	C'est cette loi que nous allons utiliser dans notre étude.
-	\chapter{ANCIEN CHAPITRE A MODIFIER}
-	\section{Protocoles possibles}
-	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynolds et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\
-	
-	
-	Avec le matériel à disposition dans le local de TP, nous pourrions selon la bibliographie faire ces protocoles plus complets:
-
-	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Suggestions de Protocoles expérimentals par Dantec Dynamics]
-		\tiny
-		\textbf{1/ Très basses vitesses}\\
-		À de très basses vitesses, le transfert de chaleur du fil est régi par la convection naturelle. Cela signifie que le refroidissement ne dépend pas seulement de l'amplitude de la vitesse, mais aussi de son orientation par rapport au champ de gravité. L'influence de la convection naturelle commence autour de 0,2 m/s pour les sondes à fil et prend totalement le dessus aux alentours de 0,03-0,04 m/s. Dans cette plage, il est important que la sonde garde la même orientation par rapport au champ de vitesse lors de l'étalonnage et de la mesure.\\
-		
-		\textbf{2/ Hautes vitesses et écoulements compressibles}\\
-		À des vitesses élevées, l'écoulement devient compressible et les effets de compressibilité doivent être pris en compte. En pratique, cela signifie que la pression et la vitesse doivent être mesurées simultanément. La correction est assez complexe et est très souvent négligée.\\
-				
-		\textbf{3/ Effets de paroi}\\
-		Lorsque le fil est placé à proximité d'une paroi solide, la chaleur est conduite à travers le fluide vers la paroi. Si cela n'est pas corrigé, la vitesse mesurée sera surestimée. L'influence de la paroi commence à une distance adimensionnelle $y^+ = y U_{\tau} / \nu = 3,5$ (où $y$ est la distance à la paroi, $U_{\tau}$ la vitesse de frottement et $\nu$ la viscosité cinématique). La distance critique à la paroi est typiquement de 0,1 à 0,2 mm, selon la vitesse de l'écoulement libre.\\
-		
-		\textbf{4/ Très haute turbulence et écoulements avec inversible}\\
-		Si la turbulence est très élevée (au-dessus de 30\% ou plus) ou dans des écoulements avec inversion de sens, où le vecteur vitesse sort de l'angle d'ouverture du réseau de capteurs, les résultats seront incorrects. De tels écoulements peuvent être mesurés correctement avec des systèmes de fil chaud volant (flying hot-wire), où la sonde est déplacée à travers le champ d'écoulement à une vitesse suffisamment élevée pour maintenir le vecteur vitesse résultant à l'intérieur de l'angle d'ouverture. Après linéarisation, la vitesse de déplacement de la sonde est soustraite de la composante longitudinale de la vitesse."
-		
-		\tcblower
-		\footnotesize \textbf{Source :} \url{Bibliographie}
-	\end{tcolorbox}
-	
-	Il existe une variété importante de sonde d'anémomètrie, pour faire d'autres études avec ces sondes. On pourra citer l'exemple de la très faible vitesse, où une boule chaude sera plus adaptée à la situation.
-	
-	\section{Dispositif expérimental}
-	En suivant les suggestion de Dantec Dynamics, nous partirons pour une mesure à haute vitesse, mais nous considérons un écoulement incompressible, et qui ne s'inverse pas.\\
-		
-	Nous avons ici un dispositif expérimental utilisant l'effet Joule, nous devrons donc faire appel à la théorie de la thermodynamique, et électique. Commençons par un bilan thermique sur le fil chaud, on retiendra \textbf{quatres transferts thermiques} dans le bilan thermique du fil chaud:
-	
-	\begin{itemize}
-		\item Conduction vers le fluide, due à la diffusion moléculaire de la chaleur dans le fluide;
-		\item Convection vers le fluide, où la chaleur est transportée par le mouvement du fluide	environnant;
-		\item Conduction vers les supports, due à la diffusion de la chaleur le long du fil;
-		\item Rayonnement thermique : puissance transférée sous forme de rayonnement électromagnétique.
-	\end{itemize}
-
-	Par rapport aux quatre échanges thermiques dans ce système, on pourra négliger dans cette étude les deux transferts suivants:
-	\begin{itemize}
-		\item Conduction vers les supports;
-		\item Rayonnement thermique.
-	\end{itemize}
-	
-	On négligera le rayonnement thermique qui est minime par rapport aux deux premiers transferts. Et grâce au fait que $d << l$ (facteur 100) dans le fil chaud, alors on pourra négliger la conduction vers les supports. \\
-	
-	Par permier \textbf{principe de la thermodynamique} sur le système fil chaud
-	\begin{center}
-		$\partial_t U = \Sigma P = P - \dot{Q} $
-	\end{center}
-	Avec les expressions suivantes pour $P$ la puissance émise par effet Joule, et $\dot{Q}$ l'échange temporelle avec le milieu extérieur:
-	\begin{itemize}
-		\item $\dot{Q} =  h S (T_w - T_0)$
-		\item $P = R_{w} I^2$
-	\end{itemize}
-	
-	Avec les constantes suivantes définies :
-	\begin{itemize}
-		\item $h$ le coefficient de dissipation avec l'extérieur;
-		\item $S$ surface latérale du fil chaud;
-		\item $T_w$ température du fil chaud;
-		\item $T_0$ température du milieu extérieur;
-		\item $R_w$ résistance du système "fil d'anémométrie";
-		\item $I$ Intensité électrique dans le fil chaud.
-	\end{itemize}
-	
-	On supposera pour que $T_w$ est identique sur toute la longueur du fil, et nous travaillerons avec le nombre adimensionné de Nusselt, et développant S = "surface latérale du fil chaud" = $d*\pi$, avec d le diamètre du fil chaud : \\
-	\begin{center}
-		$\mathrm{Nu} = \frac{h d}{k_f}$; \quad $\dot{Q} = \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
-	\end{center}
-	
-	Avec :
-	\begin{itemizeFB}
-		\item $k_f$ : coefficient de diffusion thermique.
-	\end{itemizeFB}
-	
-	D'où la relation suivante :
-	\begin{center}
-		$\partial_t U = R_w I^2 - \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
-	\end{center}
-	
-	
-	Nous obtenons le premier résultat pour le fil chaud, en prenant l'hypothèse que $\partial_t U = 0 $, soit le \textbf{régime stationnaire}. On obtient une première équation fondamentale pour l'expérience:
-	\begin{center}
-		\boxed{R_w I^2 = \pi l k_f (T_w - T_0)\,\mathrm{Nu}}
-	\end{center}
-	
-	
-	\section{Caractéristiques dynamiques et limite de fréquence}
-	On pourra se poser la question suivante : "Combien de temps il serait nécessaire d'attendre pour stabiliser la valeur du nombre de Reynold?". Dans l'étude du fil chaud, un terme de stockage de chaleur est ajouté à l'équation de transfert thermique stationnaire pour rendre compte des variations temporelles :
-	\begin{equation*}
-		I^2 R_w = (R_w - R_0)(A + B U^n) + C_w \frac{dT_w}{dt}
-	\end{equation*}
-	
-	En exprimant la température du fil $T_w$ en fonction de sa résistance $R_w$ et de son coefficient de température $\alpha_0$, on obtient l'équation différentielle suivante :
-	\begin{equation*}
-		I^2 R_w = (R_w - R_0)(A + B U^n) + \frac{C_w}{\alpha_0 R_0} \frac{dR_w}{dt}
-	\end{equation*}
-	
-	
-	\begin{figure}[h]
-		\centering
-		\begin{minipage}{0.48\linewidth}
-			Cette équation définit une constante de temps $\tau$ :
-			\begin{equation*}
-				\tau = \frac{C_w}{\alpha_0 R_0 (A_1 + B_1 U^n - I^2)}
-			\end{equation*}
-		\end{minipage}
-		\hfill
-		\begin{minipage}{0.375\linewidth}
-			\centering
-			\includegraphics[width=\linewidth]{Images/0 graphique.png}
-			\caption{Représentation graphique du pas temporel $\tau$}
-			\label{rep_grap_pas_temp}
-		\end{minipage}
-	\end{figure}
-
-	On pourra alors définir une fréquence limite donnée par :
-	\begin{equation*}
-		\boxed{f_{cp} = \frac{1}{2\pi\tau}}
-	\end{equation*}
-	Cette fréquence est une estimation pertinente pour deux situations. Elle représente la fréquence maximale où l'on peut relever des valeurs pour une variation brutale de la vitesse incidente. En fonction de la valeur de $\tau$ ou $f_{cp}$, on pourra répondre à ces deux questions:
-	\begin{itemize}
-		\item Combien de temps il faut attendre entre deux prises de mesure de vitesse ?
-	Soit faire la mesure de $U_{21} = 3 m/s$, à $U_{22} = 3,5 m/s$;
-		\item Jusqu'à quelle variation de vitesse spontanée, nous n'aurons plus de valeur stable ?
-	Soit si le courant faire des va-et-vient (situation de turbulance forte), quelle est la limite de la fréquence de va-et-vient ?
-	\end{itemize}
+%	\chapter{ANCIEN CHAPITRE A MODIFIER}
+%	\section{Protocoles possibles}
+%	Un premier protocole de calibration dit "élémentaire", pour faire fonctionner et relever des valeurs par la sonde pourra être le premier à mettre en place: Relever une vitesse pour mesure un nombre de Reynolds et qualifier la turbulence, et confronter la méthode à une autre comme peut permettre les tubes de Pitot.\\
+%	
+%	
+%	Avec le matériel à disposition dans le local de TP, nous pourrions selon la bibliographie faire ces protocoles plus complets:
+%
+%	\begin{tcolorbox}[colback=gray!5, colframe=gray!50, arc=0mm, title=Suggestions de Protocoles expérimentals par Dantec Dynamics]
+%		\tiny
+%		\textbf{1/ Très basses vitesses}\\
+%		À de très basses vitesses, le transfert de chaleur du fil est régi par la convection naturelle. Cela signifie que le refroidissement ne dépend pas seulement de l'amplitude de la vitesse, mais aussi de son orientation par rapport au champ de gravité. L'influence de la convection naturelle commence autour de 0,2 m/s pour les sondes à fil et prend totalement le dessus aux alentours de 0,03-0,04 m/s. Dans cette plage, il est important que la sonde garde la même orientation par rapport au champ de vitesse lors de l'étalonnage et de la mesure.\\
+%		
+%		\textbf{2/ Hautes vitesses et écoulements compressibles}\\
+%		À des vitesses élevées, l'écoulement devient compressible et les effets de compressibilité doivent être pris en compte. En pratique, cela signifie que la pression et la vitesse doivent être mesurées simultanément. La correction est assez complexe et est très souvent négligée.\\
+%				
+%		\textbf{3/ Effets de paroi}\\
+%		Lorsque le fil est placé à proximité d'une paroi solide, la chaleur est conduite à travers le fluide vers la paroi. Si cela n'est pas corrigé, la vitesse mesurée sera surestimée. L'influence de la paroi commence à une distance adimensionnelle $y^+ = y U_{\tau} / \nu = 3,5$ (où $y$ est la distance à la paroi, $U_{\tau}$ la vitesse de frottement et $\nu$ la viscosité cinématique). La distance critique à la paroi est typiquement de 0,1 à 0,2 mm, selon la vitesse de l'écoulement libre.\\
+%		
+%		\textbf{4/ Très haute turbulence et écoulements avec inversible}\\
+%		Si la turbulence est très élevée (au-dessus de 30\% ou plus) ou dans des écoulements avec inversion de sens, où le vecteur vitesse sort de l'angle d'ouverture du réseau de capteurs, les résultats seront incorrects. De tels écoulements peuvent être mesurés correctement avec des systèmes de fil chaud volant (flying hot-wire), où la sonde est déplacée à travers le champ d'écoulement à une vitesse suffisamment élevée pour maintenir le vecteur vitesse résultant à l'intérieur de l'angle d'ouverture. Après linéarisation, la vitesse de déplacement de la sonde est soustraite de la composante longitudinale de la vitesse."
+%		
+%		\tcblower
+%		\footnotesize \textbf{Source :} \url{Bibliographie}
+%	\end{tcolorbox}
+%	
+%	Il existe une variété importante de sonde d'anémomètrie, pour faire d'autres études avec ces sondes. On pourra citer l'exemple de la très faible vitesse, où une boule chaude sera plus adaptée à la situation.
+%	
+%	\section{Dispositif expérimental}
+%	En suivant les suggestion de Dantec Dynamics, nous partirons pour une mesure à haute vitesse, mais nous considérons un écoulement incompressible, et qui ne s'inverse pas.\\
+%		
+%	Nous avons ici un dispositif expérimental utilisant l'effet Joule, nous devrons donc faire appel à la théorie de la thermodynamique, et électique. Commençons par un bilan thermique sur le fil chaud, on retiendra \textbf{quatres transferts thermiques} dans le bilan thermique du fil chaud:
+%	
+%	\begin{itemize}
+%		\item Conduction vers le fluide, due à la diffusion moléculaire de la chaleur dans le fluide;
+%		\item Convection vers le fluide, où la chaleur est transportée par le mouvement du fluide	environnant;
+%		\item Conduction vers les supports, due à la diffusion de la chaleur le long du fil;
+%		\item Rayonnement thermique : puissance transférée sous forme de rayonnement électromagnétique.
+%	\end{itemize}
+%
+%	Par rapport aux quatre échanges thermiques dans ce système, on pourra négliger dans cette étude les deux transferts suivants:
+%	\begin{itemize}
+%		\item Conduction vers les supports;
+%		\item Rayonnement thermique.
+%	\end{itemize}
+%	
+%	On négligera le rayonnement thermique qui est minime par rapport aux deux premiers transferts. Et grâce au fait que $d << l$ (facteur 100) dans le fil chaud, alors on pourra négliger la conduction vers les supports. \\
+%	
+%	Par permier \textbf{principe de la thermodynamique} sur le système fil chaud
+%	\begin{center}
+%		$\partial_t U = \Sigma P = P - \dot{Q} $
+%	\end{center}
+%	Avec les expressions suivantes pour $P$ la puissance émise par effet Joule, et $\dot{Q}$ l'échange temporelle avec le milieu extérieur:
+%	\begin{itemize}
+%		\item $\dot{Q} =  h S (T_w - T_0)$
+%		\item $P = R_{w} I^2$
+%	\end{itemize}
+%	
+%	Avec les constantes suivantes définies :
+%	\begin{itemize}
+%		\item $h$ le coefficient de dissipation avec l'extérieur;
+%		\item $S$ surface latérale du fil chaud;
+%		\item $T_w$ température du fil chaud;
+%		\item $T_0$ température du milieu extérieur;
+%		\item $R_w$ résistance du système "fil d'anémométrie";
+%		\item $I$ Intensité électrique dans le fil chaud.
+%	\end{itemize}
+%	
+%	On supposera pour que $T_w$ est identique sur toute la longueur du fil, et nous travaillerons avec le nombre adimensionné de Nusselt, et développant S = "surface latérale du fil chaud" = $d*\pi$, avec d le diamètre du fil chaud : \\
+%	\begin{center}
+%		$\mathrm{Nu} = \frac{h d}{k_f}$; \quad $\dot{Q} = \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
+%	\end{center}
+%	
+%	Avec :
+%	\begin{itemizeFB}
+%		\item $k_f$ : coefficient de diffusion thermique.
+%	\end{itemizeFB}
+%	
+%	D'où la relation suivante :
+%	\begin{center}
+%		$\partial_t U = R_w I^2 - \pi l k_f (T_w - T_0)\,\mathrm{Nu}$
+%	\end{center}
+%	
+%	
+%	Nous obtenons le premier résultat pour le fil chaud, en prenant l'hypothèse que $\partial_t U = 0 $, soit le \textbf{régime stationnaire}. On obtient une première équation fondamentale pour l'expérience:
+%	\begin{center}
+%		\boxed{R_w I^2 = \pi l k_f (T_w - T_0)\,\mathrm{Nu}}
+%	\end{center}
+%	
+%	
+%	\section{Caractéristiques dynamiques et limite de fréquence}
+%	On pourra se poser la question suivante : "Combien de temps il serait nécessaire d'attendre pour stabiliser la valeur du nombre de Reynold?". Dans l'étude du fil chaud, un terme de stockage de chaleur est ajouté à l'équation de transfert thermique stationnaire pour rendre compte des variations temporelles :
+%	\begin{equation*}
+%		I^2 R_w = (R_w - R_0)(A + B U^n) + C_w \frac{dT_w}{dt}
+%	\end{equation*}
+%	
+%	En exprimant la température du fil $T_w$ en fonction de sa résistance $R_w$ et de son coefficient de température $\alpha_0$, on obtient l'équation différentielle suivante :
+%	\begin{equation*}
+%		I^2 R_w = (R_w - R_0)(A + B U^n) + \frac{C_w}{\alpha_0 R_0} \frac{dR_w}{dt}
+%	\end{equation*}
+%	
+%	
+%	\begin{figure}[h]
+%		\centering
+%		\begin{minipage}{0.48\linewidth}
+%			Cette équation définit une constante de temps $\tau$ :
+%			\begin{equation*}
+%				\tau = \frac{C_w}{\alpha_0 R_0 (A_1 + B_1 U^n - I^2)}
+%			\end{equation*}
+%		\end{minipage}
+%		\hfill
+%		\begin{minipage}{0.375\linewidth}
+%			\centering
+%			\includegraphics[width=\linewidth]{Images/0 graphique.png}
+%			\caption{Représentation graphique du pas temporel $\tau$}
+%			\label{rep_grap_pas_temp}
+%		\end{minipage}
+%	\end{figure}
+%
+%	On pourra alors définir une fréquence limite donnée par :
+%	\begin{equation*}
+%		\boxed{f_{cp} = \frac{1}{2\pi\tau}}
+%	\end{equation*}
+%	Cette fréquence est une estimation pertinente pour deux situations. Elle représente la fréquence maximale où l'on peut relever des valeurs pour une variation brutale de la vitesse incidente. En fonction de la valeur de $\tau$ ou $f_{cp}$, on pourra répondre à ces deux questions:
+%	\begin{itemize}
+%		\item Combien de temps il faut attendre entre deux prises de mesure de vitesse ?
+%	Soit faire la mesure de $U_{21} = 3 m/s$, à $U_{22} = 3,5 m/s$;
+%		\item Jusqu'à quelle variation de vitesse spontanée, nous n'aurons plus de valeur stable ?
+%	Soit si le courant faire des va-et-vient (situation de turbulance forte), quelle est la limite de la fréquence de va-et-vient ?
+%	\end{itemize}
 	
 	
 	
@@ -561,6 +561,116 @@
 	
 	
 	
+	\section{Description des protocoles}
+	\subsection{Calibrage}
+	Avant de pouvoir utiliser le fil chaud, il est nécessaire de le calibrer. L'étude théorique nous a montré que la vitesse du fluide U et la tension du fil $E_s$ sont liés par l'équation $E_s^2 = A + B U^n$. Il s'agit maintenant de déterminer les constantes A, B et n.\\\\
+	Pour cela, nous utilisons le tube de Pitot : nous le plaçons aussi proche que possible du fil chaud, au centre du tube. Pour mesurer en même temps la tension du fil, et la vitesse du fluide avec le tube de Pitot. Bien que le tube de Pitot et le fil ne sont pas exactement au même point, on s'assure qu'ils mesurent environ la même vitesse avec le graphique suivant :  
+
+	%	\begin{figure}[h!]
+		%		\begin{minipage}{0.3\textheight}
+			%			\centering
+			%			\begin{tikzpicture}
+				%				\begin{axis}[
+					%					title={Profils de pression mesurés},
+					%					xlabel={Position selon $z$ (mm)},
+					%					ylabel={Pression ($Pa$)},
+					%					grid=major,
+					%					legend pos=north west,
+					%					width=0.8\textwidth,
+					%					height=7cm,
+					%					% On définit les couleurs
+					%					cycle list={
+						%						{blue, mark=x},
+						%					}
+					%					]
+					%					
+					%					% Courbe 1 (Série de gauche dans Excel)
+					%					\addplot+ [smooth] coordinates {
+						%						(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
+						%						(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
+						%						(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
+						%						(-21, 139.25) (-25, 137.29)
+						%					};
+					%					\addlegendentry{Série 1}
+					%					
+					%				\end{axis}
+				%			\end{tikzpicture}
+			%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
+			%		\end{minipage}
+		%		\hfill
+		%		\begin{minipage}{0.3\textheight}
+			%			\centering
+			%			\begin{tikzpicture}
+				%				\begin{axis}[
+					%					title={Profils de pression mesurés},
+					%					xlabel={Position selon $z$ (mm)},
+					%					ylabel={Pression ($Pa$)},
+					%					grid=major,
+					%					legend pos=north west,
+					%					width=0.8\textwidth,
+					%					height=7cm,
+					%					% On définit les couleurs
+					%					cycle list={
+						%						{orange, mark=x}
+						%					}
+					%					]
+					%					
+					%					
+					%					% Courbe 2 (Série de droite dans Excel)
+					%					\addplot+ [smooth] coordinates {
+						%						(21.5, 115.72) (17.5, 105.91) (13.5, 99.54) (11.5, 94.14) 
+						%						(9.5, 90.22) (7.5, 82.87) (5.5, 77.47) (3.5, 71.59) 
+						%						(2.5, 63.74) (1.5, 56.88) (0.5, 50.99) (0, 47.56)
+						%					};
+					%					\addlegendentry{Série 2}
+					%					
+					%				\end{axis}
+				%			\end{tikzpicture}
+			%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré par rapport au bord du cylindre}
+			%		\end{minipage}
+		%	\end{figure}
+	
+	\begin{figure}[H] % Utilisation du [H] pour forcer la position
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				title={Profils de pression mesurés},
+				xlabel={Position selon $z$ (mm)},
+				ylabel={Pression ($Pa$)},
+				grid=major,
+				legend pos=north west,
+				width=0.8\textwidth, % Taille ajustée pour un seul graphe
+				height=8cm,
+				cycle list={
+					{blue, mark=x},
+				}
+				]
+				
+				% Courbe 1 (Série de gauche dans Excel)
+				\addplot+ [smooth] coordinates {
+					(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
+					(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
+					(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
+					(-21, 139.25) (-25, 137.29)
+				};
+				\addlegendentry{Série 1}
+				
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Profil de vitesse le long du diamètre du tube, grossièrement mesuré avec le tube de Pitot}
+	\end{figure}
+	%	Ces deux courbes permettent de visualiser le profil à la sortie du cylindre. Par la constance du profil dans le domaine $z \in [-20mm;20mm]$ on pourra placer à la sortie du cylindre les tubes de Pitot, et la sonde d'anémomètrie simultanément, mais suffisamment éloignable pour que les sondes n'interfèrent pas entre elles.
+	Ce profil de vitesse mesuré avec le tube de Pitot nous permet d'observer qu'au centre du tube (domaine [-20mm,20mm]), la vitesse varie peu, et donc que nous pourrons placer, à cet endroit, le tube de Pitot accolé au fil chaud lors des mesures nécessaires au calibrage du fil chaud, et mesurer environ la même vitesse.\\\\
+	Nous effectuons ces mesures en plusieurs point de fonctionnement du compresseur, puis après avoir prit les tension moyennes de chaques acquisitions (faits sur environ 8 secondes), nous obtenons une plage de donnée de la tension $E_s$ et de la vitesse U correspondante. \\
+	Pour déterminer les constantes A, B et n, nous utilisions la fonction lsqcurvefit de matlab, qui, après lui avoir donné la forme de l'équation ainsi que les données, nous donne les meilleurs coefficients (qui minimisent le $R^2$).
+	 
+	
+	\subsection{Étude de la couche limite}
+	
+	Pour étudier la couche limite, nous gardons une puissance du compresseur fixe, et nous modifions la distance à la paroie du fil chaud (du centre vers la paroie) à l'aide de la vis micrométrique. Nous avons deux limitations lors de cette manipulation : \\
+	-La vis ne permet pas de placer le fil à la fois au centre du tube, et en proche paroie
+	-Nous ne pouvons pas nous permettre de coller le fil à la paroie. En raison de sa fragilité, nous risquons de le briser.
+	\subsection{Caractérisation de la turbulence}
 	
 	\section{Solution Dantec Dynamics}
 	%\subsection{Présentation de la solution}
@@ -771,108 +881,7 @@
 	
 	\chapter{Résultats et Discussion}
 
-	\section{Mesure du profil de vitesse à l'aide du tube de Pitot}
-	
-	TABLEAU ANCIEN
-	
-	Pour ce tableau, on a mesuré la pression en $mmH_2O$ à l'aide du manomètre, et fait la conversion en $Pa$, avec le coefficient de conversion \boxed{c_{mmH20 \rightarrow Pa} = 9,80665}.
-	
-%	\begin{figure}[h!]
-%		\begin{minipage}{0.3\textheight}
-%			\centering
-%			\begin{tikzpicture}
-%				\begin{axis}[
-%					title={Profils de pression mesurés},
-%					xlabel={Position selon $z$ (mm)},
-%					ylabel={Pression ($Pa$)},
-%					grid=major,
-%					legend pos=north west,
-%					width=0.8\textwidth,
-%					height=7cm,
-%					% On définit les couleurs
-%					cycle list={
-%						{blue, mark=x},
-%					}
-%					]
-%					
-%					% Courbe 1 (Série de gauche dans Excel)
-%					\addplot+ [smooth] coordinates {
-%						(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
-%						(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
-%						(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
-%						(-21, 139.25) (-25, 137.29)
-%					};
-%					\addlegendentry{Série 1}
-%					
-%				\end{axis}
-%			\end{tikzpicture}
-%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
-%		\end{minipage}
-%		\hfill
-%		\begin{minipage}{0.3\textheight}
-%			\centering
-%			\begin{tikzpicture}
-%				\begin{axis}[
-%					title={Profils de pression mesurés},
-%					xlabel={Position selon $z$ (mm)},
-%					ylabel={Pression ($Pa$)},
-%					grid=major,
-%					legend pos=north west,
-%					width=0.8\textwidth,
-%					height=7cm,
-%					% On définit les couleurs
-%					cycle list={
-%						{orange, mark=x}
-%					}
-%					]
-%					
-%					
-%					% Courbe 2 (Série de droite dans Excel)
-%					\addplot+ [smooth] coordinates {
-%						(21.5, 115.72) (17.5, 105.91) (13.5, 99.54) (11.5, 94.14) 
-%						(9.5, 90.22) (7.5, 82.87) (5.5, 77.47) (3.5, 71.59) 
-%						(2.5, 63.74) (1.5, 56.88) (0.5, 50.99) (0, 47.56)
-%					};
-%					\addlegendentry{Série 2}
-%					
-%				\end{axis}
-%			\end{tikzpicture}
-%			\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré par rapport au bord du cylindre}
-%		\end{minipage}
-%	\end{figure}
 
-\begin{figure}[H] % Utilisation du [H] pour forcer la position
-	\centering
-	\begin{tikzpicture}
-		\begin{axis}[
-			title={Profils de pression mesurés},
-			xlabel={Position selon $z$ (mm)},
-			ylabel={Pression ($Pa$)},
-			grid=major,
-			legend pos=north west,
-			width=0.8\textwidth, % Taille ajustée pour un seul graphe
-			height=8cm,
-			cycle list={
-				{blue, mark=x},
-			}
-			]
-			
-			% Courbe 1 (Série de gauche dans Excel)
-			\addplot+ [smooth] coordinates {
-				(27, 130.92) (23, 132.88) (19, 136.80) (15, 140.23) 
-				(11, 142.20) (7, 141.22) (3, 142.20) (-1, 143.18) 
-				(-5, 142.20) (-9, 141.22) (-13, 142.20) (-17, 140.23) 
-				(-21, 139.25) (-25, 137.29)
-			};
-			\addlegendentry{Série 1}
-			
-		\end{axis}
-	\end{tikzpicture}
-	\caption{Comparaison des mesures de pression $mmH_2O$ selon la position $z$, centré au milieu du cylindre}
-\end{figure}
-%	Ces deux courbes permettent de visualiser le profil à la sortie du cylindre. Par la constance du profil dans le domaine $z \in [-20mm;20mm]$ on pourra placer à la sortie du cylindre les tubes de Pitot, et la sonde d'anémomètrie simultanément, mais suffisamment éloignable pour que les sondes n'interfèrent pas entre elles.
-Ce mesure du profil de vitesse avec le tube de Pitot nous permet d'observer qu'au centre du tube (domaine [-20mm,20mm]), la vitesse varie peu, et donc que nous pourrons placer, à cet endroit, le tube de Pitot accolé au fil chaud lors des mesures nécessaires au calibrage du fil chaud, et mesurer environ la même vitesse.
-	
 	\section{Mesure d'anémométrie, avec la méthode ATC}
 	
 	
@@ -973,20 +982,15 @@ Ce mesure du profil de vitesse avec le tube de Pitot nous permet d'observer qu'a
 %	
 %	Avec un $R^2$ > 0.98, nous avons une corrélation correct.
 
-Avant de pouvoir utiliser le fil chaud, nous devons d'abord le calibrer, en trouvant les coefficients A,B et n de l'équation *équation* trouvé dans la partie *partie*. \\\\
-Pour cela, nous mesurons, pour plusieurs puissance du compresseur (à l'aide de la molette de régulation), la vitesse en sortie avec le tube de Pitot, tout en lançant une acquisition de l'anémomètre à fil chaud, pedant envirion 8 secondes à une fréquence de 1kHz. 
-
-Nous obtenons, sur cette plage de 8 secondes, l'évolution de la tensions de sortie du système d'anémomètrie, de laquelle nous calculons la moyenne. \\\\
-
-À l'aide de la fonction \textbf{lsqcurvefit} de Matlab, nous obtenons Les coefficients A, B et n qui permettent de s'approcher au mieux de nos valeurs. 
+Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit dans la partie 3.2.1. 
 
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.90\linewidth]{Images/matlab}
-	\caption{test}
+	\caption{Validation de nos coefficients A, B et n}
 	\label{matlab}
 \end{figure}
-
+ Nous traçons ici sur matlab les mesures expérimentales (points bleus) ainsi que la fonction $E_s = f(U)$ avec les coefficients A, B et n trouvés à l'aide de la fonction matlab lsqcurvefit : $A=2.076$, $B = 0.853$, $n = 0.474$. On remarque que la courbe est parfaitement cohérente avec nous résultats, nous avons d'aillleur un très bon $R^2$ de 0.9995 
 	
 	\subsection{Mesure en couche limite}
 		Nous faisons une mesure sur le fil chaud suivant :

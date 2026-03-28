@@ -5,53 +5,52 @@
 \contentsline {section}{\numberline {2.2}Bilan thermique}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Loi de King}{5}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Loi d'évolution de la tension}{6}{section.2.4}%
-\contentsline {chapter}{\numberline {3}ANCIEN CHAPITRE A MODIFIER}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Protocoles possibles}{7}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Dispositif expérimental}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Caractéristiques dynamiques et limite de fréquence}{9}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Méthodologie expérimentale}{10}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Présentation du matériel}{10}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Montage expérimental}{10}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Instrumentation et acquisition des données}{11}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Sondes d'anémométrie à fil chaud}{11}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Précautions d'utilisation}{12}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Solution Dantec Dynamics}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Le hardware et StreamLine : les composants physiques}{13}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Le logiciel StreamWare}{14}{subsection.4.2.2}%
-\contentsline {chapter}{\numberline {5}Modélisation sur \textsc {COMSOL Multiphysics}}{16}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modèle}{16}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Résultats des simulations numériques}{17}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Profil de vitesse sur la longueur}{17}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Profil de vitesse dans la section de sortie}{19}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Résultats et Discussion}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Mesure du profil de vitesse à l'aide du tube de Pitot}{20}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Mesure d'anémométrie, avec la méthode ATC}{21}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Méthode de calcul}{21}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Détermination des constantes A,B,n}{21}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Mesure en couche limite}{22}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Étude de la couche limite}{23}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Profil de vitesse dans la couche limite}{23}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Loi logarithmique de Von Kármán}{25}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Qualification de la turbulence}{26}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}$U^+$, et $y^+$}{26}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}Calcul de $U_m$}{27}{subsection.6.3.5}%
-\contentsline {subsubsection}{Loi logarithme de von Kármán}{27}{section*.27}%
-\contentsline {chapter}{Conclusion}{29}{chapter*.29}%
-\contentsline {chapter}{Annexes}{30}{chapter*.30}%
-\contentsline {chapter}{Tableaux de valeurs}{30}{chapter*.30}%
-\contentsline {section}{\numberline {1.1}Tableaux}{30}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Tableau pour profil de vitesse (4.2)}{30}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Tableau détermination des constantes A,B,n (4.3.2)}{30}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Tableau deux puissances en soufflerie (4.4)}{31}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Tableau pour la loi logarithme de von Kármán}{31}{subsection.1.1.4}%
-\contentsline {chapter}{TP Anémométrie}{31}{table.caption.34}%
-\contentsline {section}{\numberline {1.1}Introduction}{32}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Dispositif Expérimental}{32}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Montage et Géométrie}{32}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Instrumentation}{32}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Calibration du Fil Chaud}{32}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Résultats et Analyse}{33}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Profils de Pression}{33}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Mesures Anémométriques}{33}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Mesures Anémométriques : couche limite}{33}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Conclusion}{34}{section.1.5}%
+\contentsline {chapter}{\numberline {3}Méthodologie expérimentale}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Présentation du matériel}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Montage expérimental}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Instrumentation et acquisition des données}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Sondes d'anémométrie à fil chaud}{8}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Précautions d'utilisation}{9}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Description des protocoles}{10}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Calibrage}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Étude de la couche limite}{11}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Caractérisation de la turbulence}{11}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Solution Dantec Dynamics}{11}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Le hardware et StreamLine : les composants physiques}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Le logiciel StreamWare}{12}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Modélisation sur \textsc {COMSOL Multiphysics}}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modèle}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Résultats des simulations numériques}{15}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Profil de vitesse sur la longueur}{15}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Profil de vitesse dans la section de sortie}{17}{subsection.4.2.2}%
+\contentsline {chapter}{\numberline {5}Résultats et Discussion}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Mesure d'anémométrie, avec la méthode ATC}{18}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Méthode de calcul}{18}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Détermination des constantes A,B,n}{18}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Mesure en couche limite}{19}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Étude de la couche limite}{20}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Profil de vitesse dans la couche limite}{21}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Loi logarithmique de Von Kármán}{21}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Qualification de la turbulence}{23}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}$U^+$, et $y^+$}{23}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Calcul de $U_m$}{24}{subsection.5.2.5}%
+\contentsline {subsubsection}{Loi logarithme de von Kármán}{24}{section*.26}%
+\contentsline {chapter}{Conclusion}{26}{chapter*.28}%
+\contentsline {chapter}{Annexes}{27}{chapter*.29}%
+\contentsline {chapter}{Tableaux de valeurs}{27}{chapter*.29}%
+\contentsline {section}{\numberline {1.1}Tableaux}{27}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Tableau pour profil de vitesse (4.2)}{27}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Tableau détermination des constantes A,B,n (4.3.2)}{27}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Tableau deux puissances en soufflerie (4.4)}{28}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Tableau pour la loi logarithme de von Kármán}{28}{subsection.1.1.4}%
+\contentsline {chapter}{TP Anémométrie}{28}{table.caption.33}%
+\contentsline {section}{\numberline {1.1}Introduction}{29}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Dispositif Expérimental}{29}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Montage et Géométrie}{29}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Instrumentation}{29}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Calibration du Fil Chaud}{29}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Résultats et Analyse}{30}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Profils de Pression}{30}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Mesures Anémométriques}{30}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Mesures Anémométriques : couche limite}{30}{subsection.1.4.3}%
+\contentsline {section}{\numberline {1.5}Conclusion}{31}{section.1.5}%
