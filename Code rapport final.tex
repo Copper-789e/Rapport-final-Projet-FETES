@@ -1259,9 +1259,89 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 	\begin{equation*}
 		\boxed{U^+ = \frac{1}{\kappa} \ln(y^+) + B}
 	\end{equation*}
-	où $\kappa$ est la constante de Von Kármán, de valeur approximative $\kappa = 0.384$, et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).
+	où $\kappa$ est la constante de Von Kármán, (approximativement $\kappa = 0.384$), et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).\\
 	
-	\noindent L'objectif est de trouver un résultat similaire à la loi de Von Kármán avec nos mesures expérimentales. Pour cela, il faut passer aux variables $U^+$ et $y^+$, donc il est nécessaire de déterminer $u_\tau$. Cette valeur peut être approximée de la manière suivante
+	\noindent L'objectif est de trouver un résultat similaire à la loi de Von Kármán avec nos mesures expérimentales. Pour cela, il faut passer aux variables $U^+$ et $y^+$, donc il est nécessaire de déterminer $u_\tau$. En réalisant un bilan des forces sur la paroi, on peut exprimer le cisaillement $\tau_w$ de la manière suivante :
+	\begin{equation*}
+		\tau_w = \frac{f}{8}\rho U_m^2
+	\end{equation*} 
+	avec $U_m$ la vitesse moyenne du tube dans la section de sortie et f le facteur de friction de Darcy, qui dépend uniquement du régime de l'écoulement (nombre de Reynolds).\\
+	
+	\noindent Il existe de nombreuses corrélations qui permettent d'obtenir de facteur de friction de Darcy; nous avons retenu celle de Blasius (valable pour $Re < 10^5$). Son expression est alors $f = 0.3164 \: Re^{-\frac{1}{4}}$.\\
+	
+	\noindent Obtenir la vitesse moyenne de l'écoulement sur la section de sortie se fait de manière un peu plus délicate, étant donné que nous n'avons que des mesures ponctuelles de vitesse. La vitesse moyenne est définie par :
+	
+	\begin{equation*}
+		U_{moy} = \frac{\Phi}{S} = \frac{8 \pi \int U(r) r dr}{\pi D^2}
+	\end{equation*}
+	
+	\noindent Pour passer à une forme discrète, calculable avec nos mesures expérimentales, nous sommons sur les intervalles $[r_i, r_{i+1}]$ les débits moyens $\Phi_i$ correspondants :
+	\begin{equation*}
+		\Phi_i =  2\pi \left[ \frac{U(r_i) r_i + U(r_{i+1}) r_{i+1}}{2} \right] (r_{i+1}-r_i)
+	\end{equation*}
+	
+	\noindent Soit finalement :	
+	\begin{equation*}
+		U_{moy} =\frac{4}{D^2} \sum_{i=0}^{n-1} (U_i r_i + U_{i+1} r_{i+1}) (r_{i+1}-r_i)
+	\end{equation*}
+	
+	\noindent Dans le cas de la vitesse élevée ($U_{max} \approx 18$ m/s), l'application numérique sur les 18 points de mesure donne $U_{moy} \approx 14,84 $ m/s.\\
+
+	\noindent Tout cela nous permet d'obtenir $u_\tau$, dont la valeur dépend du Reynolds mais qui est globalement proche de $0.70$ m/s.
+	
+	\begin{figure}[ht]
+		\centering
+		\begin{tikzpicture}
+			\begin{axis}[
+				width=11cm, height=7cm,
+				xlabel={$\ln(y^+)$},
+				ylabel={$U^+$},
+				grid=both,
+				minor tick num=1,
+				legend pos=north west,
+				title={Analyse de la zone logarithmique}
+				]
+				\pgfplotstableread{
+					x           y
+					7.778975583 27.227469121
+					7.662656436 26.871100183
+					7.552867308 26.819935218
+					7.431504282 26.282073526
+					7.291640618 25.99626004
+					7.130449459 25.278283037
+					6.937291372 24.482921333
+					6.697485974 23.338917417
+					6.580227331 23.229028192
+					6.451356273 22.274882532
+					6.298560685 22.004871687
+					6.120228566 21.22880379
+					5.899978369 20.683137367
+					5.617471170 19.741931714
+					5.219463126 18.460462996
+					4.537514257 16.690613664
+					3.852392691 15.527551661
+				}\datatable
+				
+				\addplot[only marks, mark=o, blue] table {\datatable};
+				\addlegendentry{Points expérimentaux}
+				
+				\addplot[thick, red, no marks] table[y={create col/linear regression={y=y}}] {\datatable};
+				\addlegendentry{Régression : $U^+ = 3,01 \ln(y^+) + 3,47$}
+			\end{axis}
+		\end{tikzpicture}
+		\caption{Profil $U^+$ en fonction de $\ln(y^+)$}
+		\label{profil_y+_U+}
+	\end{figure}
+	
+	\noindent On obtient la régression linéaire suivante :
+	\begin{equation*}
+		\boxed{U^+ = A \ln(y^+) + B$, avec $A=3,01$, et $B = 3,47}
+	\end{equation*}
+	Cette régression nous indique une pente $A = 3,013$; nous pouvons identifier la constante de Von Kármán expérimentale :
+	\begin{equation*}
+		\kappa_{exp} = \frac{1}{A} \approx 0,33
+	\end{equation*}
+	La pente obtenue expérimentalement est inférieure à la valeur de référence de la constante de Von Kármán ($\kappa = 0,384$), mais l'ordre de grandeur est correct. L'ordonnée à l'origine $B \approx 3,47$ est également sous-estimée. Ces différences peuvent s'expliquer par les conditions spécifiques de l'écoulement ou la rugosité résiduelle de la paroi.
 	
 	\newpage 
 	\subsection{Qualification de la turbulence}
@@ -1396,59 +1476,6 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 	où $\kappa$ est la constante de von Kármán, de valeur approximative $\kappa = 0.384$, et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).
 	
 	ANCIEN TABLEAU
-
-	\begin{figure}[ht]
-		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				width=11cm, height=7cm,
-				xlabel={$\ln(y^+)$},
-				ylabel={$U^+$},
-				grid=both,
-				minor tick num=1,
-				legend pos=north west,
-				title={Analyse de la zone logarithmique}
-				]
-				\pgfplotstableread{
-					x           y
-					7.778975583 27.227469121
-					7.662656436 26.871100183
-					7.552867308 26.819935218
-					7.431504282 26.282073526
-					7.291640618 25.99626004
-					7.130449459 25.278283037
-					6.937291372 24.482921333
-					6.697485974 23.338917417
-					6.580227331 23.229028192
-					6.451356273 22.274882532
-					6.298560685 22.004871687
-					6.120228566 21.22880379
-					5.899978369 20.683137367
-					5.617471170 19.741931714
-					5.219463126 18.460462996
-					4.537514257 16.690613664
-					3.852392691 15.527551661
-				}\datatable
-				
-				\addplot[only marks, mark=o, blue] table {\datatable};
-				\addlegendentry{Points expérimentaux}
-				
-				\addplot[thick, red, no marks] table[y={create col/linear regression={y=y}}] {\datatable};
-				\addlegendentry{Régression : $U^+ = 3,01 \ln(y^+) + 3,47$}
-			\end{axis}
-		\end{tikzpicture}
-		\caption{Profil $U^+$ en fonction de $\ln(y^+)$ et détermination expérimentale des constantes.}
-	\end{figure}
-	
-	\noindent Régression :
-	\begin{equation*}
-		\boxed{U^+ = A \ln(y^+) + B$, avec $A=3,01$, et $B = 3,47}
-	\end{equation*}
-	\noindent Analyse des résultats :	La régression linéaire effectuée sur l'ensemble des points expérimentaux donne un coefficient de corrélation $R^2 = 0,996$, ce qui indique une pente $A = 3,013$, nous pouvons identifier la constante de von Kármán expérimentale :
-	\begin{equation*}
-		\kappa_{exp} = \frac{1}{A} \approx 0,33
-	\end{equation*}
-	On observe une légère différence avec la valeur de référence empirique ($\kappa = 0,384$). L'ordonnée à l'origine $B \approx 3,47$ est proche de la valeur de référence de 5.0 pour une paroi lisse en PVC, ce qui peut s'expliquer par les conditions spécifiques de l'écoulement ou la rugosité résiduelle de la paroi.
 	
 	
 	\chapter*{Conclusion}
