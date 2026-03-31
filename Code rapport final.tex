@@ -75,7 +75,7 @@
 		\begin{minipage}{0.45\textwidth}
 			\begin{flushright} \large
 				\emph{Encadrants :}\\
-				Muriel Amiel \\
+				Muriel Amielh \\
 				Daniel Mazzoni
 			\end{flushright}
 		\end{minipage}
@@ -518,16 +518,16 @@
 				\textbf{Référence} & \textbf{Type de fil} & \textbf{R\_20} & \textbf{R\_L} & \textbf{$\alpha_{20}$} & \textbf{$T_{max}$} & \textbf{État} \\
 				& & ($\Omega$) & ($\Omega$) & ($\%/^\circ C$) & ($^\circ C$) & \\
 				\midrule
-				Probe Type 55 R11 & droit & 3,3 & 0,5 & 0,48 & 150 & Failed \\
-				Probe Type 55 R11 & droit & 6,0 & 0,5 & 0,4 & 300 & pas Fil \\
-				Probe Type 55 R11 & droit & 6,2 & 0,5 & 0,37 & 150 & pas Fil \\
-				Probe Type 55 R11 & droit & 6,7 & 0,5 & 0,36 & 150 & pas Fil \\
-				Probe Type 55 R11 & droit & 7,07 & 0,6 & 0,4 & 150 & pas Fil \\
+				Probe Type 55 R11 & droit & 3,3 & 0,5 & 0,48 & 150 & Échec de l'acquisition \\
+				Probe Type 55 R11 & droit & 6,0 & 0,5 & 0,4 & 300 & Cassé \\
+				Probe Type 55 R11 & droit & 6,2 & 0,5 & 0,37 & 150 & Cassé \\
+				Probe Type 55 R11 & droit & 6,7 & 0,5 & 0,36 & 150 & Cassé \\
+				Probe Type 55 R11 & droit & 7,07 & 0,6 & 0,4 & 150 & Cassé \\
 				Probe Type 55 R11 & droit & 8,6 & 0,6 & 0,42 & 150 & Non vérifié \\
 				\midrule
-				Probe Type 55 R01 & droit & 5,3 & 0,5 & 0,48 & 300 & Ok \\
+				Probe Type 55 R01 & droit & 5,3 & 0,5 & 0,48 & 300 & Fonctionnel \\
 				\midrule
-				Probe Type 55 P15 & coudé & 3,37 & 0,5 & 0,36 & 300 & Ok \\
+				Probe Type 55 P15 & coudé & 3,37 & 0,5 & 0,36 & 300 & Fonctionnel \\
 				Probe Type 55 P15 & coudé & 3,4 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & coudé & 3,48 & 0,5 & 0,36 & 300 & Non vérifié \\
 				Probe Type 55 P15 & coudé & 3,6 & 0,5 & 0,36 & 300 & Non vérifié \\
@@ -667,10 +667,15 @@
 	
 	\subsection{Étude de la couche limite}
 	
-	Pour étudier la couche limite, nous gardons une puissance du compresseur fixe, et nous modifions la distance à la paroi du fil chaud (du centre vers la paroi) à l'aide de la vis micrométrique. Nous avons deux limitations lors de cette manipulation : \\
-	-La vis ne permet pas de placer le fil à la fois au centre du tube, et en proche paroi
-	-Nous ne pouvons pas nous permettre de coller le fil à la paroie. En raison de sa fragilité, nous risquons de le briser.\\
-	Nous comparons ensuite nos mesures avec la loi de Von Kármán.
+	Pour étudier la couche limite, nous gardons une puissance du compresseur fixe, et nous modifions la distance à la paroi du fil chaud (du centre vers la paroi) à l'aide de la vis micrométrique. \\
+	
+	\noindent Nous avons deux limitations lors de cette manipulation :
+	\begin{itemize}
+		\item La vis ne permet pas de placer le fil à la fois au centre du tube, et en proche paroi
+		\item Nous ne pouvons pas nous permettre de coller le fil à la paroi. En raison de sa fragilité, nous risquons de le briser.
+	\end{itemize}
+	
+	\noindent Nous comparons ensuite nos mesures avec la loi de Von Kármán.
 	
 	\subsection{Caractérisation de la turbulence}
 	Pour étudier plus en détail le phénomène de turbulence, on analysera l'intensité de turbulence, le spectre d'énergie turbulente ainsi que la taille caractéristique des grosses structures. 
@@ -988,12 +993,12 @@
 Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit dans la partie 3.2.1. 
 
 	\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.90\linewidth]{Images/matlab}
-	\caption{Validation de nos coefficients A, B et n}
-	\label{matlab}
-\end{figure}
- Nous traçons ici sur matlab les mesures expérimentales (points bleus) ainsi que la fonction $E_s = f(U)$ avec les coefficients A, B et n trouvés à l'aide de la fonction matlab lsqcurvefit : $A=2.076$, $B = 0.853$, $n = 0.474$. On remarque que la courbe est parfaitement cohérente avec nous résultats, nous avons d'aillleur un très bon $R^2$ de 0.9995 
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/matlab}
+		\caption{Validation de nos coefficients A, B et n}
+		\label{matlab}
+	\end{figure}
+ 	Nous traçons ici sur matlab les mesures expérimentales (points bleus) ainsi que la fonction $E_s = f(U)$ avec les coefficients A, B et n trouvés à l'aide de la fonction matlab lsqcurvefit : $A=2.076$, $B = 0.853$, $n = 0.474$. On remarque que la courbe est parfaitement cohérente avec nous résultats, nous avons d'aillleur un très bon $R^2$ de 0.9995 
 	
 	\subsection{Mesure en couche limite}
 		Nous faisons une mesure sur le fil chaud suivant :
@@ -1110,7 +1115,7 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 	
 	Protocole : descendre le fil chaud jusqu'à atteindre la paroi sans la toucher, et prendre la valeur lu sur l'échelle graduée comme la distance à la paroi nulle.\\
 	
-	Résultat : Dans ces conditions, nous avons un $Re \approx 15 000$, donc pas suffisamment petit pour considérer un écoulement laminaire. pour cette manipulation, nous avons voulu interpoler les valeurs à un polynôme dans $\mathbb{R} _2[X]$, et avons obtenue cette équation : 
+	Résultat : Dans ces conditions, nous avons un $Re \approx 15 000$, donc pas suffisamment petit pour considérer un écoulement laminaire. pour cette manipulation, nous avons voulu interpoler les valeurs pour comparer avec un profil de vitesse parabolique, et avons obtenue cette équation : 
 	
 	\begin{equation*}
 		\boxed{P(x) = 0,5395361 + 0,0635075x-0,0007952x^2}
@@ -1193,7 +1198,7 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 
 	\noindent Il semble également y avoir une différence entre simulation et mesures lorsque l'on s'approche du centre du tuyau : alors que la vitesse continue d'augmenter, d'après \textsc{Comsol}, les mesures montrent qu'elle se stabilise plus vite que ce que prédit la simulation. \\
 	
-	\begin{figure}[h!]
+	\begin{figure}[H]
 		\centering
 		\begin{tikzpicture}
 			\begin{axis}[
@@ -1343,46 +1348,39 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 	\end{equation*}
 	La pente obtenue expérimentalement est inférieure à la valeur de référence de la constante de Von Kármán ($\kappa = 0,384$), mais l'ordre de grandeur est correct. L'ordonnée à l'origine $B \approx 3,47$ est également sous-estimée. Ces différences peuvent s'expliquer par les conditions spécifiques de l'écoulement ou la rugosité résiduelle de la paroi.
 	
-	\newpage 
-	\subsection{Qualification de la turbulence}
-	\begin{table}[h]
+	\section{Turbulence en sortie du tuyau}
+	Si la forme du profil de vitesse est caractéristique de la turbulence dans l'écoulement, les fluctuations de vitesse n'en sont pas moins des éléments essentiels pour la décrire. En particulier, l'étude de l'intensité de la turbulence, le spectre d'énergie turbulente et la longueur caractéristique des grosses structures permettent de caractériser la turbulence de l'écoulement.
+	
+	\subsection{Fluctuations de vitesse} 
+	Le fil chaud nous permet de récupérer les valeurs instantanées de tension, et donc de vitesse, sur toute la durée de l'acquisition (voir figure \ref{fluctuations_de_vitesse} ci-dessous).
+	\begin{figure}[H]
 		\centering
-		\caption{Données de profil de vitesse (extraites)}
-		\footnotesize % Police légèrement plus grande car plus de place
-		
-		% --- Première partie (9 premiers points) ---
-		\begin{tabular}{l|ccccccccc}
-			\toprule
-			\textbf{z (mm)} & 234 & 240 & 245 & 250 & 255 & 260 & 265 & 270 & 272 \\
-			\midrule
-			\textbf{z cl (mm)} & 54 & 48 & 43 & 38 & 33 & 28 & 23 & 18 & 16 \\
-			\textbf{U1 (m/s)} & 8,7 & 8,89 & 8,88 & 8,74 & 8,57 & 8,32 & 7,95 & 7,76 & 7,46 \\
-			\textbf{U2 (m/s)} & 18,07 & 17,86 & 17,83 & 17,51 & 17,34 & 16,92 & 16,45 & 15,76 & 15,69 \\
-			\toprule
-			\textbf{z (mm)} & 274 & 276 & 278 & 280 & 282 & 284 & 286 & 287 & 288 \\
-			\midrule
-			\textbf{z cl (mm)} & 14 & 12 & 10 & 8 & 6 & 4 & 2 & 1 & 0 \\
-			\textbf{U1 (m/s)} & 7,35 & 7,25 & 6,99 & 6,81 & 6,59 & 6,06 & 5,59 & 5,06 & 3,49 \\
-			\textbf{U2 (m/s)} & 15,12 & 14,96 & 14,49 & 14,16 & 13,58 & 12,80 & 11,70 & 10,97 & 8,62 \\
-			\bottomrule
-		\end{tabular}
-	\end{table}
+		\includegraphics[width=0.90\linewidth]{Images/fluctuations_de_vitesse}
+		\caption{Vitesse de sortie en fonction du temps}
+		\label{fluctuations_de_vitesse}
+	\end{figure}
 	
-	Nous avons repris les valeurs de vitesse pour
+	\noindent On peut tirer de cette table de vitesse moyenne $U_{moy}$ et les fluctuations de vitesse $u'$ telles que $u = U_{moy} + u'$. On peut également tirer l'écart-type sur la vitesse $\sigma_U = \sqrt{\text{var(u)}}$.
+	\subsection{Qualification de la turbulence}
 	
-	Nous avons utilisé les formules suivantes pour remplir les lignes du tableau:
-	\begin{itemize}
-		\item Intensité : I = $\frac{\sigma_{U}}{U_{moy}}$;
-		\item Re : Re = $\frac{\rho_{air} d U_{moy}}{\nu}$;
-		\item Formule empirique : $I_{emp} = 0.16Re^{-1/8}$.
-	\end{itemize}
+	On définit l'intensité de turbulence avec la formule suivante : 
+	\begin{equation*}
+		I = \frac{\sigma_{U}}{U_{moy}}
+	\end{equation*}
+	
+	Pour chaque valeur de vitesse moyenne, on peut définir un nombre de Reynolds associé $Re = \frac{\rho_{air} d U_{moy}}{\nu}$
+	
+	Une loi théorique donne l'évolution de l'intensité de turbulence en fonction du nombre de Reynolds. Sa formule est la suivante :
+	\begin{equation*}
+		I_{emp} = 0.16Re^{-1/8}
+	\end{equation*}
 	
 	\begin{figure}[h]
 		\centering
 		\begin{tikzpicture}
 			\begin{axis}[
 				width=12cm, height=8cm,
-				xlabel={Moyenne ($m/s$)},
+				xlabel={Vitesse de sortie ($m/s$)},
 				ylabel={Valeurs},
 				grid=both,
 				legend pos=north east,
@@ -1407,81 +1405,125 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 				
 			\end{axis}
 		\end{tikzpicture}
-		\caption{Évolution de l'intensité et de la formule empirique en fonction de la vitesse moyenne relevée}
+		\caption{Évolution de l'intensité de turbulence en fonction de la vitesse moyenne}
+		\label{intensite_de_turbulence}
 	\end{figure}
 	
+	La comparaison entre cette formule théorique et nos mesures expérimentales apparait en figure \ref{intensite_de_turbulence}. On remarque bien la décroissance prévue, mais les valeurs d'intensité de turbulence mesurées sont néanmoins plus importantes que ne le prévoit la théorie.
+
+	\subsection{Spectre d'énergie turbulente}
 	
-	\subsection{$U^+$, et $y^+$}
+	L'analyse spectrale de la turbulence permet de caractériser la répartition de l'énergie cinétique turbulente en fonction des échelles spatiales. Cette approche repose sur la décomposition du signal de vitesse fluctuant $u'(t)$ en composantes fréquentielles.\\
+		
+	 \noindent Le spectre d'énergie est défini à partir de la transformée de Fourier de la fluctuation de vitesse :
+	\begin{equation*}
+		\hat{u}(f) = \int_{-\infty}^{+\infty} u'(t) e^{-i 2\pi f t} dt
+	\end{equation*}
 	
-	Nous voulons calculer ces grandeurs:
+	\noindent La densité spectrale d'énergie est alors :
+	\begin{equation*}
+		E(f) = |\hat{u}(f)|^2
+	\end{equation*}
+	
+	\noindent Elle représente la distribution de l'énergie turbulente en fonction de la fréquence.\\
+		
+	\noindent En utilisant l'hypothèse de Taylor (turbulence gelée), les fluctuations temporelles sont converties en fluctuations spatiales :
+	\begin{equation}
+		k = \frac{2\pi f}{U_{moy}}
+	\end{equation}
+	\noindent où $k$ est le nombre d'onde. L'évolution de E en fonction de $k$ donne le spectre d'énergie turbulente.\\
+	
+	\noindent Le spectre d'énergie permet d'identifier différentes gammes d'échelles dans la turbulence :\\
+	
 	\begin{itemize}
-		\item $U^+ = \frac{\overline{U(y)}}{u_\tau}$;
-		\item $y^+$ = $\frac{y u_\tau}{\nu}$ 
-	\end{itemize}
+		\item \textbf{Grandes échelles (petits $k$)} : structures énergétiques dominantes, liées à la géométrie de l'écoulement.
+		\item \textbf{Zone inertielle} : transfert d'énergie sans dissipation.
+		\item \textbf{Petites échelles (grands $k$)} : dissipation visqueuse.
+	\end{itemize}\vspace{3mm}
 	
-	Avec $u_\tau = U_m \sqrt{\frac{f}{8}}$, $U_m$ la valeur moyenne de la vitesse sur la section de sortie. f est le facteur de friction de Darcy, avec $f=0.316Re^{-1/4}$. $\nu = 1.5*10^{-5} m^2/s$, y la distance à la paroi, et $\overline{U(y)}$ la vitesse moyenne de la vitesse à la distance y.
+	\noindent Dans la zone inertielle, la théorie de Kolmogorov prédit une loi universelle :
+	\begin{equation}
+		E(k) \propto k^{-5/3}
+	\end{equation}
 	
-	Nous retiendrons la valeur $U_m = 14.84m/s$, qui est justifiée dans la partie 4.4.3.
+	\noindent Cette loi caractérise le mécanisme de cascade d'énergie des grandes vers les petites échelles.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/Spectre_d-energie}
+		\caption{Spectre d'énergie turbulente pour $U_{moy} = 9.4$ m/s}
+		\label{spectre_d-energie_turbulente}
+	\end{figure}
+	\noindent La figure \ref{spectre_d-energie_turbulente} ci-dessus représente le spectre d'énergie turbulente pour la vitesse de sortie $U_{moy} = 9.4$ m/s. Malgré le bruit très important à partir de $k = 10$ rad/m, on remarque que la pente en $-5/3$ est plutôt respectée.
 	
-	\subsection{Calcul de $U_m$}
-	\subsubsection*{Formulation de la somme pondérée}
+	\subsection{Longueur caractéristique des grosses structures}
 	
-	Pour un point situé à une distance $z_i$ de la paroi, le rayon local depuis le centre est $r_i = R - z_i$. La surface élémentaire $S_i$ associée à chaque mesure est l'aire de l'anneau compris entre deux rayons médians. La vitesse moyenne est définie par :
+	La fonction d'autocorrélation permet de caractériser la structure temporelle des fluctuations turbulentes et d'accéder à une échelle caractéristique des grandes structures de l'écoulement.
 	
+	La fonction d'autocorrélation normalisée est définie par :
 	\begin{equation*}
-		\boxed{U_{moy} = \frac{\sum \Phi_i}{\sum S_i} = \frac{\sum U_i S_i}{\sum S_i} = \frac{\sum U_i \pi (r_{ext,i}^2 - r_{int,i}^2)}{\pi R^2}}
+		R_{uu}(\tau) = \frac{\overline{u'(t)\,u'(t+\tau)}}{\overline{u'^2}}
+	\end{equation*}
+	\noindent où $\tau$ est le décalage temporel.\\
+	
+	\noindent Cette fonction mesure le degré de corrélation du signal avec lui-même après un retard $\tau$. Lorsque $\tau$ augmente, la corrélation décroît, traduisant la perte de mémoire des structures turbulentes.\\
+	
+	\noindent Dans la pratique expérimentale, la fonction est calculée à partir d'un signal discret :
+	\begin{equation*}
+		R(k) = \frac{1}{N-k} \sum_{i=0}^{N-k-1} \frac{u'_i u'_{i+k}}{\overline{u'^2}}
+	\end{equation*}
+	\noindent avec $\tau = k \Delta t$ ($\Delta t = 1$ ms).\\
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/autocorrelation}
+		\caption{Fonctions d'autocorrélation pour plusieurs vitesses de sortie}
+		\label{autocorrelation}
+	\end{figure}
+	
+	\noindent Différentes fonctions d'autocorrélations sont affichées dans la figure \ref{autocorrelation}. On voit que l'autocorrélation pour la vitesse moyenne de $U_{moy} = 3.8$ m/s est complètement aberrante; en revanche, le reste des courbes sont globalement cohérentes.\\
+	
+	\noindent La fonction d'autocorrélation permet de définir une échelle temporelle caractéristique des grandes structures turbulentes, appelée échelle intégrale :
+	\begin{equation*}
+		T_L = \int_0^{\infty} R_{uu}(\tau)\, d\tau
 	\end{equation*}
 	
-	
-	
-	\subsubsection*{Calcul numérique par pondération des vitesses moyennes}
-	
-	En utilisant les coordonnées $(z, U)$ expérimentales et en appliquant une intégration numérique discrète (pondération par le périmètre $2\pi r$), nous obtenons les contributions suivantes :
-	
-	
-	Pour passer à une forme calculable par nos points expérimentaux, nous travaillerons avec les intervalles $[r_i, r_{i+1}]$ :
+	\noindent En pratique, l'intégration est limitée au premier passage par zéro de la fonction d'autocorrélation afin d'éviter les effets de bruit :
 	\begin{equation*}
-		\Phi_i =  2\pi \left[ \frac{U(r_i) r_i + U(r_{i+1}) r_{i+1}}{2} \right] \Delta r_i
+		T_L \approx \int_0^{\tau_0} R_{uu}(\tau)\, d\tau
 	\end{equation*}
-
-	Donc, 
+	\noindent où $\tau_0$ est le premier zéro de $R_{uu}$.\\
 	
+	\noindent Cette échelle temporelle est ensuite convertie en échelle spatiale en utilisant l'hypothèse de Taylor :
 	\begin{equation*}
-		\boxed{\Phi_i = \pi \left( U_i r_i + U_{i+1} r_{i+1} \right) \Delta r_i}
+		L = U_{moy} \, T_L
 	\end{equation*}
 	
-	La vitesse moyenne est enfin obtenue en sommant toutes ces contributions et en divisant par la section totale $S = \pi R^2$ :
+	\noindent La grandeur $L$ correspond à la taille caractéristique des plus grandes structures turbulentes, c'est-à-dire les tourbillons contenant la majorité de l'énergie cinétique. Son évolution en fonction de la vitesse moyenne de sortie est visible en figure \ref{longueur_caracteristique}.
 	
-	\begin{equation*}
-		\boxed{U_{moy} =\frac{1}{R^2} \sum_{i=0}^{n-1} (U_i r_i + U_{i+1} r_{i+1}) \Delta r_i}
-	\end{equation*}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.90\linewidth]{Images/longueur_caracteristique}
+		\caption{Longueur caractéristique des grosses structures}
+		\label{longueur_caracteristique}
+	\end{figure}
 	
-	L'application numérique sur les 18 points de mesure donne :
-	\begin{equation*}
-		\boxed{U_{moy} \approx 14,84 \text{ m/s}}
-	\end{equation*}
-
-	\subsubsection{Loi logarithme de von Kármán}
-	
-	La structure de la couche limite turbulente peut être décrite par des variables adimensionnelles basées sur la vitesse de frottement $u_\tau = \sqrt{\tau_w / \rho}$. On définit ainsi la distance à la paroi adimensionnelle $y^+$ et la vitesse adimensionnelle $U^+$ par :
-	\begin{equation*}
-		y^+ = \frac{y u_\tau}{\nu} \quad ; \quad U^+ = \frac{U}{u_\tau}
-	\end{equation*}
-	
-	Dans la zone logarithmique ($30 < y^+ < 1000$ environ), le profil de vitesse suit la loi de von Kármán :
-	\begin{equation*}
-		\boxed{U^+ = \frac{1}{\kappa} \ln(y^+) + B}
-	\end{equation*}
-	où $\kappa$ est la constante de von Kármán, de valeur approximative $\kappa = 0.384$, et $B$ une constante d'intégration (proche de 5,0 pour une paroi lisse).
-	
-	ANCIEN TABLEAU
+	\noindent Outre le point aberrant que nous avions prévu pour $U_{moy} = 3.8$ m/s, la longueur caractéristique calculée est globalement constante. On remarque surtout que cette longueur est toujours supérieure au diamètre du tuyau, ce qui est absolument impossible.
 	
 	
 	\chapter*{Conclusion}
 	\addcontentsline{toc}{chapter}{Conclusion}
-	Le dispositif de mesure à la règle ne permet pas d'atteindre la sous couche visqueuse en théorie de la couche limite.
 	
+	Cette étude expérimentale nous a permis de caractériser un écoulement turbulent en sortie de tube à l'aide de l'anémométrie à fil chaud. À travers l'analyse des signaux de vitesse, nous avons pu mettre en évidence plusieurs propriétés fondamentales de la turbulence.\\
+	
+	\noindent D'une part, l'analyse spectrale a permis d'observer la répartition de l'énergie turbulente selon les échelles, avec une identification qualitative de la zone inertielle et une tendance compatible avec la loi en $k^{-5/3}$ prédite par la théorie de Kolmogorov. D'autre part, l'étude de la fonction d'autocorrélation nous a permis d'accéder à une échelle intégrale caractéristique des grandes structures de l'écoulement, fournissant ainsi une information complémentaire sur l'organisation spatiale de la turbulence.\\
+	
+	\noindent L'étude de la couche limite a également permis de mettre en évidence le comportement attendu du profil de vitesse, notamment dans la région logarithmique. Toutefois, les limitations expérimentales du dispositif n'ont pas permis d'accéder aux zones les plus proches de la paroi. En particulier, la sous-couche visqueuse et la zone tampon n'ont pas pu être résolues avec précision, ce qui restreint l'analyse fine des phénomènes de transport près de la paroi.\\
+	
+	\noindent Par ailleurs, l'analyse des fluctuations de vitesse a mis en évidence une limite importante liée à l'acquisition des données. La fréquence d'échantillonnage utilisée ($f_e = 1000$ Hz) s'est révélée insuffisante pour capturer correctement les petites échelles de la turbulence. En effet, une fréquence plus élevée aurait permis d'améliorer la résolution des hautes fréquences du spectre et d'accéder plus fidèlement à la zone dissipative. Cette limitation a donc un impact direct sur la qualité de l'estimation du spectre d'énergie et sur la caractérisation des petites structures turbulentes.\\
+	
+	\noindent D'un point de vue pédagogique, ce travail a permis de mettre en pratique des concepts théoriques fondamentaux de la mécanique des fluides turbulents, tels que la décomposition de Reynolds, l'analyse spectrale, ou encore l'utilisation de l'hypothèse de Taylor. Il a également permis de mieux comprendre les contraintes expérimentales associées aux mesures en turbulence, ainsi que les compromis nécessaires entre résolution temporelle, précision spatiale et limitations instrumentales.\\
+		
 	
 	\newpage
 	\chapter*{Annexes}
@@ -1607,88 +1649,5 @@ Pour déterminer les constantes A, B et n, nous utilisons le protocole décrit d
 		\end{tabular}
 		\caption{Données de profil de vitesse en couche limite adimensionnée}
 	\end{table}
-
-
-	\addcontentsline{toc}{chapter}{TP Anémométrie}
-	\setcounter{chapter}{1}
-	\setcounter{section}{0}
-	\chapter*{TP Anémométrie}
-	\section{Introduction}
-	L'objectif de ce TP est l'étude expérimentale d'un écoulement en sortie d'un cylindre en PVC. Nous utilisons la technique de l'anémométrie à fil chaud pour caractériser les fluctuations de vitesse, après une phase cruciale de calibration.
-	
-	\section{Dispositif Expérimental}
-	\subsection{Montage et Géométrie}
-	L'écoulement est généré en sortie d'un \textbf{cylindre PVC} rigide. Le positionnement de la sonde est contrôlé par un système de déplacement micrométrique selon l'axe $z$.
-	
-	\subsection{Instrumentation}
-	\begin{itemize}
-		\item \textbf{Anémomètre à fil chaud :} Utilisation d'une sonde 1D de type \textit{Probe Type 55 R11} (fil droit).
-		\item \textbf{Système d'acquisition :} Boîtier matériel \textbf{Streamline} piloté par le logiciel \textbf{Streamware} pour la gestion de la température de surchauffe et l'échantillonnage.
-		\item \textbf{Référence de pression :} Un \textbf{tube de Pitot} couplé à un \textbf{manomètre différentiel} permettant la mesure de la pression dynamique.
-	\end{itemize}
-	
-	\section{Calibration du Fil Chaud}
-	Le fil chaud mesure une tension électrique $E$. Pour obtenir la vitesse $U$, nous effectuons une calibration à l'aide du tube de Pitot.
-	La vitesse de référence est calculée à partir de la pression mesurée via la relation de Bernoulli :
-	\begin{equation}
-		U = \sqrt{\frac{2 \Delta P}{\rho_{air}}}
-	\end{equation}
-	Avec:
-	\begin{itemize}
-		\item $\Delta P$ : la pression convertie depuis les $mmH_2O$ mesurés au manomètre;
-		\item $\rho_{air}$ : obtenue avec l'équation des gaz parfaits : $\rho_{air} = \frac{P}{RT}$.
-	\end{itemize}
-	
-	
-	\subsection*{Suggestions de question :}
-	\begin{itemize}
-		\item 0) Installez uniquement les tubes de Pitot sur le support, et identifier le tube mesurant la pression statique, et la pression atmosphérique;
-		\item 1) Pourquoi on utilise un tube de Pitot pour calibrer le fil chaud ?
-		\item 2) Vérifier les hypothèses de l'équation de Bernoulli et trouvez la relation entre la vitesse $U$ et la variation de pression $\Delta P$?
-		\item 3) Obtenez quelques valeurs de vitesse à l'aide du tube de Pitot : Trouvez le profil de vitesse dans la géométrie du système, et essayez de trouver la couche limite;
-		\item 4) Quelle est la précision (incertitude) du tube de Pitot par rapport au fil chaud / Qu'est-ce qu'apportera en plus le fil chaud par rapport à au tube de Pitot ?
-	\end{itemize}
-	
-	\section{Résultats et Analyse}
-	\subsection{Profils de Pression}
-	Les mesures relevées au manomètre en fonction de la position $z$ permettent d'identifier la zone de potentiel de l'écoulement.
-	
-	\subsection*{Suggestions de question :}
-	\begin{itemize}
-		\item 1) Dessinez le profil de vitesse dans la géométrie du système;
-		\item 2) Est-ce que l'on peut utiliser à la fois le tube de Pitot et le fil chaud dans cette situation ? (Le support permet de mettre les trois tiges tubes de Pitot et fil chaud)
-	\end{itemize}
-	
-	\subsection{Mesures Anémométriques}
-	L'acquisition via Streamware nous permet d'extraire la vitesse moyenne $\overline{U}$ et l'intensité de turbulence $Tu$. Les caractéristiques de la sonde (résistance à $20^\circ C$, coefficient $\alpha$) sont consignées dans l'inventaire matériel.
-	
-	\subsection*{Suggestions de question théorique :}
-	\begin{itemize}
-		\item 1) Identifier les constantes (résistances, coefficient linéaire pour la température) qualifiant votre fil chaud pour votre manipulation;
-		\item 2) Trouvez la relation entre la vitesse $U$ et la variation de pression $\Delta P$?
-	\end{itemize}
-	
-	\subsection*{Suggestions de question expérimentale :}
-	\begin{itemize}
-		\item 1) Installez les tube de Pitot, et un fil chaud droit 1D pour la zone centrale du cylindre;
-		\item 2) Obtenez quelques mesures de vitesse pour différentes situation de turbulance grâce au fil chaud.
-	\end{itemize}
-	
-	
-	\subsection{Mesures Anémométriques : couche limite}
-	
-	\subsection*{Suggestions de question théorique :}
-	\begin{itemize}
-		\item 1) Identifier la couche limite dans la géométrie du système
-	\end{itemize}
-	
-	\subsection*{Suggestions de question expérimentale :}
-	\begin{itemize}
-		\item 1) Installez uniquement un fil chaud coudé 1D pour la couche limite du système;
-		\item 2) Dessinez le profil de vitesse le long de la couche limite, et déterminer l'épaisseur de la couche limite.
-	\end{itemize}
-	
-	\section{Conclusion}
-	Ce TP a permis de valider la chaîne d'acquisition Streamline et de quantifier les propriétés de l'écoulement en sortie de conduite PVC.
 	
 \end{document}
