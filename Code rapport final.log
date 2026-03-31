@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.6)  28 MAR 2026 22:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.3.6)  31 MAR 2026 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1466,7 +1466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 663--666
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 673.
+Package pdftex.def Info: logo.png  used on input line 674.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1476,24 +1476,24 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
+Underfull \hbox (badness 10000) in paragraph at lines 702--703
 
  []
 
 <Images/8 fil chaud xD.png, id=406, 468.24937pt x 128.73094pt>
 File: Images/8 fil chaud xD.png Graphic file (type png)
 <use Images/8 fil chaud xD.png>
-Package pdftex.def Info: Images/8 fil chaud xD.png  used on input line 704.
+Package pdftex.def Info: Images/8 fil chaud xD.png  used on input line 707.
 (pdftex.def)             Requested size: 227.62206pt x 62.5778pt.
 <Images/9.1 reglage streamline.png, id=408, 350.81062pt x 212.29312pt>
 File: Images/9.1 reglage streamline.png Graphic file (type png)
 <use Images/9.1 reglage streamline.png>
 Package pdftex.def Info: Images/9.1 reglage streamline.png  used on input line 
-717.
+720.
 (pdftex.def)             Requested size: 409.71692pt x 247.9576pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 721.
+Package pdftex.def Info: logo.png  used on input line 724.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1503,7 +1503,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [11 <./Images/8 fil chaud xD.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 722--723
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
 
  []
 
@@ -1511,17 +1511,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 722--723
 File: Images/9.2 resultat graphique.png Graphic file (type png)
 <use Images/9.2 resultat graphique.png>
 Package pdftex.def Info: Images/9.2 resultat graphique.png  used on input line 
-733.
+736.
 (pdftex.def)             Requested size: 163.88739pt x 147.71266pt.
 <Images/9.3 erreur graphique.png, id=417, 350.81062pt x 285.31593pt>
 File: Images/9.3 erreur graphique.png Graphic file (type png)
 <use Images/9.3 erreur graphique.png>
 Package pdftex.def Info: Images/9.3 erreur graphique.png  used on input line 74
-0.
+3.
 (pdftex.def)             Requested size: 184.37135pt x 149.95418pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 752.
+Package pdftex.def Info: logo.png  used on input line 755.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1534,7 +1534,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
  <./Images/9.3 erreur graphique.png>]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 801.
+Package pdftex.def Info: logo.png  used on input line 804.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1547,22 +1547,22 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [13]
 Chapitre 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 805--806
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 807--808
+Underfull \hbox (badness 10000) in paragraph at lines 810--811
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--810
+Underfull \hbox (badness 10000) in paragraph at lines 812--813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--812
+Underfull \hbox (badness 10000) in paragraph at lines 814--815
 
  []
 
@@ -1573,16 +1573,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 811--812
 File: Images/0.3_comsol_vcentre_145.png Graphic file (type png)
 <use Images/0.3_comsol_vcentre_145.png>
 Package pdftex.def Info: Images/0.3_comsol_vcentre_145.png  used on input line 
-822.
+825.
 (pdftex.def)             Requested size: 364.19667pt x 160.57613pt.
 <Images/0.4_comsol_vcentre_7.17.png, id=442, 755.82375pt x 333.245pt>
 File: Images/0.4_comsol_vcentre_7.17.png Graphic file (type png)
 <use Images/0.4_comsol_vcentre_7.17.png>
 Package pdftex.def Info: Images/0.4_comsol_vcentre_7.17.png  used on input line
- 828.
+ 831.
 (pdftex.def)             Requested size: 364.19667pt x 160.57613pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 833--834
+Underfull \hbox (badness 10000) in paragraph at lines 836--837
 
  []
 
@@ -1590,14 +1590,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 833--834
 File: Images/0.5_comsol_vcentre_1489.png Graphic file (type png)
 <use Images/0.5_comsol_vcentre_1489.png>
 Package pdftex.def Info: Images/0.5_comsol_vcentre_1489.png  used on input line
- 839.
+ 842.
 (pdftex.def)             Requested size: 364.19667pt x 160.57613pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 847.
+Package pdftex.def Info: logo.png  used on input line 850.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1612,21 +1612,21 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 File: Images/0.6_comsol_couche_limite.png Graphic file (type png)
 <use Images/0.6_comsol_couche_limite.png>
 Package pdftex.def Info: Images/0.6_comsol_couche_limite.png  used on input lin
-e 852.
+e 855.
 (pdftex.def)             Requested size: 364.19667pt x 225.20364pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 857--858
+Underfull \hbox (badness 10000) in paragraph at lines 860--861
 
  []
 
 <Images/0.1 comsol tube.png, id=458, 566.86781pt x 267.24844pt>
 File: Images/0.1 comsol tube.png Graphic file (type png)
 <use Images/0.1 comsol tube.png>
-Package pdftex.def Info: Images/0.1 comsol tube.png  used on input line 866.
+Package pdftex.def Info: Images/0.1 comsol tube.png  used on input line 869.
 (pdftex.def)             Requested size: 409.71692pt x 193.16498pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 869.
+Package pdftex.def Info: logo.png  used on input line 872.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1641,16 +1641,16 @@ ng>]
 File: Images/0.2 comsol graphiques.png Graphic file (type png)
 <use Images/0.2 comsol graphiques.png>
 Package pdftex.def Info: Images/0.2 comsol graphiques.png  used on input line 8
-73.
+76.
 (pdftex.def)             Requested size: 409.71692pt x 180.64624pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--879
+Underfull \hbox (badness 10000) in paragraph at lines 881--882
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 882.
+Package pdftex.def Info: logo.png  used on input line 885.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1662,29 +1662,29 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [17 <./Images/0.1 comsol tube.png> <./Images/0.2 comsol graphiques.png>]
 Chapitre 5.
 
-LaTeX Warning: Command \' invalid in math mode on input line 900.
+LaTeX Warning: Command \' invalid in math mode on input line 903.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 900.
+LaTeX Warning: Command \' invalid in math mode on input line 903.
 
 Missing character: There is no é in font cmr8!
 Missing character: There is no é in font cmr8!
 
-LaTeX Warning: Command \' invalid in math mode on input line 901.
+LaTeX Warning: Command \' invalid in math mode on input line 904.
 
 Missing character: There is no é in font cmr8!
 <Images/matlab.png, id=477, 1003.95074pt x 529.98pt>
 File: Images/matlab.png Graphic file (type png)
 <use Images/matlab.png>
-Package pdftex.def Info: Images/matlab.png  used on input line 989.
+Package pdftex.def Info: Images/matlab.png  used on input line 992.
 (pdftex.def)             Requested size: 409.71692pt x 216.28233pt.
 [18
 
 ]
-Package pgfplots info on input line 1086: Using 'lua backend=false' for axis: x
+Package pgfplots info on input line 1089: Using 'lua backend=false' for axis: x
 mode=log unsupported (yet).
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
 []\T1/cmr/m/sc/12 Table 5.4 \T1/cmr/m/n/12 ^^U |Gra-phique semi-
  []
 
@@ -1692,13 +1692,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1094--1094
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1098--1099
+Underfull \hbox (badness 10000) in paragraph at lines 1101--1102
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1099.
+Package pdftex.def Info: logo.png  used on input line 1102.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1708,23 +1708,23 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [19 <./Images/matlab.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1124
+Underfull \hbox (badness 10000) in paragraph at lines 1111--1112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1124.
+Package pdftex.def Info: logo.png  used on input line 1127.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1734,33 +1734,33 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.47353pt}.
 
 [20]
-Overfull \hbox (4.59688pt too wide) in paragraph at lines 1183--1184
+Overfull \hbox (4.59688pt too wide) in paragraph at lines 1186--1187
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+Underfull \hbox (badness 10000) in paragraph at lines 1192--1193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1194--1195
 
  []
 
-Package pgfplots info on input line 1206: Using 'lua backend=false' for axis: x
+Package pgfplots info on input line 1209: Using 'lua backend=false' for axis: x
 mode=log unsupported (yet).
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1248--1249
+Underfull \hbox (badness 10000) in paragraph at lines 1251--1252
 
  []
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1251.
+Package pdftex.def Info: logo.png  used on input line 1254.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1772,7 +1772,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [21]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1263.
+Package pdftex.def Info: logo.png  used on input line 1266.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1785,31 +1785,31 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [22]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1331.
+(hyperref)                removing `superscript' on input line 1334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 1331.
+(hyperref)                removing `superscript' on input line 1334.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1331.
+(hyperref)                removing `math shift' on input line 1334.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1341.
+Package pdftex.def Info: logo.png  used on input line 1344.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1821,19 +1821,19 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1344.
+(hyperref)                removing `math shift' on input line 1347.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1344.
+(hyperref)                removing `subscript' on input line 1347.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1344.
+(hyperref)                removing `math shift' on input line 1347.
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1395.
+Package pdftex.def Info: logo.png  used on input line 1398.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 Package fancyhdr Warning: \headheight is too small (33.75pt): 
@@ -1845,7 +1845,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [24]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1451.
+Package pdftex.def Info: logo.png  used on input line 1454.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1858,7 +1858,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [25] [26
 
 ]
-Overfull \hbox (8.11958pt too wide) in paragraph at lines 1500--1522
+Overfull \hbox (8.11958pt too wide) in paragraph at lines 1503--1525
  [][] 
  []
 
@@ -1867,7 +1867,7 @@ Overfull \hbox (8.11958pt too wide) in paragraph at lines 1500--1522
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1585.
+Package pdftex.def Info: logo.png  used on input line 1588.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1882,9 +1882,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{section.1.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1586 	\section{Introduction}
+l.1589 	\section{Introduction}
                               
-Overfull \hbox (10.24738pt too wide) in paragraph at lines 1596--1597
+Overfull \hbox (10.24738pt too wide) in paragraph at lines 1599--1600
 []\T1/cmr/bx/n/12 Système d'ac-qui-si-tion : \T1/cmr/m/n/12 Boî-tier ma-té-riel
  \T1/cmr/bx/n/12 Stream-line \T1/cmr/m/n/12 pi-loté par le lo-gi-ciel \T1/cmr/b
 x/n/12 Stream-
@@ -1895,7 +1895,7 @@ x/n/12 Stream-
 ]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1659.
+Package pdftex.def Info: logo.png  used on input line 1662.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1908,7 +1908,7 @@ Package fancyhdr Warning: \headheight is too small (33.75pt):
 [30]
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 1664.
+Package pdftex.def Info: logo.png  used on input line 1667.
 (pdftex.def)             Requested size: 56.9055pt x 29.87349pt.
 
 
@@ -1969,9 +1969,9 @@ type1/public/amsfonts/cm/cmr6.pfb><C:/Users/roman/AppData/Local/Programs/MiKTeX
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/roman/AppData/Local
 /Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/roman/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Code rapport final.pdf" (32 pages, 3660362 bytes).
+Output written on "Code rapport final.pdf" (32 pages, 3660759 bytes).
 PDF statistics:
- 1233 PDF objects out of 1440 (max. 8388607)
+ 1234 PDF objects out of 1440 (max. 8388607)
  122 named destinations out of 1000 (max. 500000)
  684 words of extra memory for PDF output out of 10000 (max. 10000000)
 
